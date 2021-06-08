@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%lld Smoothies</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>No Smoothies</string>
+			<key>one</key>
+			<string>%lld Smoothie</string>
+			<key>other</key>
+			<string>%lld Smoothies</string>
+		</dict>
+	</dict>
+	<key>%lld of 10 points earned</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>No points earned</string>
+			<key>one</key>
+			<string>%lld of 10 points earned</string>
+			<key>other</key>
+			<string>%lld of 10 points earned</string>
+		</dict>
+	</dict>
+	<key>You are %lld points away from a free smoothie!</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>zero</key>
+			<string>Congratulations, you got yourself a free smoothie!</string>
+			<key>one</key>
+			<string>You are %lld point away from a free smoothie!</string>
+			<key>other</key>
+			<string>You are %lld points away from a free smoothie!</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

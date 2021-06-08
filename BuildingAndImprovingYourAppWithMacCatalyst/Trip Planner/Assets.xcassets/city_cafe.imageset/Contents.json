@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "city_cafe.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

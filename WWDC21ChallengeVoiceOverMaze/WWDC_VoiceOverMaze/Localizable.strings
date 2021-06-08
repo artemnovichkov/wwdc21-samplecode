@@ -1,0 +1,15 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Localizable strings.
+*/
+
+"InitialInstructionsTitle" = "Are you ready to escape from Castle Park?";
+"InitialInstructionsContent" = "Ask Siri to Turn on VoiceOver. \n\nSwipe left and right to navigate. \n\nDouble-tap to activate. \n\nPrepare for your journey!";
+"EnterButton" = "Enter Castle Park";
+
+"Congratulations" = "Congratulations!";
+"ExitFromCastlePark" = "You have escaped from Castle Park!\nYou can ask Siri to turn off VoiceOver.";
+"Enjoy" = "Enjoy WWDC 2021!";
+"AccessibilityLink" = "For more information about making accessible apps, visit developer.apple.com/accessibility.";

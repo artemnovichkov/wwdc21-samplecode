@@ -1,0 +1,49 @@
+Assets from Unsplash are covered under the Unsplash License: https://unsplash.com/license
+
+CollectionViewSample/Assets.xcassets/Destinations/cusco.imageset/
+Images created by Paul Lequay
+https://unsplash.com/photos/73FOXT1DvjI
+
+CollectionViewSample/Assets.xcassets/Destinations/st-lucia.imageset/
+Images created by Corinne Kutz
+https://unsplash.com/photos/xVCEvpBpe_g
+
+CollectionViewSample/Assets.xcassets/Destinations/patagonia.imageset/
+Images created by Rodrigo Flores
+https://unsplash.com/photos/nk_JKocDkDo
+
+CollectionViewSample/Assets.xcassets/Destinations/cork.imageset/
+Images created by Yen Tran
+https://unsplash.com/photos/y-o266_jp9g
+
+CollectionViewSample/Assets.xcassets/Destinations/cambodia.imageset/
+Images created by Taylor Simpson
+https://unsplash.com/photos/p6-9LcGDhHc
+
+CollectionViewSample/Assets.xcassets/Destinations/italy.imageset/
+Images created by Sofia
+https://unsplash.com/photos/mv--aWdjUn4
+
+CollectionViewSample/Assets.xcassets/Destinations/iceland.imageset/
+Images created by Norris Niman
+https://unsplash.com/photos/ABtmE3jhaPQ
+
+CollectionViewSample/Assets.xcassets/Destinations/tokyo.imageset/
+Images created by Freeman Zhou
+https://unsplash.com/photos/plX7xeNb3Yo
+
+CollectionViewSample/Assets.xcassets/Destinations/vietnam.imageset/
+Images created by David Emrich
+https://unsplash.com/photos/WirMEd6CMts
+
+CollectionViewSample/Assets.xcassets/Destinations/new-zealand.imageset/
+Images created by Casey Horner
+https://unsplash.com/photos/75_s8iWHKLs
+
+CollectionViewSample/Assets.xcassets/Destinations/paris.imageset/
+Images created by Adrien
+https://unsplash.com/photos/wAScP0OY-yM
+
+CollectionViewSample/Assets.xcassets/Destinations/bali.imageset/
+Images created by Alexa West
+https://unsplash.com/photos/OOTEpsO2eV0

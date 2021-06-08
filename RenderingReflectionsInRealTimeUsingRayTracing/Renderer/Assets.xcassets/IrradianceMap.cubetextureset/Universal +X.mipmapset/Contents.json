@@ -1,0 +1,47 @@
+{
+  "properties" : {
+    "level-mode" : "fixed"
+  },
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "levels" : [
+    {
+      "filename" : "tile0.png",
+      "mipmap-level" : "base"
+    },
+    {
+      "filename" : "tileLevel10.png",
+      "mipmap-level" : "mipmap-level-1"
+    },
+    {
+      "filename" : "tileLevel20.png",
+      "mipmap-level" : "mipmap-level-2"
+    },
+    {
+      "filename" : "tileLevel30.png",
+      "mipmap-level" : "mipmap-level-3"
+    },
+    {
+      "filename" : "tileLevel40.png",
+      "mipmap-level" : "mipmap-level-4"
+    },
+    {
+      "filename" : "tileLevel50.png",
+      "mipmap-level" : "mipmap-level-5"
+    },
+    {
+      "filename" : "tileLevel60.png",
+      "mipmap-level" : "mipmap-level-6"
+    },
+    {
+      "filename" : "tileLevel70.png",
+      "mipmap-level" : "mipmap-level-7"
+    },
+    {
+      "filename" : "tileLevel80.png",
+      "mipmap-level" : "mipmap-level-8"
+    }
+  ]
+}

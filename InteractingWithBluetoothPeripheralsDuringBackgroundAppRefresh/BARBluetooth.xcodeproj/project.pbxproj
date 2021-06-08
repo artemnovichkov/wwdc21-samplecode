@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		921DD4822614B9C200BFD806 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921DD4712614B9C200BFD806 /* RootView.swift */; };
+		92A8F63A2613724E00587375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A8F6392613724E00587375 /* Assets.xcassets */; };
+		92A8F6412613724E00587375 /* BARBluetooth WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 92A8F6402613724E00587375 /* BARBluetooth WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		92A8F6462613724F00587375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A8F6452613724F00587375 /* Assets.xcassets */; };
+		92A8F64C2613724F00587375 /* BARBluetooth WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 92A8F64B2613724F00587375 /* BARBluetooth WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		92A8F6572613725000587375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A8F6562613725000587375 /* Assets.xcassets */; };
+		92A8F6702613728900587375 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8F6692613728900587375 /* ComplicationController.swift */; };
+		92A8F6712613728900587375 /* BluetoothReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8F66A2613728900587375 /* BluetoothReceiver.swift */; };
+		92A8F6732613728900587375 /* BARBluetoothApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8F66C2613728900587375 /* BARBluetoothApp.swift */; };
+		92A8F6742613728900587375 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8F66E2613728900587375 /* RootView.swift */; };
+		92A8F6752613728900587375 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8F66F2613728900587375 /* ExtensionDelegate.swift */; };
+		92A8F67E261372A600587375 /* SamplePeripheralApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8F676261372A600587375 /* SamplePeripheralApp.swift */; };
+		92A8F681261372A600587375 /* BluetoothSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8F67A261372A600587375 /* BluetoothSender.swift */; };
+		92A8F682261372A600587375 /* ApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8F67B261372A600587375 /* ApplicationDelegate.swift */; };
+		92A8F688261372CA00587375 /* BluetoothConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8F686261372C700587375 /* BluetoothConstants.swift */; };
+		92A8F689261372CA00587375 /* BluetoothConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A8F686261372C700587375 /* BluetoothConstants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92A8F6422613724E00587375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92A8F62A2613724C00587375 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92A8F63F2613724E00587375;
+			remoteInfo = "BatteryMonitor WatchKit App";
+		};
+		92A8F64D2613724F00587375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92A8F62A2613724C00587375 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92A8F64A2613724F00587375;
+			remoteInfo = "BatteryMonitor WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92A8F6612613725000587375 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				92A8F64C2613724F00587375 /* BARBluetooth WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A8F6652613725000587375 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				92A8F6412613724E00587375 /* BARBluetooth WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		68EF525C441675D1DF648C1A /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		921DD4712614B9C200BFD806 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		921DD4832614C28400BFD806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92A8F6322613724D00587375 /* BARBluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BARBluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92A8F6392613724E00587375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92A8F6402613724E00587375 /* BARBluetooth WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BARBluetooth WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92A8F6452613724F00587375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92A8F64B2613724F00587375 /* BARBluetooth WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BARBluetooth WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92A8F6562613725000587375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92A8F65B2613725000587375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92A8F6692613728900587375 /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		92A8F66A2613728900587375 /* BluetoothReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothReceiver.swift; sourceTree = "<group>"; };
+		92A8F66C2613728900587375 /* BARBluetoothApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BARBluetoothApp.swift; sourceTree = "<group>"; };
+		92A8F66E2613728900587375 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		92A8F66F2613728900587375 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		92A8F676261372A600587375 /* SamplePeripheralApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePeripheralApp.swift; sourceTree = "<group>"; };
+		92A8F67A261372A600587375 /* BluetoothSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothSender.swift; sourceTree = "<group>"; };
+		92A8F67B261372A600587375 /* ApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationDelegate.swift; sourceTree = "<group>"; };
+		92A8F686261372C700587375 /* BluetoothConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothConstants.swift; sourceTree = "<group>"; };
+		92A8F687261372C700587375 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DAD556FD0354C9EF55C70C49 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92A8F62F2613724D00587375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A8F6482613724F00587375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D4FFC18A1E33254AE63DF30 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				DAD556FD0354C9EF55C70C49 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		7E12634D7716C577E85990D0 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				68EF525C441675D1DF648C1A /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		92A8F6292613724C00587375 = {
+			isa = PBXGroup;
+			children = (
+				92A8F687261372C700587375 /* README.md */,
+				92A8F685261372C700587375 /* shared */,
+				92A8F6342613724D00587375 /* BARBluetooth */,
+				92A8F6442613724E00587375 /* BARBluetooth WatchKit App */,
+				92A8F64F2613724F00587375 /* BARBluetooth WatchKit Extension */,
+				92A8F6332613724D00587375 /* Products */,
+				0D4FFC18A1E33254AE63DF30 /* Configuration */,
+				7E12634D7716C577E85990D0 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		92A8F6332613724D00587375 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92A8F6322613724D00587375 /* BARBluetooth.app */,
+				92A8F6402613724E00587375 /* BARBluetooth WatchKit App.app */,
+				92A8F64B2613724F00587375 /* BARBluetooth WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92A8F6342613724D00587375 /* BARBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				92A8F676261372A600587375 /* SamplePeripheralApp.swift */,
+				92A8F67B261372A600587375 /* ApplicationDelegate.swift */,
+				92A8F67A261372A600587375 /* BluetoothSender.swift */,
+				921DD4712614B9C200BFD806 /* RootView.swift */,
+				92A8F6392613724E00587375 /* Assets.xcassets */,
+				921DD4832614C28400BFD806 /* Info.plist */,
+			);
+			path = BARBluetooth;
+			sourceTree = "<group>";
+		};
+		92A8F6442613724E00587375 /* BARBluetooth WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				92A8F6452613724F00587375 /* Assets.xcassets */,
+			);
+			path = "BARBluetooth WatchKit App";
+			sourceTree = "<group>";
+		};
+		92A8F64F2613724F00587375 /* BARBluetooth WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				92A8F66C2613728900587375 /* BARBluetoothApp.swift */,
+				92A8F66F2613728900587375 /* ExtensionDelegate.swift */,
+				92A8F66A2613728900587375 /* BluetoothReceiver.swift */,
+				92A8F66E2613728900587375 /* RootView.swift */,
+				92A8F6692613728900587375 /* ComplicationController.swift */,
+				92A8F6562613725000587375 /* Assets.xcassets */,
+				92A8F65B2613725000587375 /* Info.plist */,
+			);
+			path = "BARBluetooth WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		92A8F685261372C700587375 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				92A8F686261372C700587375 /* BluetoothConstants.swift */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92A8F6312613724D00587375 /* BARBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92A8F6662613725000587375 /* Build configuration list for PBXNativeTarget "BARBluetooth" */;
+			buildPhases = (
+				92A8F62E2613724D00587375 /* Sources */,
+				92A8F62F2613724D00587375 /* Frameworks */,
+				92A8F6302613724D00587375 /* Resources */,
+				92A8F6652613725000587375 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92A8F6432613724E00587375 /* PBXTargetDependency */,
+			);
+			name = BARBluetooth;
+			productName = BatteryMonitor;
+			productReference = 92A8F6322613724D00587375 /* BARBluetooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92A8F63F2613724E00587375 /* BARBluetooth WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92A8F6622613725000587375 /* Build configuration list for PBXNativeTarget "BARBluetooth WatchKit App" */;
+			buildPhases = (
+				92A8F63E2613724E00587375 /* Resources */,
+				92A8F6612613725000587375 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92A8F64E2613724F00587375 /* PBXTargetDependency */,
+			);
+			name = "BARBluetooth WatchKit App";
+			productName = "BatteryMonitor WatchKit App";
+			productReference = 92A8F6402613724E00587375 /* BARBluetooth WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		92A8F64A2613724F00587375 /* BARBluetooth WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92A8F65E2613725000587375 /* Build configuration list for PBXNativeTarget "BARBluetooth WatchKit Extension" */;
+			buildPhases = (
+				92A8F6472613724F00587375 /* Sources */,
+				92A8F6482613724F00587375 /* Frameworks */,
+				92A8F6492613724F00587375 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BARBluetooth WatchKit Extension";
+			productName = "BatteryMonitor WatchKit Extension";
+			productReference = 92A8F64B2613724F00587375 /* BARBluetooth WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92A8F62A2613724C00587375 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					92A8F6312613724D00587375 = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+					92A8F63F2613724E00587375 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					92A8F64A2613724F00587375 = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+				};
+			};
+			buildConfigurationList = 92A8F62D2613724C00587375 /* Build configuration list for PBXProject "BARBluetooth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92A8F6292613724C00587375;
+			productRefGroup = 92A8F6332613724D00587375 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92A8F6312613724D00587375 /* BARBluetooth */,
+				92A8F63F2613724E00587375 /* BARBluetooth WatchKit App */,
+				92A8F64A2613724F00587375 /* BARBluetooth WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92A8F6302613724D00587375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A8F63A2613724E00587375 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A8F63E2613724E00587375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A8F6462613724F00587375 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A8F6492613724F00587375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A8F6572613725000587375 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92A8F62E2613724D00587375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A8F682261372A600587375 /* ApplicationDelegate.swift in Sources */,
+				92A8F67E261372A600587375 /* SamplePeripheralApp.swift in Sources */,
+				921DD4822614B9C200BFD806 /* RootView.swift in Sources */,
+				92A8F688261372CA00587375 /* BluetoothConstants.swift in Sources */,
+				92A8F681261372A600587375 /* BluetoothSender.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A8F6472613724F00587375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A8F6702613728900587375 /* ComplicationController.swift in Sources */,
+				92A8F6712613728900587375 /* BluetoothReceiver.swift in Sources */,
+				92A8F6752613728900587375 /* ExtensionDelegate.swift in Sources */,
+				92A8F6732613728900587375 /* BARBluetoothApp.swift in Sources */,
+				92A8F689261372CA00587375 /* BluetoothConstants.swift in Sources */,
+				92A8F6742613728900587375 /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92A8F6432613724E00587375 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92A8F63F2613724E00587375 /* BARBluetooth WatchKit App */;
+			targetProxy = 92A8F6422613724E00587375 /* PBXContainerItemProxy */;
+		};
+		92A8F64E2613724F00587375 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92A8F64A2613724F00587375 /* BARBluetooth WatchKit Extension */;
+			targetProxy = 92A8F64D2613724F00587375 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		92A8F65C2613725000587375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD556FD0354C9EF55C70C49 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92A8F65D2613725000587375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD556FD0354C9EF55C70C49 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		92A8F65F2613725000587375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD556FD0354C9EF55C70C49 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BARBluetooth WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BARBluetooth WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.BARBluetooth${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		92A8F6602613725000587375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD556FD0354C9EF55C70C49 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BARBluetooth WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BARBluetooth WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.BARBluetooth${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		92A8F6632613725000587375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD556FD0354C9EF55C70C49 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = BARBluetooth_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "BARBluetooth WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.example.apple-samplecode.BARBluetooth";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.BARBluetooth${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp";
+				PRODUCT_NAME = "BARBluetooth WatchKit App";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		92A8F6642613725000587375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD556FD0354C9EF55C70C49 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = BARBluetooth_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "BARBluetooth WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.example.apple-samplecode.BARBluetooth";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.BARBluetooth${SAMPLE_CODE_DISAMBIGUATOR}.watchkitapp";
+				PRODUCT_NAME = "BARBluetooth WatchKit App";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		92A8F6672613725000587375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD556FD0354C9EF55C70C49 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BARBluetooth/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.BARBluetooth${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92A8F6682613725000587375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD556FD0354C9EF55C70C49 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BARBluetooth/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.BARBluetooth${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92A8F62D2613724C00587375 /* Build configuration list for PBXProject "BARBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A8F65C2613725000587375 /* Debug */,
+				92A8F65D2613725000587375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92A8F65E2613725000587375 /* Build configuration list for PBXNativeTarget "BARBluetooth WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A8F65F2613725000587375 /* Debug */,
+				92A8F6602613725000587375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92A8F6622613725000587375 /* Build configuration list for PBXNativeTarget "BARBluetooth WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A8F6632613725000587375 /* Debug */,
+				92A8F6642613725000587375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92A8F6662613725000587375 /* Build configuration list for PBXNativeTarget "BARBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A8F6672613725000587375 /* Debug */,
+				92A8F6682613725000587375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92A8F62A2613724C00587375 /* Project object */;
+}

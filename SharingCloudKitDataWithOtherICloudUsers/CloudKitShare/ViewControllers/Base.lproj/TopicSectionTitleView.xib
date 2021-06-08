@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="CloudKitShare" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TopicSectionTitleView" customModule="CloudKitShare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BT2-EL-BcO" customClass="TopicSectionTitleButton" customModule="CloudKitShare" customModuleProvider="target">
+                    <rect key="frame" x="16" y="7" width="291" height="30"/>
+                    <state key="normal" title="Edit">
+                        <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="editTopic:" destination="-1" eventType="touchUpInside" id="lsB-IO-S5x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56a-Ft-AW2">
+                    <rect key="frame" x="325" y="7" width="40" height="30"/>
+                    <state key="normal" title="Share"/>
+                    <connections>
+                        <action selector="shareTopic:" destination="-1" eventType="touchUpInside" id="ei9-km-OXL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="56a-Ft-AW2" secondAttribute="trailing" constant="16" id="H95-LG-qpH"/>
+                <constraint firstAttribute="bottom" secondItem="BT2-EL-BcO" secondAttribute="bottom" constant="7" id="IOO-sk-C5v"/>
+                <constraint firstItem="56a-Ft-AW2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="bki-A2-5oe"/>
+                <constraint firstItem="BT2-EL-BcO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="kd3-o8-HbU"/>
+                <constraint firstItem="56a-Ft-AW2" firstAttribute="leading" secondItem="BT2-EL-BcO" secondAttribute="trailing" constant="18" id="krE-Ab-99C"/>
+                <constraint firstAttribute="bottom" secondItem="56a-Ft-AW2" secondAttribute="bottom" constant="7" id="t1f-51-WXB"/>
+                <constraint firstItem="BT2-EL-BcO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="z93-fp-KUG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Sbp-Iq-YAy"/>
+            <connections>
+                <outlet property="shareButton" destination="56a-Ft-AW2" id="rGZ-i8-06p"/>
+                <outlet property="titleButton" destination="BT2-EL-BcO" id="vId-zt-Mhf"/>
+            </connections>
+            <point key="canvasLocation" x="27.5" y="-224"/>
+        </view>
+    </objects>
+</document>

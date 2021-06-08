@@ -1,0 +1,5 @@
+Bob: This is a test.
+John: Is it really?
+Bob: Yes.
+John: How fascinating! Goodbye!
+John: Goodbye.

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "stone_town.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

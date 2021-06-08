@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19082.1" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19080.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19016"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Book tickets" id="ck0-wL-Gld"/>
+                        <paymentButton width="1" alignment="left" id="iYb-EB-Quh">
+                            <connections>
+                                <action selector="payPressedWithSender:" destination="AgC-eL-Hgc" id="pRJ-3H-Tfq"/>
+                            </connections>
+                        </paymentButton>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="66" y="109"/>
+        </scene>
+        <!--Confirmation-->
+        <scene sceneID="hCN-v8-1fl">
+            <objects>
+                <controller identifier="Confirmation" title="Confirmation" id="Qqh-Se-3nT">
+                    <items>
+                        <label alignment="left" text="Thanks" id="ABr-4E-d3Y">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                        <label alignment="left" text="Your order has been placed." numberOfLines="2" id="rYy-4s-NLd"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="339" y="109"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19101.3" systemVersion="21A219b" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Attachment" representedClassName="Attachment" syncable="YES" codeGenerationType="class">
+        <attribute name="thumbnail" optional="YES" transient="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName" customClassName="UIKit.UIImage"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="imageData" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ImageData" inverseName="attachment" inverseEntity="ImageData"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="attachments" inverseEntity="Post"/>
+    </entity>
+    <entity name="ImageData" representedClassName="ImageData" syncable="YES" codeGenerationType="class">
+        <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <relationship name="attachment" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Attachment" inverseName="imageData" inverseEntity="Attachment"/>
+    </entity>
+    <entity name="Post" representedClassName="Post" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="Transformable" valueTransformerName="SecureCLLocationTransformer" allowsCloudEncryption="YES" customClassName="CoreLocation.CLLocation"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="attachments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Attachment" inverseName="post" inverseEntity="Attachment"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="posts" inverseEntity="Tag"/>
+        <userInfo/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName" customClassName="UIKit.UIColor"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="postCount" optional="YES" attributeType="Integer 64" derived="YES" derivationExpression="posts.@count" usesScalarValueType="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Post" inverseName="tags" inverseEntity="Post"/>
+    </entity>
+    <elements>
+        <element name="Attachment" positionX="151.33984375" positionY="86.921875" width="128" height="89"/>
+        <element name="ImageData" positionX="312.91015625" positionY="101.94921875" width="128" height="73"/>
+        <element name="Post" positionX="-29.0703125" positionY="143.5" width="128" height="104"/>
+        <element name="Tag" positionX="154.265625" positionY="200.84765625" width="128" height="104"/>
+    </elements>
+</model>

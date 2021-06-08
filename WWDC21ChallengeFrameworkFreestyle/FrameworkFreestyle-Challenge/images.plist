@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>SceneKit-Texture</string>
+	<string>AV-Texture</string>
+	<string>AppClips-Texture</string>
+	<string>SpriteKit-Texture</string>
+	<string>MapKit-Texture</string>
+	<string>RealityKit-Texture</string>
+	<string>Acc-Texture</string>
+	<string>CoreMotion-Texture</string>
+	<string>WidgetKit-Texture</string>
+	<string>CoreML-Texture</string>
+	<string>HealthKit-Texture</string>
+	<string>WebKit-Texture</string>
+	<string>ARKit-Texture</string>
+	<string>SK-Texture</string>
+	<string>Metal-Texture</string>
+	<string>MK-Texture</string>
+	<string>Msg-Texture</string>
+</array>
+</plist>

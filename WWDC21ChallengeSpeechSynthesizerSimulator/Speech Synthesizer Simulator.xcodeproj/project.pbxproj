@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D883C4D62669B38700D3E6BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C4D52669B38700D3E6BC /* AppDelegate.swift */; };
+		D883C4D82669B38700D3E6BC /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D883C4D72669B38700D3E6BC /* Scene.sks */; };
+		D883C4DA2669B38700D3E6BC /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C4D92669B38700D3E6BC /* Scene.swift */; };
+		D883C4DC2669B38700D3E6BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C4DB2669B38700D3E6BC /* ViewController.swift */; };
+		D883C4E12669B38800D3E6BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D883C4E02669B38800D3E6BC /* Assets.xcassets */; };
+		D883C4E42669B38800D3E6BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D883C4E22669B38800D3E6BC /* LaunchScreen.storyboard */; };
+		D883C4EC2669B3A700D3E6BC /* red-bird.png in Resources */ = {isa = PBXBuildFile; fileRef = D883C4EA2669B3A700D3E6BC /* red-bird.png */; };
+		D883C4ED2669B3A700D3E6BC /* blue-bird.png in Resources */ = {isa = PBXBuildFile; fileRef = D883C4EB2669B3A700D3E6BC /* blue-bird.png */; };
+		D883C4EF2669B40100D3E6BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D883C4EE2669B40100D3E6BC /* Main.storyboard */; };
+		D883C4F12669B41B00D3E6BC /* DialogueLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C4F02669B41B00D3E6BC /* DialogueLabel.swift */; };
+		D883C4F32669B42400D3E6BC /* ScriptReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C4F22669B42400D3E6BC /* ScriptReader.swift */; };
+		D883C4F52669B43000D3E6BC /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C4F42669B43000D3E6BC /* Conversation.swift */; };
+		D883C4F72669B43800D3E6BC /* conversation.txt in Resources */ = {isa = PBXBuildFile; fileRef = D883C4F62669B43800D3E6BC /* conversation.txt */; };
+		D883C4F92669B43F00D3E6BC /* SpriteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C4F82669B43F00D3E6BC /* SpriteHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5068F0BF082A75F0D844C4BA /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		D7F6F555C67656ABD042448F /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		D883C4D22669B38700D3E6BC /* Speech Synthesizer Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speech Synthesizer Simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D883C4D52669B38700D3E6BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D883C4D72669B38700D3E6BC /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
+		D883C4D92669B38700D3E6BC /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		D883C4DB2669B38700D3E6BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D883C4E02669B38800D3E6BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D883C4E32669B38800D3E6BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D883C4EA2669B3A700D3E6BC /* red-bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-bird.png"; sourceTree = "<group>"; };
+		D883C4EB2669B3A700D3E6BC /* blue-bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-bird.png"; sourceTree = "<group>"; };
+		D883C4EE2669B40100D3E6BC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D883C4F02669B41B00D3E6BC /* DialogueLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogueLabel.swift; sourceTree = "<group>"; };
+		D883C4F22669B42400D3E6BC /* ScriptReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptReader.swift; sourceTree = "<group>"; };
+		D883C4F42669B43000D3E6BC /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		D883C4F62669B43800D3E6BC /* conversation.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conversation.txt; sourceTree = "<group>"; };
+		D883C4F82669B43F00D3E6BC /* SpriteHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteHelper.swift; sourceTree = "<group>"; };
+		D883C4FC2669B7CC00D3E6BC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D883C4CF2669B38700D3E6BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20846E0387CBB07618A7418F /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				5068F0BF082A75F0D844C4BA /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		3ED24FE854E2C91D4C210094 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D7F6F555C67656ABD042448F /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		D883C4C92669B38700D3E6BC = {
+			isa = PBXGroup;
+			children = (
+				D883C4FC2669B7CC00D3E6BC /* README.md */,
+				D883C4D42669B38700D3E6BC /* Speech Synthesizer Simulator */,
+				D883C4D32669B38700D3E6BC /* Products */,
+				3ED24FE854E2C91D4C210094 /* Configuration */,
+				20846E0387CBB07618A7418F /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		D883C4D32669B38700D3E6BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D883C4D22669B38700D3E6BC /* Speech Synthesizer Simulator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D883C4D42669B38700D3E6BC /* Speech Synthesizer Simulator */ = {
+			isa = PBXGroup;
+			children = (
+				D883C4D52669B38700D3E6BC /* AppDelegate.swift */,
+				D883C4D72669B38700D3E6BC /* Scene.sks */,
+				D883C4D92669B38700D3E6BC /* Scene.swift */,
+				D883C4DB2669B38700D3E6BC /* ViewController.swift */,
+				D883C4F82669B43F00D3E6BC /* SpriteHelper.swift */,
+				D883C4F62669B43800D3E6BC /* conversation.txt */,
+				D883C4F42669B43000D3E6BC /* Conversation.swift */,
+				D883C4F22669B42400D3E6BC /* ScriptReader.swift */,
+				D883C4EE2669B40100D3E6BC /* Main.storyboard */,
+				D883C4F02669B41B00D3E6BC /* DialogueLabel.swift */,
+				D883C4E02669B38800D3E6BC /* Assets.xcassets */,
+				D883C4E22669B38800D3E6BC /* LaunchScreen.storyboard */,
+				D883C4EB2669B3A700D3E6BC /* blue-bird.png */,
+				D883C4EA2669B3A700D3E6BC /* red-bird.png */,
+			);
+			path = "Speech Synthesizer Simulator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D883C4D12669B38700D3E6BC /* Speech Synthesizer Simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D883C4E72669B38800D3E6BC /* Build configuration list for PBXNativeTarget "Speech Synthesizer Simulator" */;
+			buildPhases = (
+				D883C4CE2669B38700D3E6BC /* Sources */,
+				D883C4CF2669B38700D3E6BC /* Frameworks */,
+				D883C4D02669B38700D3E6BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Speech Synthesizer Simulator";
+			productName = "Speech Synthesizer Simulator";
+			productReference = D883C4D22669B38700D3E6BC /* Speech Synthesizer Simulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D883C4CA2669B38700D3E6BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					D883C4D12669B38700D3E6BC = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = D883C4CD2669B38700D3E6BC /* Build configuration list for PBXProject "Speech Synthesizer Simulator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D883C4C92669B38700D3E6BC;
+			productRefGroup = D883C4D32669B38700D3E6BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D883C4D12669B38700D3E6BC /* Speech Synthesizer Simulator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D883C4D02669B38700D3E6BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D883C4EF2669B40100D3E6BC /* Main.storyboard in Resources */,
+				D883C4D82669B38700D3E6BC /* Scene.sks in Resources */,
+				D883C4E42669B38800D3E6BC /* LaunchScreen.storyboard in Resources */,
+				D883C4ED2669B3A700D3E6BC /* blue-bird.png in Resources */,
+				D883C4E12669B38800D3E6BC /* Assets.xcassets in Resources */,
+				D883C4F72669B43800D3E6BC /* conversation.txt in Resources */,
+				D883C4EC2669B3A700D3E6BC /* red-bird.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D883C4CE2669B38700D3E6BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D883C4F92669B43F00D3E6BC /* SpriteHelper.swift in Sources */,
+				D883C4F52669B43000D3E6BC /* Conversation.swift in Sources */,
+				D883C4F12669B41B00D3E6BC /* DialogueLabel.swift in Sources */,
+				D883C4DC2669B38700D3E6BC /* ViewController.swift in Sources */,
+				D883C4F32669B42400D3E6BC /* ScriptReader.swift in Sources */,
+				D883C4DA2669B38700D3E6BC /* Scene.swift in Sources */,
+				D883C4D62669B38700D3E6BC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D883C4E22669B38800D3E6BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D883C4E32669B38800D3E6BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D883C4E52669B38800D3E6BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F6F555C67656ABD042448F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D883C4E62669B38800D3E6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F6F555C67656ABD042448F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D883C4E82669B38800D3E6BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F6F555C67656ABD042448F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Speech-Synthesizer-Simulator${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D883C4E92669B38800D3E6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F6F555C67656ABD042448F /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Speech-Synthesizer-Simulator${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D883C4CD2669B38700D3E6BC /* Build configuration list for PBXProject "Speech Synthesizer Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D883C4E52669B38800D3E6BC /* Debug */,
+				D883C4E62669B38800D3E6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D883C4E72669B38800D3E6BC /* Build configuration list for PBXNativeTarget "Speech Synthesizer Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D883C4E82669B38800D3E6BC /* Debug */,
+				D883C4E92669B38800D3E6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D883C4CA2669B38700D3E6BC /* Project object */;
+}

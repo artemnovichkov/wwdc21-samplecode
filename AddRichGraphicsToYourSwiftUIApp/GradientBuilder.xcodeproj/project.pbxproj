@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E096ED5A2660B1640056DB30 /* GradientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED582660B1640056DB30 /* GradientModel.swift */; };
+		E096ED5B2660B1640056DB30 /* GradientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED582660B1640056DB30 /* GradientModel.swift */; };
+		E096ED5C2660B1640056DB30 /* GradientModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED592660B1640056DB30 /* GradientModelStore.swift */; };
+		E096ED5D2660B1640056DB30 /* GradientModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED592660B1640056DB30 /* GradientModelStore.swift */; };
+		E096ED642660B1AB0056DB30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED5F2660B1AA0056DB30 /* ContentView.swift */; };
+		E096ED652660B1AB0056DB30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED5F2660B1AA0056DB30 /* ContentView.swift */; };
+		E096ED662660B1AB0056DB30 /* SystemColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED602660B1AA0056DB30 /* SystemColorPicker.swift */; };
+		E096ED672660B1AB0056DB30 /* SystemColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED602660B1AA0056DB30 /* SystemColorPicker.swift */; };
+		E096ED682660B1AB0056DB30 /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED612660B1AA0056DB30 /* Visualizer.swift */; };
+		E096ED692660B1AB0056DB30 /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED612660B1AA0056DB30 /* Visualizer.swift */; };
+		E096ED6A2660B1AB0056DB30 /* GradientDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED622660B1AB0056DB30 /* GradientDetailView.swift */; };
+		E096ED6B2660B1AB0056DB30 /* GradientDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED622660B1AB0056DB30 /* GradientDetailView.swift */; };
+		E096ED6C2660B1AB0056DB30 /* GradientControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED632660B1AB0056DB30 /* GradientControl.swift */; };
+		E096ED6D2660B1AB0056DB30 /* GradientControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED632660B1AB0056DB30 /* GradientControl.swift */; };
+		E096ED742660B1DC0056DB30 /* ParticleVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED702660B1DC0056DB30 /* ParticleVisualizer.swift */; };
+		E096ED752660B1DC0056DB30 /* ParticleVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED702660B1DC0056DB30 /* ParticleVisualizer.swift */; };
+		E096ED762660B1DC0056DB30 /* ShapeVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED712660B1DC0056DB30 /* ShapeVisualizer.swift */; };
+		E096ED772660B1DC0056DB30 /* ShapeVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED712660B1DC0056DB30 /* ShapeVisualizer.swift */; };
+		E096ED7C2660B2090056DB30 /* ParticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED792660B2080056DB30 /* ParticleModel.swift */; };
+		E096ED7D2660B2090056DB30 /* ParticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED792660B2080056DB30 /* ParticleModel.swift */; };
+		E096ED7E2660B2090056DB30 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED7A2660B2090056DB30 /* Particle.swift */; };
+		E096ED7F2660B2090056DB30 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED7A2660B2090056DB30 /* Particle.swift */; };
+		E096ED802660B2090056DB30 /* ParticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED7B2660B2090056DB30 /* ParticleCell.swift */; };
+		E096ED812660B2090056DB30 /* ParticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E096ED7B2660B2090056DB30 /* ParticleCell.swift */; };
+		E0F47EF92660AA4200C40960 /* GradientBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F47EE62660AA4000C40960 /* GradientBuilderApp.swift */; };
+		E0F47EFA2660AA4200C40960 /* GradientBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F47EE62660AA4000C40960 /* GradientBuilderApp.swift */; };
+		E0F47EFD2660AA4200C40960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F47EE82660AA4200C40960 /* Assets.xcassets */; };
+		E0F47EFE2660AA4200C40960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F47EE82660AA4200C40960 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B282E442BB3697417B7751FB /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		E096ED582660B1640056DB30 /* GradientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientModel.swift; sourceTree = "<group>"; };
+		E096ED592660B1640056DB30 /* GradientModelStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientModelStore.swift; sourceTree = "<group>"; };
+		E096ED5F2660B1AA0056DB30 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E096ED602660B1AA0056DB30 /* SystemColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemColorPicker.swift; sourceTree = "<group>"; };
+		E096ED612660B1AA0056DB30 /* Visualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visualizer.swift; sourceTree = "<group>"; };
+		E096ED622660B1AB0056DB30 /* GradientDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientDetailView.swift; sourceTree = "<group>"; };
+		E096ED632660B1AB0056DB30 /* GradientControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientControl.swift; sourceTree = "<group>"; };
+		E096ED702660B1DC0056DB30 /* ParticleVisualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleVisualizer.swift; sourceTree = "<group>"; };
+		E096ED712660B1DC0056DB30 /* ShapeVisualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeVisualizer.swift; sourceTree = "<group>"; };
+		E096ED792660B2080056DB30 /* ParticleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleModel.swift; sourceTree = "<group>"; };
+		E096ED7A2660B2090056DB30 /* Particle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		E096ED7B2660B2090056DB30 /* ParticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleCell.swift; sourceTree = "<group>"; };
+		E0D1DE8F2660ABDC0020EFF8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E0F47EE62660AA4000C40960 /* GradientBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBuilderApp.swift; sourceTree = "<group>"; };
+		E0F47EE82660AA4200C40960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E0F47EED2660AA4200C40960 /* GradientBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradientBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0F47EF02660AA4200C40960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0F47EF52660AA4200C40960 /* GradientBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradientBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0F47EF72660AA4200C40960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0F47EF82660AA4200C40960 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E59D9AC559BE0FF2B2BCF1E9 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0F47EEA2660AA4200C40960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F47EF22660AA4200C40960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A7B88654F2AE0FA2B542BE2 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				B282E442BB3697417B7751FB /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		4F5190470048DD8E61FD3EB4 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E59D9AC559BE0FF2B2BCF1E9 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		E096ED572660B1440056DB30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E096ED582660B1640056DB30 /* GradientModel.swift */,
+				E096ED592660B1640056DB30 /* GradientModelStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E096ED5E2660B18F0056DB30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E096ED5F2660B1AA0056DB30 /* ContentView.swift */,
+				E096ED632660B1AB0056DB30 /* GradientControl.swift */,
+				E096ED622660B1AB0056DB30 /* GradientDetailView.swift */,
+				E096ED602660B1AA0056DB30 /* SystemColorPicker.swift */,
+				E096ED612660B1AA0056DB30 /* Visualizer.swift */,
+				E096ED6E2660B1BC0056DB30 /* Visualizers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E096ED6E2660B1BC0056DB30 /* Visualizers */ = {
+			isa = PBXGroup;
+			children = (
+				E096ED702660B1DC0056DB30 /* ParticleVisualizer.swift */,
+				E096ED712660B1DC0056DB30 /* ShapeVisualizer.swift */,
+				E096ED782660B1F10056DB30 /* Particles */,
+			);
+			path = Visualizers;
+			sourceTree = "<group>";
+		};
+		E096ED782660B1F10056DB30 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				E096ED7A2660B2090056DB30 /* Particle.swift */,
+				E096ED7B2660B2090056DB30 /* ParticleCell.swift */,
+				E096ED792660B2080056DB30 /* ParticleModel.swift */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		E0F47EE02660AA4000C40960 = {
+			isa = PBXGroup;
+			children = (
+				E0D1DE8F2660ABDC0020EFF8 /* README.md */,
+				E0F47EE52660AA4000C40960 /* Shared */,
+				E0F47EEF2660AA4200C40960 /* iOS */,
+				E0F47EF62660AA4200C40960 /* macOS */,
+				E0F47EEE2660AA4200C40960 /* Products */,
+				4F5190470048DD8E61FD3EB4 /* Configuration */,
+				3A7B88654F2AE0FA2B542BE2 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		E0F47EE52660AA4000C40960 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E0F47EE62660AA4000C40960 /* GradientBuilderApp.swift */,
+				E096ED572660B1440056DB30 /* Model */,
+				E096ED5E2660B18F0056DB30 /* Views */,
+				E0F47EE82660AA4200C40960 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E0F47EEE2660AA4200C40960 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0F47EED2660AA4200C40960 /* GradientBuilder.app */,
+				E0F47EF52660AA4200C40960 /* GradientBuilder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0F47EEF2660AA4200C40960 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E0F47EF02660AA4200C40960 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		E0F47EF62660AA4200C40960 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				E0F47EF72660AA4200C40960 /* Info.plist */,
+				E0F47EF82660AA4200C40960 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0F47EEC2660AA4200C40960 /* GradientBuilder (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0F47F012660AA4200C40960 /* Build configuration list for PBXNativeTarget "GradientBuilder (iOS)" */;
+			buildPhases = (
+				E0F47EE92660AA4200C40960 /* Sources */,
+				E0F47EEA2660AA4200C40960 /* Frameworks */,
+				E0F47EEB2660AA4200C40960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GradientBuilder (iOS)";
+			productName = "GradientBuilder (iOS)";
+			productReference = E0F47EED2660AA4200C40960 /* GradientBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0F47EF42660AA4200C40960 /* GradientBuilder (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0F47F042660AA4200C40960 /* Build configuration list for PBXNativeTarget "GradientBuilder (macOS)" */;
+			buildPhases = (
+				E0F47EF12660AA4200C40960 /* Sources */,
+				E0F47EF22660AA4200C40960 /* Frameworks */,
+				E0F47EF32660AA4200C40960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GradientBuilder (macOS)";
+			productName = "GradientBuilder (macOS)";
+			productReference = E0F47EF52660AA4200C40960 /* GradientBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0F47EE12660AA4000C40960 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					E0F47EEC2660AA4200C40960 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					E0F47EF42660AA4200C40960 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = E0F47EE42660AA4000C40960 /* Build configuration list for PBXProject "GradientBuilder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0F47EE02660AA4000C40960;
+			productRefGroup = E0F47EEE2660AA4200C40960 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0F47EEC2660AA4200C40960 /* GradientBuilder (iOS) */,
+				E0F47EF42660AA4200C40960 /* GradientBuilder (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0F47EEB2660AA4200C40960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F47EFD2660AA4200C40960 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F47EF32660AA4200C40960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F47EFE2660AA4200C40960 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0F47EE92660AA4200C40960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F47EF92660AA4200C40960 /* GradientBuilderApp.swift in Sources */,
+				E096ED7E2660B2090056DB30 /* Particle.swift in Sources */,
+				E096ED6A2660B1AB0056DB30 /* GradientDetailView.swift in Sources */,
+				E096ED742660B1DC0056DB30 /* ParticleVisualizer.swift in Sources */,
+				E096ED5C2660B1640056DB30 /* GradientModelStore.swift in Sources */,
+				E096ED7C2660B2090056DB30 /* ParticleModel.swift in Sources */,
+				E096ED802660B2090056DB30 /* ParticleCell.swift in Sources */,
+				E096ED662660B1AB0056DB30 /* SystemColorPicker.swift in Sources */,
+				E096ED762660B1DC0056DB30 /* ShapeVisualizer.swift in Sources */,
+				E096ED642660B1AB0056DB30 /* ContentView.swift in Sources */,
+				E096ED5A2660B1640056DB30 /* GradientModel.swift in Sources */,
+				E096ED682660B1AB0056DB30 /* Visualizer.swift in Sources */,
+				E096ED6C2660B1AB0056DB30 /* GradientControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0F47EF12660AA4200C40960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F47EFA2660AA4200C40960 /* GradientBuilderApp.swift in Sources */,
+				E096ED7F2660B2090056DB30 /* Particle.swift in Sources */,
+				E096ED6B2660B1AB0056DB30 /* GradientDetailView.swift in Sources */,
+				E096ED752660B1DC0056DB30 /* ParticleVisualizer.swift in Sources */,
+				E096ED5D2660B1640056DB30 /* GradientModelStore.swift in Sources */,
+				E096ED7D2660B2090056DB30 /* ParticleModel.swift in Sources */,
+				E096ED812660B2090056DB30 /* ParticleCell.swift in Sources */,
+				E096ED672660B1AB0056DB30 /* SystemColorPicker.swift in Sources */,
+				E096ED772660B1DC0056DB30 /* ShapeVisualizer.swift in Sources */,
+				E096ED652660B1AB0056DB30 /* ContentView.swift in Sources */,
+				E096ED5B2660B1640056DB30 /* GradientModel.swift in Sources */,
+				E096ED692660B1AB0056DB30 /* Visualizer.swift in Sources */,
+				E096ED6D2660B1AB0056DB30 /* GradientControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E0F47EFF2660AA4200C40960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59D9AC559BE0FF2B2BCF1E9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0F47F002660AA4200C40960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59D9AC559BE0FF2B2BCF1E9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E0F47F022660AA4200C40960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59D9AC559BE0FF2B2BCF1E9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.GradientBuilder${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = GradientBuilder;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0F47F032660AA4200C40960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59D9AC559BE0FF2B2BCF1E9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.GradientBuilder${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = GradientBuilder;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0F47F052660AA4200C40960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59D9AC559BE0FF2B2BCF1E9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.GradientBuilder${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = GradientBuilder;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E0F47F062660AA4200C40960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59D9AC559BE0FF2B2BCF1E9 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.GradientBuilder${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = GradientBuilder;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0F47EE42660AA4000C40960 /* Build configuration list for PBXProject "GradientBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0F47EFF2660AA4200C40960 /* Debug */,
+				E0F47F002660AA4200C40960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0F47F012660AA4200C40960 /* Build configuration list for PBXNativeTarget "GradientBuilder (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0F47F022660AA4200C40960 /* Debug */,
+				E0F47F032660AA4200C40960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0F47F042660AA4200C40960 /* Build configuration list for PBXNativeTarget "GradientBuilder (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0F47F052660AA4200C40960 /* Debug */,
+				E0F47F062660AA4200C40960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0F47EE12660AA4000C40960 /* Project object */;
+}

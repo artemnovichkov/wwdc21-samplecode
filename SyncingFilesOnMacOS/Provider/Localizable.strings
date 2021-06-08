@@ -1,0 +1,13 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Localized strings for provider actions.
+*/
+"ACTION_HEART" = "Mark Heart";
+"ACTION_UNHEART" = "Unheart";
+"ACTION_PIN" = "Pin";
+"ACTION_UNPIN" = "Unpin";
+"ACTION_START_SHARING" = "Start sharing with others";
+"ACTION_STOP_SHARING" = "Stop sharing with others";
+

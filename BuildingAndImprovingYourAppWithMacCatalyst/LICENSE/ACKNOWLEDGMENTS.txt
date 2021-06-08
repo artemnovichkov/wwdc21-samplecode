@@ -1,0 +1,157 @@
+Assets from Unsplash are covered under the Unsplash License: https://unsplash.com/license
+
+Trip Planner/Assets.xcassets/kilimanjaro.imageset
+Images created by Sergey Pesterev
+https://unsplash.com/photos/DWXR-nAbxCk
+
+Trip Planner/Assets.xcassets/serengeti.imageset
+Images created by Magdalena Kula Manchee
+https://unsplash.com/photos/DWXR-nAbxCk
+
+Trip Planner/Assets.xcassets/stone_town.imageset
+Images created by Kaspars Eglitis
+https://unsplash.com/photos/TU4Zh6PQ10Q
+
+Trip Planner/Assets.xcassets/on_the_rock.imageset
+Images created by richard glendenning
+https://unsplash.com/photos/UZalS3t9uPU
+
+Trip Planner/Assets.xcassets/safari_lunch.imageset
+Images created by David Clode
+https://unsplash.com/photos/_uvQ5QCnuuI
+
+Trip Planner/Assets.xcassets/city_cafe.imageset
+Images created by Jabber Visuals
+https://unsplash.com/photos/DW3uFfLxijQ
+
+Trip Planner/Assets.xcassets/oceanside_villa.imageset
+Images created by Med J
+https://unsplash.com/photos/ePeTsqcyUiI
+
+Trip Planner/Assets.xcassets/safari_camp.imageset
+Images created by Claire Roadley
+https://unsplash.com/photos/zhCsqXsQ8Mc
+
+Trip Planner/Assets.xcassets/kilimanjaro_tent.imageset
+Images created by Patrick Hendry
+https://unsplash.com/photos/WKt6okFYtg4
+
+Trip Planner/Assets.xcassets/redeemer.imageset
+Images created by Robert Nyman
+https://unsplash.com/photos/-ysyCHixMHU
+
+Trip Planner/Assets.xcassets/iguazu_falls.imageset
+Images created by Gábor Sz.
+https://unsplash.com/photos/5rbQW61lOSU
+
+Trip Planner/Assets.xcassets/ipanema.imageset
+Images created by Raphael Souza
+https://unsplash.com/photos/k5lTCaL0wRw
+
+Trip Planner/Assets.xcassets/mercado_cafe.imageset
+Images created by Isis França
+https://unsplash.com/photos/wIQG-3H3s1g
+
+Trip Planner/Assets.xcassets/rio_cantina.imageset
+Images created by Gláuber Sampaio
+https://unsplash.com/photos/PwoENx99uzk
+
+Trip Planner/Assets.xcassets/grandes_pratos.imageset
+Images created by Nathalia Segato
+https://unsplash.com/photos/V4lXS3FEMD4
+
+Trip Planner/Assets.xcassets/villa_paraiso.imageset
+Images created by Roberta keiko Kitahara Santana 
+https://unsplash.com/photos/QCACEJfHGao
+
+Trip Planner/Assets.xcassets/villa_isabel.imageset
+Images created by Maucicio Sabino
+https://unsplash.com/photos/qMDW4y-kssw
+
+Trip Planner/Assets.xcassets/sugarloaf.imageset
+Images created by Carlos Machado
+https://unsplash.com/photos/TmRckxjJoP8
+
+Trip Planner/Assets.xcassets/doge.imageset
+Images created by Ying Zhu
+https://unsplash.com/photos/4UZfmxvc5Qk
+
+Trip Planner/Assets.xcassets/nara.imageset
+Images created by Nishiyama Aoi
+https://unsplash.com/photos/D-yZxa_G6wU
+
+Trip Planner/Assets.xcassets/bento.imageset
+Images created by Richard Iwaki
+https://unsplash.com/photos/2cpx1N7Us5Q
+
+Trip Planner/Assets.xcassets/matcha.imageset
+Images created by MJ Tangonan
+https://unsplash.com/photos/CAUgg2lxRk0
+
+Trip Planner/Assets.xcassets/sushi.imageset
+Images created by Mahmoud Fawzy
+https://unsplash.com/photos/n1DePkKznLY
+
+Trip Planner/Assets.xcassets/fuji.imageset
+Images created by Daniel Hehn
+https://unsplash.com/photos/NdkM92CRaxg
+
+Trip Planner/Assets.xcassets/okinawa.imageset
+Images created by Ryo Yoshitake
+https://unsplash.com/photos/Fim4XEASDZc
+
+Trip Planner/Assets.xcassets/golden_pavilion.imageset
+Images created by Mike Syezycki
+https://unsplash.com/photos/m2yp_xinmwY
+
+Trip Planner/Assets.xcassets/tokyo_tower.imageset
+Images created by Louie Martinez
+https://unsplash.com/photos/IocJwyqRv3M
+
+Trip Planner/Assets.xcassets/cherry_blossoms.imageset
+Images created by Rondell Herriot
+https://unsplash.com/photos/f8RPclQiK_I
+
+Trip Planner/Assets.xcassets/sagrada_familia.imageset
+Images created by Ken Cheung
+https://unsplash.com/photos/-271sKk6WaM
+
+Trip Planner/Assets.xcassets/park_guell
+Images created by Vitor Monteiro
+https://unsplash.com/photos/jiAv24Lc3T0
+
+Trip Planner/Assets.xcassets/alhambra.imageset
+Images created by Jorge Fernández Salas
+https://unsplash.com/photos/yteO5bs_QCA
+
+Trip Planner/Assets.xcassets/Cordoba.imageset
+Images created by Girl with red hat
+https://unsplash.com/photos/YQXLO2cvjYg
+
+Trip Planner/Assets.xcassets/barcelona_hotel.imageset
+Images created by Amin Safaripour
+https://unsplash.com/photos/I-Vu4OejhQU
+
+Trip Planner/Assets.xcassets/hotel_le_meridien.imageset
+Images created by Jorge Salvador
+https://unsplash.com/photos/04BbkvzWDko
+
+Trip Planner/Assets.xcassets/hotel_cordoba.imageset
+Images created by Alfons Morales
+https://unsplash.com/photos/yyql_hMRVBw
+
+Trip Planner/Assets.xcassets/paella.imageset
+Images created by Kaitlin Dowis
+https://unsplash.com/photos/VjM2t7VH9Uo
+
+Trip Planner/Assets.xcassets/terrace_dining.imageset
+Images created by Jesús Terrés
+https://unsplash.com/photos/MAd5EcC-kAM
+
+Trip Planner/Assets.xcassets/barcelona_market.imageset
+Images created by ja_ma
+https://unsplash.com/photos/-gOUx23DNks
+
+Trip Planner/Assets.xcassets/charcuterie.imageset
+Images created by Erik Dunagn
+https://unsplash.com/photos/MQyCrJVFG8U

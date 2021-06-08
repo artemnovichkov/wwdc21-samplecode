@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Provider</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFile</key>
+			<string>ProviderIcon</string>
+			<key>CFBundleSymbolName</key>
+			<string>basket</string>
+		</dict>
+	</dict>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionFileProviderActions</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Note that we are comparing with != YES instead of == NO in the query to avoid having to write out the value for the default case</string>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>domainUserInfo.pinnedFeatureEnabled == 1 &amp;&amp; SUBQUERY ( fileproviderItems, $item, $item.userInfo.pinned != YES &amp;&amp; !($item.contentType.identifier UTI-CONFORMS-TO &quot;public.folder&quot;) ).@count &gt; 0</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>com.example.apple-samplecode.FruitBasket.Action.Pin</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>ACTION_PIN</string>
+			</dict>
+			<dict>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>domainUserInfo.pinnedFeatureEnabled == 1 &amp;&amp; SUBQUERY ( fileproviderItems, $item, $item.userInfo.pinned == YES ).@count &gt; 0</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>com.example.apple-samplecode.FruitBasket.Action.Unpin</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>ACTION_UNPIN</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Note that we are comparing with != YES instead of == NO in the query to avoid having to write out the value for the default case</string>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>SUBQUERY ( fileproviderItems, $item, $item.userInfo.heart != YES &amp;&amp; $item.itemIdentifier != &quot;NSFileProviderRootContainerItemIdentifier&quot; ).@count &gt; 0</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>com.example.apple-samplecode.FruitBasket.Action.Heart</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>ACTION_HEART</string>
+			</dict>
+			<dict>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>SUBQUERY ( fileproviderItems, $item, $item.userInfo.heart == YES ).@count &gt; 0</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>com.example.apple-samplecode.FruitBasket.Action.Unheart</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>ACTION_UNHEART</string>
+			</dict>
+			<dict>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>SUBQUERY ( fileproviderItems, $item, ($item.contentType.identifier UTI-CONFORMS-TO &quot;public.folder&quot;) &amp;&amp; $item.userInfo.isShared.inherited != YES &amp;&amp; $item.inheritedUserInfo.isShared.inherited != YES &amp;&amp; $item.itemIdentifier != &quot;NSFileProviderRootContainerItemIdentifier&quot; ).@count &gt; 0</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>com.example.apple-samplecode.FruitBasket.Action.StartSharing</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>ACTION_START_SHARING</string>
+			</dict>
+			<dict>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>SUBQUERY ( fileproviderItems, $item, $item.userInfo.isShared.inherited == YES ).@count &gt; 0</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>com.example.apple-samplecode.FruitBasket.Action.StopSharing</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>ACTION_STOP_SHARING</string>
+			</dict>
+			<dict>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>SUBQUERY ( fileproviderItems, $item, $item.userInfo.inUse != NULL ).@count == 1</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>com.example.apple-samplecode.FruitBasket.Action.ForceLock</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>Mark no longer in use</string>
+			</dict>
+			<dict>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>SUBQUERY ( fileproviderItems, $item, ($item.contentType.identifier UTI-CONFORMS-TO &quot;public.folder&quot;) &amp;&amp; $item.isDownloaded == YES ).@count == 1</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>com.example.apple-samplecode.FruitBasket.Action.EvictFolder</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>Remove Download for Entire Folder</string>
+			</dict>
+		</array>
+		<key>NSExtensionFileProviderDocumentGroup</key>
+		<string>group.com.example.apple-samplecode.FruitBasket</string>
+		<key>NSExtensionFileProviderSupportsEnumeration</key>
+		<true/>
+		<key>NSExtensionFileProviderWantsFlattenedPackages</key>
+		<true/>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.fileprovider-nonui</string>
+		<key>NSExtensionPrincipalClass</key>
+		<string>Extension.Extension</string>
+		<key>NSFileProviderDecorations</key>
+		<array>
+			<dict>
+				<key>BadgeImageType</key>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).pictureFolder</string>
+				<key>Category</key>
+				<string>FolderBadge</string>
+				<key>Identifier</key>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).pictureFolder</string>
+				<key>Label</key>
+				<dict>
+					<key>NSStringFormat</key>
+					<string>Picture Folder</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>BadgeImageType</key>
+				<string>com.apple.icon-decoration.badge.warning</string>
+				<key>Category</key>
+				<string>Badge</string>
+				<key>Identifier</key>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).hasConflict</string>
+				<key>Label</key>
+				<string>Conflict</string>
+			</dict>
+			<dict>
+				<key>BadgeImageType</key>
+				<string>com.apple.icon-decoration.badge.heart</string>
+				<key>Category</key>
+				<string>Badge</string>
+				<key>Identifier</key>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).heart</string>
+				<key>Label</key>
+				<string>Heart item</string>
+			</dict>
+			<dict>
+				<key>BadgeImageType</key>
+				<string>com.apple.icon-decoration.badge.locked-by-user</string>
+				<key>Category</key>
+				<string>Badge</string>
+				<key>Identifier</key>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).inUse</string>
+				<key>Label</key>
+				<dict>
+					<key>NSStringFormat</key>
+					<string>In use by %@</string>
+					<key>NSStringFormatValues</key>
+					<array>
+						<string>item.userInfo.inUse</string>
+					</array>
+				</dict>
+			</dict>
+			<dict>
+				<key>BadgeImageType</key>
+				<string>com.apple.icon-decoration.badge.pinned</string>
+				<key>Category</key>
+				<string>Badge</string>
+				<key>Identifier</key>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).pinned</string>
+				<key>Label</key>
+				<string>Pinned</string>
+			</dict>
+		</array>
+		<key>NSFileProviderUserInteractions</key>
+		<array>
+			<dict>
+				<key>ActivationRule</key>
+				<string>sourceItem.filename CONTAINS &quot;maynotcreate&quot; AND action == &quot;Create&quot;</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount == 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Create</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item may not be created.</string>
+							<key>LocalizedTitle</key>
+							<string>Item may not be created.</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Create</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>These items may not be created.</string>
+							<key>LocalizedTitle</key>
+							<string>Items may not be created.</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>sourceItem.filename CONTAINS &quot;maynotrename&quot; AND action == &quot;Rename&quot;</string>
+				<key>HelpURL</key>
+				<string>https://developer.apple.com/documentation/fileprovider</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount == 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Rename</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item may not be renamed.</string>
+							<key>LocalizedTitle</key>
+							<string>Item may not be renamed.</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Rename</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>These items may not be renamed.</string>
+							<key>LocalizedTitle</key>
+							<string>Items may not be renamed</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>domainUserInfo.shouldWarnOnImportingToFolder == 1 AND destinationItem.filename CONTAINS &quot;maynotimporthere&quot; AND (action == &quot;MoveIn&quot; OR action == &quot;CopyIn&quot;)</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &lt;= 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Import</string>
+								<key>Continue</key>
+								<string>Import</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item may not be imported here.</string>
+							<key>LocalizedTitle</key>
+							<string>Item may not be imported.</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Import</string>
+								<key>Continue</key>
+								<string>Import</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>These items may not be imported.</string>
+							<key>LocalizedTitle</key>
+							<string>Items may not be imported</string>
+						</dict>
+					</dict>
+				</array>
+				<key>SuppressionIdentifier</key>
+				<string>com.apple.fruitbasket.mayNotImport</string>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>(destinationItem.inheritedUserInfo.isShared.inherited == YES OR destinationItem.userInfo.isShared.inherited == YES) AND (action == &quot;Create&quot; OR action == &quot;MoveIn&quot; OR action == &quot;Move&quot; OR action == &quot;CopyIn&quot;)</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &lt;= 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Cancel</string>
+								<key>Continue</key>
+								<string>Save</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>If you save this item here, anyone with access to the shared folder will be able to access it.</string>
+							<key>LocalizedTitle</key>
+							<string>Save to shared folder?</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Cancel</string>
+								<key>Continue</key>
+								<string>Save</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>If you save these items here, anyone with access to the shared folder will be able to access them.</string>
+							<key>LocalizedTitle</key>
+							<string>Save to shared folder?</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>destinationItem.filename CONTAINS &quot;cannotimporthere&quot; AND (action == &quot;MoveIn&quot; OR action == &quot;CopyIn&quot;)</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &lt;= 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item can not be imported here.</string>
+							<key>LocalizedTitle</key>
+							<string>Item can not be imported.</string>
+							<key>RecoveryOptions</key>
+							<dict>
+								<key>Continue</key>
+								<false/>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedSubTitle</key>
+							<string>These items can not be imported here.</string>
+							<key>LocalizedTitle</key>
+							<string>Items cannot not be imported here</string>
+							<key>RecoveryOptions</key>
+							<dict>
+								<key>Continue</key>
+								<false/>
+							</dict>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>sourceItem.filename CONTAINS &quot;cannotexport&quot; AND action == &quot;MoveOut&quot;</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount == 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item can not be exported.</string>
+							<key>LocalizedTitle</key>
+							<string>Item can not be exported.</string>
+							<key>RecoveryOptions</key>
+							<dict>
+								<key>Continue</key>
+								<false/>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedSubTitle</key>
+							<string>These items can not be exported.</string>
+							<key>LocalizedTitle</key>
+							<string>Items cannot not be exported</string>
+							<key>RecoveryOptions</key>
+							<dict>
+								<key>Continue</key>
+								<false/>
+							</dict>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>sourceItem.filename CONTAINS &quot;maynotexport&quot; AND action == &quot;MoveOut&quot;</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount == 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Export</string>
+								<key>Continue</key>
+								<string>Export</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item may not be exported.</string>
+							<key>LocalizedTitle</key>
+							<string>Item may not be exported.</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Move</string>
+								<key>Continue</key>
+								<string>Move</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>These items may not be moved.</string>
+							<key>LocalizedTitle</key>
+							<string>Items may not be moved</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>sourceItem.filename CONTAINS &quot;maynotmove&quot; AND action == &quot;Move&quot;</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount == 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Move</string>
+								<key>Continue</key>
+								<string>Move</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item may not be moved.</string>
+							<key>LocalizedTitle</key>
+							<string>Item may not be moved.</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Move</string>
+								<key>Continue</key>
+								<string>Move</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>These items may not be moved.</string>
+							<key>LocalizedTitle</key>
+							<string>Items may not be moved</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>sourceItem.filename CONTAINS &quot;cannotmove&quot; AND action == &quot;Move&quot;</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount == 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item can not be moved.</string>
+							<key>LocalizedTitle</key>
+							<string>Item can not be moved.</string>
+							<key>RecoveryOptions</key>
+							<dict>
+								<key>Continue</key>
+								<false/>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedSubTitle</key>
+							<string>These items can not be moved.</string>
+							<key>LocalizedTitle</key>
+							<string>Items cannot not be moved</string>
+							<key>RecoveryOptions</key>
+							<dict>
+								<key>Continue</key>
+								<false/>
+							</dict>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>sourceItem.filename CONTAINS &quot;maynotdelete&quot; AND action == &quot;Delete&quot;</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount == 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Delete</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item may not be deleted.</string>
+							<key>LocalizedTitle</key>
+							<string>Item may not be deleted.</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Delete</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>These items may not be deleted.</string>
+							<key>LocalizedTitle</key>
+							<string>Items may not be deleted</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>sourceItem.filename CONTAINS &quot;cannotdelete&quot; AND action == &quot;Delete&quot;</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount == 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item cannot be deleted.</string>
+							<key>LocalizedTitle</key>
+							<string>Item cannot be deleted.</string>
+							<key>RecoveryOptions</key>
+							<dict>
+								<key>Continue</key>
+								<false/>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedSubTitle</key>
+							<string>These items cannot be deleted.</string>
+							<key>LocalizedTitle</key>
+							<string>Items cannot be deleted</string>
+							<key>RecoveryOptions</key>
+							<dict>
+								<key>Continue</key>
+								<false/>
+							</dict>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>sourceItem.filename CONTAINS &quot;cannottrash&quot; AND action == &quot;Trash&quot;</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount == 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item cannot be trashed.</string>
+							<key>LocalizedTitle</key>
+							<string>Item cannot be trashed.</string>
+							<key>RecoveryOptions</key>
+							<dict>
+								<key>Continue</key>
+								<false/>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedSubTitle</key>
+							<string>These items cannot be trashed.</string>
+							<key>LocalizedTitle</key>
+							<string>Items cannot be trashed</string>
+						</dict>
+						<key>RecoveryOptions</key>
+						<dict>
+							<key>Continue</key>
+							<false/>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>sourceItem.filename CONTAINS &quot;cannotrename&quot; AND action == &quot;Rename&quot;</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount == 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item cannot be renamed.</string>
+							<key>LocalizedTitle</key>
+							<string>Item cannot be renamed.</string>
+							<key>RecoveryOptions</key>
+							<dict>
+								<key>Continue</key>
+								<false/>
+							</dict>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>sourceItem.filename CONTAINS &quot;maynottrash&quot; AND action == &quot;Trash&quot;</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount == 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Trash</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item may not be trashed.</string>
+							<key>LocalizedTitle</key>
+							<string>Item may not be trashed.</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Trash</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>These items may not be trashed.</string>
+							<key>LocalizedTitle</key>
+							<string>Items may not be trashed</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>sourceItem.userInfo.inUse != NULL</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount == 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedSubTitle</key>
+							<dict>
+								<key>NSStringFormat</key>
+								<string>ITEM_IN_USE_FORMAT</string>
+								<key>NSStringFormatValues</key>
+								<array>
+									<string>firstMatchingItem.userInfo.inUse</string>
+								</array>
+							</dict>
+							<key>LocalizedTitle</key>
+							<string>Item in use</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedSubTitle</key>
+							<string>ITEM_IN_USE_FORMAT_MULTIPLE</string>
+							<key>LocalizedTitle</key>
+							<string>Items in use</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>ActivationRule</key>
+				<string>sourceItem.filename CONTAINS &quot;maynotexclude&quot; AND action == &quot;ExcludeFromSync&quot;</string>
+				<key>SubInteractions</key>
+				<array>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount == 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Exclude</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>This item may not be excluded.</string>
+							<key>LocalizedTitle</key>
+							<string>Item may not be excluded.</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>ActivationRule</key>
+						<string>sourceItemsCount &gt; 1</string>
+						<key>Alert</key>
+						<dict>
+							<key>LocalizedRecoveryOptions</key>
+							<dict>
+								<key>Cancel</key>
+								<string>Do Not Exclude</string>
+							</dict>
+							<key>LocalizedSubTitle</key>
+							<string>These items may not be excluded.</string>
+							<key>LocalizedTitle</key>
+							<string>Items may not be excluded</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1611C59926334F18005747D0 /* anemone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 1611C59526334F17005747D0 /* anemone.usdz */; };
+		1611C59E263351BB005747D0 /* FoodPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1611C59D263351BB005747D0 /* FoodPool.swift */; };
+		1611C60C263761F9005747D0 /* WanderSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1611C60B263761F9005747D0 /* WanderSystem.swift */; };
+		1611C61426388565005747D0 /* FearSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1611C61326388565005747D0 /* FearSystem.swift */; };
+		16420D56262A496300BC0A1A /* MovementSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16420D55262A496300BC0A1A /* MovementSettingsView.swift */; };
+		16428FDA263B31DE0060475C /* AnimationSpeedSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16428FD9263B31DE0060475C /* AnimationSpeedSystem.swift */; };
+		16749798262E26AC00C5F8F4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16749797262E26AC00C5F8F4 /* Settings.swift */; };
+		1674979A262E274500C5F8F4 /* UnderwaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16749799262E274500C5F8F4 /* UnderwaterView.swift */; };
+		1674979C262E28E600C5F8F4 /* HungerSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674979B262E28E600C5F8F4 /* HungerSystem.swift */; };
+		1674979E262E298F00C5F8F4 /* FlockingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674979D262E298F00C5F8F4 /* FlockingSystem.swift */; };
+		167497A0262E2A7800C5F8F4 /* Entity+Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674979F262E2A7800C5F8F4 /* Entity+Distance.swift */; };
+		167497A2262E2AD600C5F8F4 /* VectorMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167497A1262E2AD600C5F8F4 /* VectorMath.swift */; };
+		167497A4262E2C6800C5F8F4 /* MotionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167497A3262E2C6800C5F8F4 /* MotionComponent.swift */; };
+		167497A6262E2DB100C5F8F4 /* MotionSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167497A5262E2DB100C5F8F4 /* MotionSystem.swift */; };
+		1674D8312645A19C00533FDB /* Fish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1674D8302645A19C00533FDB /* Fish.swift */; };
+		168DAB092624B782001E32EA /* fish_sardine.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 168DAB072624B782001E32EA /* fish_sardine.usdz */; };
+		16B38CAC2649EABD004A705B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 16B38CAB2649EABD004A705B /* Settings.bundle */; };
+		16D48EF9263C869100061FEA /* krill.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 16D48EF8263C869100061FEA /* krill.usdz */; };
+		16D6C48D264F834C0088648D /* CharacterStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6C48C264F834C0088648D /* CharacterStates.swift */; };
+		661A10C1264A4C8C001DED63 /* fish_yellowtang in Resources */ = {isa = PBXBuildFile; fileRef = 661A10C0264A4C8C001DED63 /* fish_yellowtang */; };
+		661A10C3264A5580001DED63 /* seaweed in Resources */ = {isa = PBXBuildFile; fileRef = 661A10C2264A557F001DED63 /* seaweed */; };
+		661A10C5264A5BB4001DED63 /* LODSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661A10C4264A5BB4001DED63 /* LODSystem.swift */; };
+		661A10C7264A62B8001DED63 /* starfish in Resources */ = {isa = PBXBuildFile; fileRef = 661A10C6264A62B8001DED63 /* starfish */; };
+		661A1189264B4211001DED63 /* fish_clown in Resources */ = {isa = PBXBuildFile; fileRef = 661A1188264B4211001DED63 /* fish_clown */; };
+		661DC2A9263B87EA00D533C1 /* ParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DC2A8263B87EA00D533C1 /* ParameterView.swift */; };
+		6625F3662637D76A003DED77 /* Octopus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6625F3652637D76A003DED77 /* Octopus.swift */; };
+		66327F4B2631DF57009B9652 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66327F4A2631DF57009B9652 /* Character.swift */; };
+		664266D9261D1E0100088741 /* PostProcessing.metal in Sources */ = {isa = PBXBuildFile; fileRef = 664266D8261D1E0100088741 /* PostProcessing.metal */; };
+		6643974F261BC8B1007A3130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6643974E261BC8B1007A3130 /* AppDelegate.swift */; };
+		66439751261BC8B1007A3130 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66439750261BC8B1007A3130 /* ContentView.swift */; };
+		66439755261BC8B2007A3130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66439754261BC8B2007A3130 /* Assets.xcassets */; };
+		66439758261BC8B2007A3130 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66439757261BC8B2007A3130 /* Preview Assets.xcassets */; };
+		6644308D261E4C4400D104FD /* MixingRamp.png in Resources */ = {isa = PBXBuildFile; fileRef = 6644308B261E4C4400D104FD /* MixingRamp.png */; };
+		6644308E261E4C4400D104FD /* ColorRamp.png in Resources */ = {isa = PBXBuildFile; fileRef = 6644308C261E4C4400D104FD /* ColorRamp.png */; };
+		6651F8B42633A83400294366 /* Scattering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6651F8B32633A83400294366 /* Scattering.swift */; };
+		6651F8B62633B32900294366 /* Starfish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6651F8B52633B32900294366 /* Starfish.swift */; };
+		6651F8B82633C02400294366 /* Seaweed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6651F8B72633C02400294366 /* Seaweed.swift */; };
+		6651F8BA2633C68600294366 /* Seaweed.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6651F8B92633C68600294366 /* Seaweed.metal */; };
+		6672924526313C1A001BFFD1 /* PostProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6672924426313C1A001BFFD1 /* PostProcessing.swift */; };
+		6672924726313EE4001BFFD1 /* MeshAnchorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6672924626313EE4001BFFD1 /* MeshAnchorTracker.swift */; };
+		668373002648FF99003FB967 /* cell_noise_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 668372FF2648FF99003FB967 /* cell_noise_1.png */; };
+		668E083B264F695300DB19EF /* MetalLibLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E083A264F695300DB19EF /* MetalLibLoader.swift */; };
+		66C97A862639429900699AC5 /* Octopus.metal in Sources */ = {isa = PBXBuildFile; fileRef = 66C97A852639429900699AC5 /* Octopus.metal */; };
+		66EE44FB2640B5B2007AC2F6 /* Octopus in Resources */ = {isa = PBXBuildFile; fileRef = 66EE44FA2640B5B2007AC2F6 /* Octopus */; };
+		66EEC8E92642637E00AA559E /* Diver in Resources */ = {isa = PBXBuildFile; fileRef = 66EEC8E82642637D00AA559E /* Diver */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15D8F427EA90BCA0CA055CBA /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		1611C59526334F17005747D0 /* anemone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = anemone.usdz; sourceTree = "<group>"; };
+		1611C59D263351BB005747D0 /* FoodPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPool.swift; sourceTree = "<group>"; };
+		1611C60B263761F9005747D0 /* WanderSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderSystem.swift; sourceTree = "<group>"; };
+		1611C61326388565005747D0 /* FearSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FearSystem.swift; sourceTree = "<group>"; };
+		16420D55262A496300BC0A1A /* MovementSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementSettingsView.swift; sourceTree = "<group>"; };
+		16428FD9263B31DE0060475C /* AnimationSpeedSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSpeedSystem.swift; sourceTree = "<group>"; };
+		16749797262E26AC00C5F8F4 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		16749799262E274500C5F8F4 /* UnderwaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderwaterView.swift; sourceTree = "<group>"; };
+		1674979B262E28E600C5F8F4 /* HungerSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HungerSystem.swift; sourceTree = "<group>"; };
+		1674979D262E298F00C5F8F4 /* FlockingSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlockingSystem.swift; sourceTree = "<group>"; };
+		1674979F262E2A7800C5F8F4 /* Entity+Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+Distance.swift"; sourceTree = "<group>"; };
+		167497A1262E2AD600C5F8F4 /* VectorMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorMath.swift; sourceTree = "<group>"; };
+		167497A3262E2C6800C5F8F4 /* MotionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionComponent.swift; sourceTree = "<group>"; };
+		167497A5262E2DB100C5F8F4 /* MotionSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionSystem.swift; sourceTree = "<group>"; };
+		1674D8302645A19C00533FDB /* Fish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fish.swift; sourceTree = "<group>"; };
+		168DAB072624B782001E32EA /* fish_sardine.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fish_sardine.usdz; sourceTree = "<group>"; };
+		16B38CAB2649EABD004A705B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		16D48EF8263C869100061FEA /* krill.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = krill.usdz; sourceTree = "<group>"; };
+		16D6C48C264F834C0088648D /* CharacterStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStates.swift; sourceTree = "<group>"; };
+		6155A964BDA674C2D29D5FF4 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		661A10C0264A4C8C001DED63 /* fish_yellowtang */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fish_yellowtang; sourceTree = "<group>"; };
+		661A10C2264A557F001DED63 /* seaweed */ = {isa = PBXFileReference; lastKnownFileType = folder; path = seaweed; sourceTree = "<group>"; };
+		661A10C4264A5BB4001DED63 /* LODSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LODSystem.swift; sourceTree = "<group>"; };
+		661A10C6264A62B8001DED63 /* starfish */ = {isa = PBXFileReference; lastKnownFileType = folder; path = starfish; sourceTree = "<group>"; };
+		661A1188264B4211001DED63 /* fish_clown */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fish_clown; sourceTree = "<group>"; };
+		661DC2A8263B87EA00D533C1 /* ParameterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterView.swift; sourceTree = "<group>"; };
+		6625F3652637D76A003DED77 /* Octopus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octopus.swift; sourceTree = "<group>"; };
+		66327F4A2631DF57009B9652 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		664266D8261D1E0100088741 /* PostProcessing.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PostProcessing.metal; sourceTree = "<group>"; };
+		6643974B261BC8B1007A3130 /* Underwater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Underwater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6643974E261BC8B1007A3130 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66439750261BC8B1007A3130 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		66439754261BC8B2007A3130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66439757261BC8B2007A3130 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6644308B261E4C4400D104FD /* MixingRamp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MixingRamp.png; sourceTree = "<group>"; };
+		6644308C261E4C4400D104FD /* ColorRamp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorRamp.png; sourceTree = "<group>"; };
+		6651F8B32633A83400294366 /* Scattering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scattering.swift; sourceTree = "<group>"; };
+		6651F8B52633B32900294366 /* Starfish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starfish.swift; sourceTree = "<group>"; };
+		6651F8B72633C02400294366 /* Seaweed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seaweed.swift; sourceTree = "<group>"; };
+		6651F8B92633C68600294366 /* Seaweed.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Seaweed.metal; sourceTree = "<group>"; };
+		6672924426313C1A001BFFD1 /* PostProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProcessing.swift; sourceTree = "<group>"; };
+		6672924626313EE4001BFFD1 /* MeshAnchorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshAnchorTracker.swift; sourceTree = "<group>"; };
+		668372FF2648FF99003FB967 /* cell_noise_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_noise_1.png; sourceTree = "<group>"; };
+		668E083A264F695300DB19EF /* MetalLibLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalLibLoader.swift; sourceTree = "<group>"; };
+		66C97A852639429900699AC5 /* Octopus.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Octopus.metal; sourceTree = "<group>"; };
+		66EE44FA2640B5B2007AC2F6 /* Octopus */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Octopus; sourceTree = "<group>"; };
+		66EEC8E82642637D00AA559E /* Diver */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Diver; sourceTree = "<group>"; };
+		89B3AF2834858FC09E48DE17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66439748261BC8B1007A3130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CB7E91CC05574D3A1807AD5 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				6155A964BDA674C2D29D5FF4 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		664267A0261D3BB600088741 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				661A1188264B4211001DED63 /* fish_clown */,
+				661A10C6264A62B8001DED63 /* starfish */,
+				661A10C2264A557F001DED63 /* seaweed */,
+				661A10C0264A4C8C001DED63 /* fish_yellowtang */,
+				668372FF2648FF99003FB967 /* cell_noise_1.png */,
+				66EEC8E82642637D00AA559E /* Diver */,
+				66EE44FA2640B5B2007AC2F6 /* Octopus */,
+				1611C59526334F17005747D0 /* anemone.usdz */,
+				168DAB072624B782001E32EA /* fish_sardine.usdz */,
+				16D48EF8263C869100061FEA /* krill.usdz */,
+				6644308C261E4C4400D104FD /* ColorRamp.png */,
+				6644308B261E4C4400D104FD /* MixingRamp.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		66439742261BC8B1007A3130 = {
+			isa = PBXGroup;
+			children = (
+				89B3AF2834858FC09E48DE17 /* README.md */,
+				6643974D261BC8B1007A3130 /* Underwater */,
+				6643974C261BC8B1007A3130 /* Products */,
+				9FFF892A597D3DA234A08B5D /* Configuration */,
+				0CB7E91CC05574D3A1807AD5 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		6643974C261BC8B1007A3130 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6643974B261BC8B1007A3130 /* Underwater.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6643974D261BC8B1007A3130 /* Underwater */ = {
+			isa = PBXGroup;
+			children = (
+				664267A0261D3BB600088741 /* Resources */,
+				6643974E261BC8B1007A3130 /* AppDelegate.swift */,
+				1611C59D263351BB005747D0 /* FoodPool.swift */,
+				66439750261BC8B1007A3130 /* ContentView.swift */,
+				16B38CAB2649EABD004A705B /* Settings.bundle */,
+				167497A1262E2AD600C5F8F4 /* VectorMath.swift */,
+				6651F8B32633A83400294366 /* Scattering.swift */,
+				1674979F262E2A7800C5F8F4 /* Entity+Distance.swift */,
+				1674979D262E298F00C5F8F4 /* FlockingSystem.swift */,
+				1611C61326388565005747D0 /* FearSystem.swift */,
+				167497A5262E2DB100C5F8F4 /* MotionSystem.swift */,
+				16428FD9263B31DE0060475C /* AnimationSpeedSystem.swift */,
+				1611C60B263761F9005747D0 /* WanderSystem.swift */,
+				167497A3262E2C6800C5F8F4 /* MotionComponent.swift */,
+				16749799262E274500C5F8F4 /* UnderwaterView.swift */,
+				1674D8302645A19C00533FDB /* Fish.swift */,
+				1674979B262E28E600C5F8F4 /* HungerSystem.swift */,
+				16749797262E26AC00C5F8F4 /* Settings.swift */,
+				16420D55262A496300BC0A1A /* MovementSettingsView.swift */,
+				66439754261BC8B2007A3130 /* Assets.xcassets */,
+				66439756261BC8B2007A3130 /* Preview Content */,
+				664266D8261D1E0100088741 /* PostProcessing.metal */,
+				6672924426313C1A001BFFD1 /* PostProcessing.swift */,
+				6672924626313EE4001BFFD1 /* MeshAnchorTracker.swift */,
+				66327F4A2631DF57009B9652 /* Character.swift */,
+				16D6C48C264F834C0088648D /* CharacterStates.swift */,
+				6651F8B52633B32900294366 /* Starfish.swift */,
+				6651F8B72633C02400294366 /* Seaweed.swift */,
+				6651F8B92633C68600294366 /* Seaweed.metal */,
+				6625F3652637D76A003DED77 /* Octopus.swift */,
+				66C97A852639429900699AC5 /* Octopus.metal */,
+				661DC2A8263B87EA00D533C1 /* ParameterView.swift */,
+				661A10C4264A5BB4001DED63 /* LODSystem.swift */,
+				668E083A264F695300DB19EF /* MetalLibLoader.swift */,
+			);
+			path = Underwater;
+			sourceTree = "<group>";
+		};
+		66439756261BC8B2007A3130 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				66439757261BC8B2007A3130 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FFF892A597D3DA234A08B5D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				15D8F427EA90BCA0CA055CBA /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6643974A261BC8B1007A3130 /* Underwater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6643975B261BC8B2007A3130 /* Build configuration list for PBXNativeTarget "Underwater" */;
+			buildPhases = (
+				66439747261BC8B1007A3130 /* Sources */,
+				66439748261BC8B1007A3130 /* Frameworks */,
+				66439749261BC8B1007A3130 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Underwater;
+			productName = Underwater;
+			productReference = 6643974B261BC8B1007A3130 /* Underwater.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66439743261BC8B1007A3130 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					6643974A261BC8B1007A3130 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 66439746261BC8B1007A3130 /* Build configuration list for PBXProject "Underwater" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66439742261BC8B1007A3130;
+			productRefGroup = 6643974C261BC8B1007A3130 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6643974A261BC8B1007A3130 /* Underwater */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66439749261BC8B1007A3130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66EE44FB2640B5B2007AC2F6 /* Octopus in Resources */,
+				6644308E261E4C4400D104FD /* ColorRamp.png in Resources */,
+				661A10C7264A62B8001DED63 /* starfish in Resources */,
+				661A10C3264A5580001DED63 /* seaweed in Resources */,
+				16D48EF9263C869100061FEA /* krill.usdz in Resources */,
+				66439758261BC8B2007A3130 /* Preview Assets.xcassets in Resources */,
+				6644308D261E4C4400D104FD /* MixingRamp.png in Resources */,
+				16B38CAC2649EABD004A705B /* Settings.bundle in Resources */,
+				66439755261BC8B2007A3130 /* Assets.xcassets in Resources */,
+				168DAB092624B782001E32EA /* fish_sardine.usdz in Resources */,
+				1611C59926334F18005747D0 /* anemone.usdz in Resources */,
+				661A1189264B4211001DED63 /* fish_clown in Resources */,
+				661A10C1264A4C8C001DED63 /* fish_yellowtang in Resources */,
+				66EEC8E92642637E00AA559E /* Diver in Resources */,
+				668373002648FF99003FB967 /* cell_noise_1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66439747261BC8B1007A3130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D6C48D264F834C0088648D /* CharacterStates.swift in Sources */,
+				664266D9261D1E0100088741 /* PostProcessing.metal in Sources */,
+				1611C61426388565005747D0 /* FearSystem.swift in Sources */,
+				1611C59E263351BB005747D0 /* FoodPool.swift in Sources */,
+				1611C60C263761F9005747D0 /* WanderSystem.swift in Sources */,
+				6651F8B42633A83400294366 /* Scattering.swift in Sources */,
+				661DC2A9263B87EA00D533C1 /* ParameterView.swift in Sources */,
+				1674D8312645A19C00533FDB /* Fish.swift in Sources */,
+				6625F3662637D76A003DED77 /* Octopus.swift in Sources */,
+				6651F8B62633B32900294366 /* Starfish.swift in Sources */,
+				1674979E262E298F00C5F8F4 /* FlockingSystem.swift in Sources */,
+				6651F8BA2633C68600294366 /* Seaweed.metal in Sources */,
+				66439751261BC8B1007A3130 /* ContentView.swift in Sources */,
+				1674979C262E28E600C5F8F4 /* HungerSystem.swift in Sources */,
+				167497A6262E2DB100C5F8F4 /* MotionSystem.swift in Sources */,
+				16420D56262A496300BC0A1A /* MovementSettingsView.swift in Sources */,
+				6651F8B82633C02400294366 /* Seaweed.swift in Sources */,
+				668E083B264F695300DB19EF /* MetalLibLoader.swift in Sources */,
+				6672924726313EE4001BFFD1 /* MeshAnchorTracker.swift in Sources */,
+				167497A0262E2A7800C5F8F4 /* Entity+Distance.swift in Sources */,
+				6643974F261BC8B1007A3130 /* AppDelegate.swift in Sources */,
+				66C97A862639429900699AC5 /* Octopus.metal in Sources */,
+				16749798262E26AC00C5F8F4 /* Settings.swift in Sources */,
+				167497A4262E2C6800C5F8F4 /* MotionComponent.swift in Sources */,
+				167497A2262E2AD600C5F8F4 /* VectorMath.swift in Sources */,
+				661A10C5264A5BB4001DED63 /* LODSystem.swift in Sources */,
+				66327F4B2631DF57009B9652 /* Character.swift in Sources */,
+				1674979A262E274500C5F8F4 /* UnderwaterView.swift in Sources */,
+				16428FDA263B31DE0060475C /* AnimationSpeedSystem.swift in Sources */,
+				6672924526313C1A001BFFD1 /* PostProcessing.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		66439759261BC8B2007A3130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D8F427EA90BCA0CA055CBA /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6643975A261BC8B2007A3130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D8F427EA90BCA0CA055CBA /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6643975C261BC8B2007A3130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D8F427EA90BCA0CA055CBA /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Underwater/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationLandscapeRight;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Underwater${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6643975D261BC8B2007A3130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D8F427EA90BCA0CA055CBA /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Underwater/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationLandscapeRight;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Underwater${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66439746261BC8B1007A3130 /* Build configuration list for PBXProject "Underwater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66439759261BC8B2007A3130 /* Debug */,
+				6643975A261BC8B2007A3130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6643975B261BC8B2007A3130 /* Build configuration list for PBXNativeTarget "Underwater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6643975C261BC8B2007A3130 /* Debug */,
+				6643975D261BC8B2007A3130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66439743261BC8B1007A3130 /* Project object */;
+}

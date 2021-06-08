@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19115.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MIz-Jw-B1n">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.3"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Offering Apple Pay-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Offering Apple Pay" id="BYZ-38-t0r" customClass="ViewController" customModule="Offering_Apple_Pay_in_Your_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BQq-b7-BB6">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </mapView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6V3-TK-n1C">
+                                <rect key="frame" x="0.0" y="663" width="414" height="199"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vDf-oY-DI2">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="199"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Tickets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYb-QZ-1Lo">
+                                            <rect key="frame" x="8" y="8" width="398" height="39"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjs-L1-jb1">
+                                            <rect key="frame" x="8" y="69" width="398" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="Bip-eE-DJk"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="kjs-L1-jb1" secondAttribute="trailing" constant="8" id="CED-Ok-2Hc"/>
+                                        <constraint firstItem="fYb-QZ-1Lo" firstAttribute="top" secondItem="vDf-oY-DI2" secondAttribute="topMargin" id="DPD-pR-HJW"/>
+                                        <constraint firstItem="fYb-QZ-1Lo" firstAttribute="trailing" secondItem="kjs-L1-jb1" secondAttribute="trailing" id="QDG-3u-CUW"/>
+                                        <constraint firstItem="fYb-QZ-1Lo" firstAttribute="leading" secondItem="kjs-L1-jb1" secondAttribute="leading" id="YAv-gc-Lws"/>
+                                        <constraint firstItem="kjs-L1-jb1" firstAttribute="top" secondItem="fYb-QZ-1Lo" secondAttribute="bottom" constant="22" id="gWw-TI-BOo"/>
+                                        <constraint firstItem="kjs-L1-jb1" firstAttribute="leading" secondItem="vDf-oY-DI2" secondAttribute="leading" constant="8" id="lmL-6i-0vd"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="c10-W6-V6x"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BQq-b7-BB6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="41Z-1h-xgf"/>
+                            <constraint firstItem="BQq-b7-BB6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GTd-wI-F1X"/>
+                            <constraint firstItem="6V3-TK-n1C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lri-Pc-v17"/>
+                            <constraint firstAttribute="trailing" secondItem="6V3-TK-n1C" secondAttribute="trailing" id="dgo-eP-i0L"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BQq-b7-BB6" secondAttribute="bottom" id="rY1-hq-fC8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6V3-TK-n1C" secondAttribute="bottom" id="stM-Xc-CmH"/>
+                            <constraint firstAttribute="trailing" secondItem="BQq-b7-BB6" secondAttribute="trailing" id="ush-gZ-alv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Offering Apple Pay" id="OMc-NO-qQo"/>
+                    <connections>
+                        <outlet property="applePayView" destination="kjs-L1-jb1" id="uQZ-KH-Q0q"/>
+                        <outlet property="mapView" destination="BQq-b7-BB6" id="eLq-TU-sN7"/>
+                        <segue destination="D6s-mG-fPC" kind="show" identifier="Confirmation" id="Syu-vg-VBa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330.39999999999998" y="-362.06896551724139"/>
+        </scene>
+        <!--Confirmation-->
+        <scene sceneID="YzD-28-xaK">
+            <objects>
+                <viewController title="Confirmation" id="D6s-mG-fPC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ehS-0K-Oo7"/>
+                        <viewControllerLayoutGuide type="bottom" id="jB8-gr-t26"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zyN-qf-KKI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for paying. We'll be in touch soon!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo9-lB-paS">
+                                <rect key="frame" x="20" y="142.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ku-5g-bVl">
+                                <rect key="frame" x="20" y="96" width="107" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Ku-5g-bVl" firstAttribute="top" secondItem="ehS-0K-Oo7" secondAttribute="bottom" constant="8" id="5D2-bS-Wik"/>
+                            <constraint firstItem="wo9-lB-paS" firstAttribute="leading" secondItem="zyN-qf-KKI" secondAttribute="leadingMargin" id="QUb-RQ-C19"/>
+                            <constraint firstItem="6Ku-5g-bVl" firstAttribute="leading" secondItem="zyN-qf-KKI" secondAttribute="leadingMargin" id="bk6-8c-K16"/>
+                            <constraint firstItem="wo9-lB-paS" firstAttribute="trailing" secondItem="zyN-qf-KKI" secondAttribute="trailingMargin" id="n0w-fB-rgI"/>
+                            <constraint firstItem="wo9-lB-paS" firstAttribute="top" secondItem="6Ku-5g-bVl" secondAttribute="bottom" constant="8" id="tca-H7-6SF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86F-yY-QKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1189.5999999999999" y="-362.06896551724139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D5e-De-unq">
+            <objects>
+                <navigationController id="MIz-Jw-B1n" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dJG-SE-Oqe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tjX-wI-DYb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LsY-73-OGp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-537.84153863811264" y="-361.99256326786741"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

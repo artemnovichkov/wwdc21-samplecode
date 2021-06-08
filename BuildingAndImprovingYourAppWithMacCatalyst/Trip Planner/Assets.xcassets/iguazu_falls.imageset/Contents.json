@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "iguazu_falls.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

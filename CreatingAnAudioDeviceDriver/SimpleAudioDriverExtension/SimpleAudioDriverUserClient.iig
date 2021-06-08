@@ -1,0 +1,30 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Headers for the user client, which connects to and exercises
+            the driver.
+*/
+
+#ifndef SimpleAudioDriverUserClient_h
+#define SimpleAudioDriverUserClient_h
+
+#include <DriverKit/IOUserClient.iig>
+
+class SimpleAudioDriverUserClient : public IOUserClient
+{
+public:
+	virtual bool			init() final;
+	virtual void			free() final;
+	
+	virtual kern_return_t	Start(IOService* in_provider) final;
+	virtual kern_return_t	Stop(IOService* in_provider) final;
+	
+	virtual kern_return_t	ExternalMethod(uint64_t in_selector,
+										   IOUserClientMethodArguments* in_arguments,
+										   const IOUserClientMethodDispatch* in_dispatch,
+										   OSObject* in_target,
+										   void* in_reference) final;
+};
+
+#endif /* SimpleAudioDriverUserClient_h */

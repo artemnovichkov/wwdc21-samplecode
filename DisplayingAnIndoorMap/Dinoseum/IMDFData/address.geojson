@@ -1,0 +1,21 @@
+{
+    "features": [
+        {
+            "feature_type": "address",
+            "geometry": null,
+            "id": "e105efb7-b0d1-4144-8b8e-72eadf95724f",
+            "properties": {
+                "address": "150 W San Carlos St",
+                "country": "US",
+                "locality": "San Jose",
+                "postal_code": "95113",
+                "postal_code_ext": null,
+                "province": "US-CA",
+                "unit": null
+            },
+            "type": "Feature"
+        }
+    ],
+    "name": "address",
+    "type": "FeatureCollection"
+}

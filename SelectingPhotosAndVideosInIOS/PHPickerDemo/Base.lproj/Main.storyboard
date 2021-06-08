@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19052" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19045"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PHPickerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="6J6-Wh-9Ol" userLabel="Live Photo View" customClass="PHLivePhotoView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.on.rectangle.angled" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tfa-GR-aFN">
+                                <rect key="frame" x="0.0" y="-0.5" width="414" height="896"/>
+                                <color key="tintColor" systemColor="systemFillColor"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8h-ar-BuB">
+                                <rect key="frame" x="190" y="429.5" width="34" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="play.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <segue destination="RBP-i6-S40" kind="presentation" id="ttY-i1-2L6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUH-sZ-1o3" userLabel="Live Photos Only">
+                                <rect key="frame" x="351" y="64" width="43" height="42"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" image="livephoto" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="medium">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="presentPickerForLivePhotosOnly:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="dYb-e4-Jeu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUv-Z2-JwA" userLabel="Images Including Live Photos">
+                                <rect key="frame" x="297.5" y="66" width="45.5" height="38"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" image="photo" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="medium">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="presentPickerForImagesIncludingLivePhotos:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="J9W-Ub-BiU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hh-Nr-iJC" userLabel="Images and Videos">
+                                <rect key="frame" x="241.5" y="64.5" width="48" height="41"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" image="photo.on.rectangle.angled" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="medium">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="presentPickerForImagesAndVideos:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="blD-00-QYC"/>
+                                </connections>
+                            </button>
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5O6-P9-SgL">
+                                <rect key="frame" x="249.5" y="111" width="136.5" height="4"/>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5O6-P9-SgL" firstAttribute="leading" secondItem="6hh-Nr-iJC" secondAttribute="leadingMargin" id="0ta-MJ-TcZ"/>
+                            <constraint firstItem="JUv-Z2-JwA" firstAttribute="firstBaseline" secondItem="6hh-Nr-iJC" secondAttribute="firstBaseline" id="2Xm-kg-8Vj"/>
+                            <constraint firstItem="K8h-ar-BuB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3GX-cO-2BE"/>
+                            <constraint firstItem="K8h-ar-BuB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Fc-Pb-x8b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dUH-sZ-1o3" secondAttribute="trailing" constant="20" id="5zY-k9-fvJ"/>
+                            <constraint firstItem="dUH-sZ-1o3" firstAttribute="firstBaseline" secondItem="6hh-Nr-iJC" secondAttribute="firstBaseline" id="95F-tl-kDv"/>
+                            <constraint firstItem="6J6-Wh-9Ol" firstAttribute="bottom" secondItem="Tfa-GR-aFN" secondAttribute="bottom" id="9Dj-Yy-7sV"/>
+                            <constraint firstItem="dUH-sZ-1o3" firstAttribute="trailingMargin" secondItem="5O6-P9-SgL" secondAttribute="trailing" id="HzF-xj-pUH"/>
+                            <constraint firstItem="dUH-sZ-1o3" firstAttribute="leading" secondItem="JUv-Z2-JwA" secondAttribute="trailing" constant="8" symbolic="YES" id="Se3-pH-5eu"/>
+                            <constraint firstItem="6J6-Wh-9Ol" firstAttribute="top" secondItem="Tfa-GR-aFN" secondAttribute="top" id="W9d-9P-kuZ"/>
+                            <constraint firstItem="6J6-Wh-9Ol" firstAttribute="trailing" secondItem="Tfa-GR-aFN" secondAttribute="trailing" id="WXh-Ek-9i3"/>
+                            <constraint firstItem="JUv-Z2-JwA" firstAttribute="leading" secondItem="6hh-Nr-iJC" secondAttribute="trailing" constant="8" symbolic="YES" id="dVh-O7-MhU"/>
+                            <constraint firstItem="6J6-Wh-9Ol" firstAttribute="leading" secondItem="Tfa-GR-aFN" secondAttribute="leading" id="eX3-Cr-Vkc"/>
+                            <constraint firstItem="Tfa-GR-aFN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f93-tE-OQE"/>
+                            <constraint firstItem="Tfa-GR-aFN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ofW-Lz-UBv"/>
+                            <constraint firstAttribute="bottom" secondItem="Tfa-GR-aFN" secondAttribute="bottom" id="orE-1a-W5p"/>
+                            <constraint firstItem="5O6-P9-SgL" firstAttribute="top" secondItem="dUH-sZ-1o3" secondAttribute="baseline" constant="20" id="rfA-cO-gXK"/>
+                            <constraint firstItem="Tfa-GR-aFN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sNr-i4-wt1"/>
+                            <constraint firstItem="dUH-sZ-1o3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="uMo-Jj-l7S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Tfa-GR-aFN" id="Qyz-6J-9hH"/>
+                        <outlet property="livePhotoView" destination="6J6-Wh-9Ol" id="My9-8U-Pas"/>
+                        <outlet property="playButton" destination="K8h-ar-BuB" id="QuH-UE-pvH"/>
+                        <outlet property="progressView" destination="5O6-P9-SgL" id="CI0-m5-Jlu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217.39130434782609" y="89.732142857142847"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="Kuh-YW-Gl1">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="RBP-i6-S40" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zmz-xO-mAe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="90"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="livephoto" catalog="system" width="128" height="122"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="photo.on.rectangle.angled" catalog="system" width="128" height="100"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

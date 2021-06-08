@@ -1,0 +1,72 @@
+[
+	{
+        "name": "Ginger",
+        "imageName" : "Ginger",
+        "year" : 2007,
+        "price" : 49.98,
+        "identifier" : "E09FFBD4-318F-46EE-8FA2-FA387D4F3562"
+	},
+    {
+        "name": "Gladiolus",
+        "imageName" : "Gladiolus",
+        "year" : 2001,
+        "price" : 51.99,
+        "identifier" : "E09FFBD4-318F-46EE-8FA2-FA387D4F3563"
+    },
+    {
+        "name": "Orchid",
+        "imageName" : "Orchid",
+        "year" : 2007,
+        "price" : 16.99,
+        "identifier" : "E09FFBD4-318F-46EE-8FA2-FA387D4F3564"
+    },
+    {
+        "name": "Poinsettia",
+        "imageName" : "Poinsettia",
+        "year" : 2010,
+        "price" : 31.99,
+        "identifier" : "E09FFBD4-318F-46EE-8FA2-FA387D4F3565"
+    },
+    {
+        "name": "Red Rose",
+        "imageName" : "RedRose",
+        "year" : 2011,
+        "price" : 24.99,
+        "identifier" : "E09FFBD4-318F-46EE-8FA2-FA387D4F3566"
+    },
+    {
+        "name": "White Rose",
+        "imageName" : "WhiteRose",
+        "year" : 2012,
+        "price" : 24.99,
+        "identifier" : "E09FFBD4-318F-46EE-8FA2-FA387D4F3567"
+    },
+    {
+        "name": "Mango",
+        "imageName" : "Mango",
+        "year" : 2013,
+        "price" : 6.99,
+        "identifier" : "E09FFBD4-318F-46EE-8FA2-FA387D4F3568"
+    },
+    {
+        "name": "Peanuts",
+        "imageName" : "Peanuts",
+        "year" : 2014,
+        "price" : 4.99,
+        "identifier" : "E09FFBD4-318F-46EE-8FA2-FA387D4F3569"
+    },
+    {
+        "name": "Cherries",
+        "imageName" : "Cherries",
+        "year" : 2015,
+        "price" : 10.99,
+        "identifier" : "E09FFBD4-318F-46EE-8FA2-FA387D4F3570"
+    },
+    {
+        "name": "Artichoke",
+        "imageName" : "Artichoke",
+        "year" : 2015,
+        "price" : 12.45,
+        "identifier" : "E09FFBD4-318F-46EE-8FA2-FA387D4F3571"
+    }
+]

@@ -1,0 +1,28 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Localizable strings.
+*/
+
+"New Garden" = "New Garden";
+"Add Plant" = "Add Plant";
+"Water Plants" = "Water Plants";
+"Variety" = "Variety";
+"Days to Maturity" = "Days to Maturity";
+"Date Planted" = "Date Planted";
+"Harvest Date" = "Harvest Date";
+"Last Watered" = "Last Watered";
+"Favorite" = "Favorite";
+"Display Mode" = "Display Mode";
+"Table" = "Table";
+"Gallery" = "Gallery";
+"Current" = "Current";
+"History" = "History";
+"Plants" = "Plants";
+"General" = "General";
+"Viewing" = "Viewing";
+"Default Garden" = "Default Garden";
+"None" = "None";
+"Export…" = "Export…";
+"CSV Header" = "Garden Name,Garden Year,Variety,Planting Depth,Days To Maturity,Date Planted,Favorite,Last Watered On,Watering Frequency";

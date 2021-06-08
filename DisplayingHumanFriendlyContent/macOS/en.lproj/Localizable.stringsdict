@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>कम से कम %lld दशमलव अंक</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@digitsCount@</string>
+		<key>digitsCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>At least %lld fractional digit</string>
+			<key>other</key>
+			<string>At least %lld fractional digits</string>
+		</dict>
+	</dict>
+	<key>कम से कम %lld पूर्ण अंक</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@digitsCount@</string>
+		<key>digitsCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>At least %lld integer digit</string>
+			<key>other</key>
+			<string>At least %lld integer digits</string>
+		</dict>
+	</dict>
+	<key>ज़्यादा से ज़्यादा %lld दशमलव अंक</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@digitsCount@</string>
+		<key>digitsCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>At most %lld fractional digit</string>
+			<key>other</key>
+			<string>At most %lld fractional digits</string>
+		</dict>
+	</dict>
+	<key>ज़्यादा से ज़्यादा %lld पूर्ण अंक</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@digitsCount@</string>
+		<key>digitsCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>At most %lld integer digit</string>
+			<key>other</key>
+			<string>At most %lld integer digits`</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

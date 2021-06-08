@@ -1,0 +1,16 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+App bundle localization file.
+*/
+
+/* Bundle display name */
+"CFBundleDisplayName" = "Фрута";
+
+/* Bundle name */
+"CFBundleName" = "Фрута";
+
+/* Copyright (human-readable) */
+"NSHumanReadableCopyright" = "© 2020–2021 Apple. Все права защищены.";
+

@@ -1,0 +1,12 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "webkit.svg",
+            "resource-type": ["image", "style-sheet"],
+            "if-domain": "example.com"
+        }
+    }
+]

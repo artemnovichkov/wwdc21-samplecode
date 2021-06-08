@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>कम से कम %lld दशमलव अंक</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@digitsCount@</string>
+		<key>digitsCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>Como mínimo %lld dígito fraccionario</string>
+			<key>other</key>
+			<string>Como mínimo %lld dígitos fraccionarios</string>
+		</dict>
+	</dict>
+	<key>कम से कम %lld पूर्ण अंक</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@digitsCount@</string>
+		<key>digitsCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>Como mínimo %lld dígito entero</string>
+			<key>other</key>
+			<string>Como mínimo %lld dígitos enteros</string>
+		</dict>
+	</dict>
+	<key>ज़्यादा से ज़्यादा %lld दशमलव अंक</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@digitsCount@</string>
+		<key>digitsCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>Como máximo %lld dígito fraccionario</string>
+			<key>other</key>
+			<string>Como máximo %lld dígitos fraccionarios</string>
+		</dict>
+	</dict>
+	<key>ज़्यादा से ज़्यादा %lld पूर्ण अंक</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@digitsCount@</string>
+		<key>digitsCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>Como máximo %lld dígito entero</string>
+			<key>other</key>
+			<string>Como máximo %lld dígitos enteros</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

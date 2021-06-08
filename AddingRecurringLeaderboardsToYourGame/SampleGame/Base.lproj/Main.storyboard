@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="TitleScreen" id="BYZ-38-t0r" customClass="TitleScreenViewController" customModule="SampleGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="titlebkgnd.landscape" translatesAutoresizingMaskIntoConstraints="NO" id="Z3Q-Rb-09B">
+                                <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="WeA-Hu-EHc">
+                                <rect key="frame" x="272" y="163" width="300" height="64"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vpN-TA-QLI">
+                                        <rect key="frame" x="21.666666666666686" y="0.0" width="257" height="64"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irk-Tl-lRG">
+                                                <rect key="frame" x="0.0" y="0.0" width="257" height="64"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRA-6X-2NO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="257" height="64"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="cRA-6X-2NO" secondAttribute="height" multiplier="257:64" id="pMk-cL-UwV"/>
+                                                        </constraints>
+                                                        <state key="normal" image="play"/>
+                                                        <connections>
+                                                            <action selector="showGameVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3gW-EJ-Kyy"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="KMd-iM-cXV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E3i-cF-dfB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z3Q-Rb-09B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FTa-qY-vYW"/>
+                            <constraint firstAttribute="bottom" secondItem="Z3Q-Rb-09B" secondAttribute="bottom" id="MRV-XI-mE2"/>
+                            <constraint firstAttribute="trailing" secondItem="Z3Q-Rb-09B" secondAttribute="trailing" id="OXP-54-cUX"/>
+                            <constraint firstItem="WeA-Hu-EHc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PKV-49-xaY"/>
+                            <constraint firstItem="Z3Q-Rb-09B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RZ7-Nj-tXx"/>
+                            <constraint firstItem="WeA-Hu-EHc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iqg-9o-9IG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="Z3Q-Rb-09B" id="XLH-Hm-Aui"/>
+                        <outlet property="backgroundImageLeading" destination="FTa-qY-vYW" id="hbs-xw-cDv"/>
+                        <outlet property="backgroundImageTop" destination="RZ7-Nj-tXx" id="PqL-PT-1V8"/>
+                        <outlet property="playButton" destination="cRA-6X-2NO" id="jjT-gU-1Eg"/>
+                        <outlet property="titleStackView" destination="WeA-Hu-EHc" id="szm-y6-CMw"/>
+                        <outlet property="titleStackViewCenterX" destination="iqg-9o-9IG" id="mPZ-Mq-7B2"/>
+                        <outlet property="titleStackViewCenterY" destination="PKV-49-xaY" id="jbc-SU-e7I"/>
+                        <outlet property="titleStackViewWidth" destination="KMd-iM-cXV" id="Kn0-wg-pHh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="80"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="13S-JB-KZo">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" id="GfB-rC-Ub8" customClass="GameViewController" customModule="SampleGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <skView key="view" contentMode="scaleToFill" id="SkW-bQ-Yvg">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </skView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bmm-RJ-jFg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861.60000000000002" y="79.610194902548727"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play" width="173" height="64"/>
+        <image name="titlebkgnd.landscape" width="2436" height="1125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

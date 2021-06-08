@@ -1,0 +1,72 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Headers for an AudioDriverKit device that generates a
+            sine wave.
+*/
+
+#ifndef SimpleAudioDevice_h
+#define SimpleAudioDevice_h
+
+#include <DriverKit/DriverKit.iig>
+#include <AudioDriverKit/IOUserAudioDevice.iig>
+#include <AudioDriverKit/IOUserAudioStream.iig>
+#include <AudioDriverKit/AudioDriverKitTypes.h>
+#include <DriverKit/IOTimerDispatchSource.iig>
+
+using namespace AudioDriverKit;
+
+constexpr uint64_t k_custom_config_change_action = 1234;
+
+class IOUserAudioDriver;
+
+class SimpleAudioDevice: public IOUserAudioDevice
+{
+public:
+	virtual bool				init(IOUserAudioDriver* in_driver,
+									 bool in_supports_prewarming,
+									 OSString* in_device_uid,
+									 OSString* in_model_uid,
+									 OSString* in_manufacturer_uid,
+									 uint32_t in_zero_timestamp_period) override LOCALONLY;
+	
+	virtual void				free() override LOCALONLY;
+	
+public:
+	// Override these methods in derived class to do custom things with
+    // transport hardware as necessary.
+	virtual kern_return_t		StartIO(IOUserAudioStartStopFlags in_flags) final LOCALONLY;
+	
+	virtual kern_return_t		StopIO(IOUserAudioStartStopFlags in_flags) final LOCALONLY;
+	
+	virtual kern_return_t		PerformDeviceConfigurationChange(uint64_t change_action,
+																 OSObject* in_change_info) final LOCALONLY;
+	
+	virtual kern_return_t		AbortDeviceConfigurationChange(uint64_t change_action,
+															   OSObject* in_change_info) final LOCALONLY;
+	
+	virtual kern_return_t		HandleChangeSampleRate(double in_sample_rate) final LOCALONLY;
+	
+	static inline int16_t 		FloatToInt16(float in_sample) LOCALONLY;
+	
+	kern_return_t				ToggleDataSource() LOCALONLY;
+
+private:
+	kern_return_t				StartTimers() LOCALONLY;
+	
+	void						StopTimers() LOCALONLY;
+	
+	void						UpdateTimers() LOCALONLY;
+	
+	virtual void				ZtsTimerOccurred(OSAction* action,
+												 uint64_t time) TYPE(IOTimerDispatchSource::TimerOccurred);
+	
+	void						GenerateToneForInput(size_t in_frame_size) LOCALONLY;
+	
+	virtual void				ToneTimerOccurred(OSAction* action,
+												  uint64_t time) TYPE(IOTimerDispatchSource::TimerOccurred);
+
+};
+
+#endif /* SimpleAudioDevice_h */

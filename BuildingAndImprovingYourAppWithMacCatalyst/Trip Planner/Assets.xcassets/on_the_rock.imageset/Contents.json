@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "on_the_rock.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

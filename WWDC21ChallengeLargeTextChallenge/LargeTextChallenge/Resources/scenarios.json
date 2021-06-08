@@ -1,0 +1,76 @@
+[
+  {
+    "exercise": "textWithButton",
+    "id": 1,
+    "name": "Text View with Button",
+    "feedback": [
+      {
+        "id": 1,
+        "property": "allowsScrolling",
+        "enabled": "Great! By placing the content in a scroll view, the view will automatically allow for scrolling if the content goes outside the bounds of the view.",
+        "description": "In SwiftUI, ScrollView allows any content within to become scrollable. This means that if any content within this view goes beyond the size of the frame set for this view, a user will be able to swipe up, or down, to see the rest of the content. This is very helpful when supporting Dynamic Type since text may grow to a point where the content in the views become very compact. The view will also only allow scrolling if it needs to. If the content fits within the bounds of the ScrollView, then it acts the same as a VStack!",
+        "disabled": "There is a lot of text onscreen and a majority of it becomes inaccessible at larger text sizes. Is there a way to access the rest of the content?"
+      }
+    ],
+    "description": "How can the UI fit a lot of text onscreen but still allow users to see it at various sizes?"
+  },
+  {
+    "exercise": "textFieldSideView",
+    "id": 2,
+    "name": "TextField with SideView",
+    "feedback": [
+      {
+        "id": 1,
+        "property": "stackVertically",
+        "enabled": "Great! By stacking the views vertically, the UI can still present the information it needs to get across.",
+        "description": "There are times where information needs to be presented next to the element that information is for. However, at larger text sizes, this information becomes inaccessible because there is a set width/height for the frame that provides the information. In cases like these, it is helpful to present this information above the element that information is for. This can be done by listening for changes to @EnvironmentObject(./sizeCategory) and updating a HStack to use a VStack at any text size above .accessibilityMedium.",
+        "disabled": "Is there a way to still present the information for the text field while providing a lot of room for the user to type?"
+      }
+    ],
+    "description": "Sometimes a text field placeholder is not enough. What's a possible approach for handling these cases?"
+  },
+  {
+    "exercise": "textWithImage",
+    "id": 3,
+    "name": "Text Views with Image",
+    "feedback": [
+      {
+        "id": 1,
+        "property": "presentLargerImage",
+        "enabled": "Great! Providing a way to see a larger version of an image allows interested users to get the information they need from the image.",
+        "disabled": "Scaling the image isn't necessary when the text size changes, but is there a way to provide a larger version of the image for interested users?"
+      }
+    ],
+    "description": "What should the UI do with images when text size grows?"
+  },
+  {
+    "exercise": "listWithIcons",
+    "id": 4,
+    "name": "List with Icons",
+    "feedback": [
+      {
+        "id": 1,
+        "property": "replaceHStackWithLabel",
+        "enabled": "Great! Labels are a great way of presenting icons with text since it handles the sizing and layout automatically.",
+        "description": "HStacks are useful for presenting content on a horizontal axis. This is commonly used for presenting an icon next to some text. However, another type of View that can present this information is a Label. Labels lay out an image and text horizontally, with the added benefit of scaling the image with the current text size. This means that spacing, size, and number of lines is handled automatically!",
+        "disabled": "Make sure the icons and text are presented in a way where icons aren't too large and text isn't truncated. Is there a way to scale the icons with the size of the text?"
+      }
+    ],
+    "description": "Showing an icon with an item in a list helps with providing info! What's a possible approach to scaling the views to accomodate larger text?"
+  },
+  {
+    "exercise": "textureGrid",
+    "id": 5,
+    "name": "Grid Views",
+    "feedback": [
+      {
+        "id": 1,
+        "property": "useScaledMetric",
+        "enabled": "Great! By combining a scaled metric with an adaptive LazyVGrid or LazyHGrid, the layout automatically updates based on text size.",
+        "description": "@ScaledMetric scales the variable based on the current text size. By combining a scaled metric with an adaptive grid column, LazyVGrid and LazyHGrid automatically reduce the number of columns, or rows, that are shown based on the available space and the current text size.",
+        "disabled": "Make sure that the grid doesn't scale incorrectly when the text size grows. Is there a way to scale the grid based on the text size?"
+      }
+    ],
+    "description": "Presenting information in a grid-like view can be a unique and creative way to present information. How should this type of view adapt to larger text sizes?"
+  }
+]

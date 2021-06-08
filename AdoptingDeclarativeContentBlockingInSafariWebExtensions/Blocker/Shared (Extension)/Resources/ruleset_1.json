@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {"regexFilter": ".*", "resourceTypes": [ "image" ] }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": { "type": "allow" },
+        "condition": {"regexFilter": "wikipedia", "resourceTypes": [ "image" ] }
+    }
+]

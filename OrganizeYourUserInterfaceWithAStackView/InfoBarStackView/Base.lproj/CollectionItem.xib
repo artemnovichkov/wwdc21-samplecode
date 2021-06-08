@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CollectionItem" customModule="InfoBarStackView" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="mbm-Zl-4pX" id="QkY-bc-Fkv"/>
+                <outlet property="view" destination="wuK-BF-6GS" id="T5m-uR-NUU"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="wuK-BF-6GS">
+            <rect key="frame" x="0.0" y="0.0" width="196" height="141"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mbm-Zl-4pX">
+                    <rect key="frame" x="10" y="10" width="176" height="121"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyUpOrDown" id="aI6-ku-YJA"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="mbm-Zl-4pX" firstAttribute="leading" secondItem="wuK-BF-6GS" secondAttribute="leading" constant="10" id="PcZ-lV-jD6"/>
+                <constraint firstItem="mbm-Zl-4pX" firstAttribute="top" secondItem="wuK-BF-6GS" secondAttribute="top" constant="10" id="RHG-3u-VYY"/>
+                <constraint firstAttribute="bottom" secondItem="mbm-Zl-4pX" secondAttribute="bottom" constant="10" id="c4e-Ma-M3q"/>
+                <constraint firstAttribute="trailing" secondItem="mbm-Zl-4pX" secondAttribute="trailing" constant="10" id="dFL-Wd-rOe"/>
+            </constraints>
+            <point key="canvasLocation" x="64" y="12"/>
+        </customView>
+    </objects>
+</document>

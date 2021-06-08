@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TagViewController" customModule="Tags" customModuleProvider="target">
+            <connections>
+                <outlet property="addTagButton" destination="dBo-x3-68S" id="SIc-ST-b7R"/>
+                <outlet property="tagNameTextField" destination="FBe-Zg-9ks" id="2ew-14-H11"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BLu-y7-OEq">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBo-x3-68S">
+                    <rect key="frame" x="340" y="7" width="25" height="30"/>
+                    <state key="normal" image="plus.circle" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="addTag:" destination="-1" eventType="touchUpInside" id="VbQ-vG-GOX"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="FBe-Zg-9ks">
+                    <rect key="frame" x="16" y="5" width="316" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="tagNameChanged:" destination="-1" eventType="editingChanged" id="Ny6-K3-9Ag"/>
+                        <outlet property="delegate" destination="-1" id="VFs-pW-hxY"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="GzZ-DY-c8s"/>
+            <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dBo-x3-68S" firstAttribute="top" secondItem="BLu-y7-OEq" secondAttribute="top" constant="7" id="1yJ-23-yrE"/>
+                <constraint firstItem="dBo-x3-68S" firstAttribute="leading" secondItem="FBe-Zg-9ks" secondAttribute="trailing" constant="8" symbolic="YES" id="5ld-EF-fam"/>
+                <constraint firstAttribute="bottom" secondItem="dBo-x3-68S" secondAttribute="bottom" constant="7" id="YO0-YG-H07"/>
+                <constraint firstItem="FBe-Zg-9ks" firstAttribute="leading" secondItem="GzZ-DY-c8s" secondAttribute="leading" constant="16" id="ZPn-7B-uQg"/>
+                <constraint firstItem="FBe-Zg-9ks" firstAttribute="top" secondItem="BLu-y7-OEq" secondAttribute="top" constant="5" id="aVu-4S-T1a"/>
+                <constraint firstItem="GzZ-DY-c8s" firstAttribute="bottom" secondItem="FBe-Zg-9ks" secondAttribute="bottom" constant="5" id="uXB-aM-rJS"/>
+                <constraint firstItem="GzZ-DY-c8s" firstAttribute="trailing" secondItem="dBo-x3-68S" secondAttribute="trailing" constant="16" id="vMa-BR-e7S"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="25.362318840579711" y="-225"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

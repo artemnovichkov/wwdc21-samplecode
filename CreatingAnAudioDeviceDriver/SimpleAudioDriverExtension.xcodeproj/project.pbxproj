@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5B6559F2612A1E40087D3B4 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C5B6559E2612A1E40087D3B4 /* AppDelegate.mm */; };
+		C5B655A22612A1E40087D3B4 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C5B655A12612A1E40087D3B4 /* ViewController.mm */; };
+		C5B655A42612A1E40087D3B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B655A32612A1E40087D3B4 /* Assets.xcassets */; };
+		C5B655A72612A1E40087D3B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B655A52612A1E40087D3B4 /* Main.storyboard */; };
+		C5B655A92612A1E40087D3B4 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = C5B655A82612A1E40087D3B4 /* main.mm */; };
+		C5B655B22612A4330087D3B4 /* com.example.apple-samplecode.SimpleAudioDriver.dext in Embed Driver Extension */ = {isa = PBXBuildFile; fileRef = C5B7D9BC26128AC50089B4C3 /* com.example.apple-samplecode.SimpleAudioDriver.dext */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C5B7D9C326128AC50089B4C3 /* SimpleAudioDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5B7D9C226128AC50089B4C3 /* SimpleAudioDriver.cpp */; };
+		C5B7D9C526128AC50089B4C3 /* SimpleAudioDriver.iig in Sources */ = {isa = PBXBuildFile; fileRef = C5B7D9C426128AC50089B4C3 /* SimpleAudioDriver.iig */; };
+		C5B7D9D1261291200089B4C3 /* SimpleAudioDevice.iig in Sources */ = {isa = PBXBuildFile; fileRef = C5B7D9D0261291200089B4C3 /* SimpleAudioDevice.iig */; };
+		C5B7D9D3261291F20089B4C3 /* SimpleAudioDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5B7D9D2261291F20089B4C3 /* SimpleAudioDevice.cpp */; };
+		C5C0063226177AC4003345D8 /* SystemExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D787B22616973F006047E5 /* SystemExtensions.framework */; };
+		C5C0063426178F98003345D8 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C0063326178F98003345D8 /* AppKit.framework */; };
+		C5C006362617ACB8003345D8 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C006352617ACB8003345D8 /* CoreAudio.framework */; };
+		C5C3BBB32612ACDC003C7BFE /* AudioDriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C3BBB12612ACD3003C7BFE /* AudioDriverKit.framework */; };
+		C5C3BBB52612ACEF003C7BFE /* DriverKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C3BBB42612ACEF003C7BFE /* DriverKit.framework */; };
+		C5D787AC261667FC006047E5 /* SimpleAudioDriverUserClient.iig in Sources */ = {isa = PBXBuildFile; fileRef = C5D787AB261667FC006047E5 /* SimpleAudioDriverUserClient.iig */; };
+		C5D787AE26168E59006047E5 /* SimpleAudioDriverUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5D787AD26168D1E006047E5 /* SimpleAudioDriverUserClient.cpp */; };
+		C5D787B126169723006047E5 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D787B026169723006047E5 /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5B655AE2612A20B0087D3B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5B7D9B326128AC50089B4C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5B7D9BB26128AC50089B4C3;
+			remoteInfo = SimpleAudioDriver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C5B655B02612A2140087D3B4 /* Embed Driver Extension */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				C5B655B22612A4330087D3B4 /* com.example.apple-samplecode.SimpleAudioDriver.dext in Embed Driver Extension */,
+			);
+			name = "Embed Driver Extension";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F06984F10B2EDA9C5B5D286 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4012C5388A4655060272253D /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		9E3D233737228B0525A55F63 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		C5B6559B2612A1E40087D3B4 /* SimpleAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5B6559D2612A1E40087D3B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C5B6559E2612A1E40087D3B4 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		C5B655A02612A1E40087D3B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C5B655A12612A1E40087D3B4 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		C5B655A32612A1E40087D3B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5B655A62612A1E40087D3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5B655A82612A1E40087D3B4 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		C5B655AD2612A1F70087D3B4 /* SimpleAudio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleAudio.entitlements; sourceTree = "<group>"; };
+		C5B7D9BC26128AC50089B4C3 /* com.example.apple-samplecode.SimpleAudioDriver.dext */ = {isa = PBXFileReference; explicitFileType = "wrapper.driver-extension"; includeInIndex = 0; path = "com.example.apple-samplecode.SimpleAudioDriver.dext"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5B7D9BF26128AC50089B4C3 /* DriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DriverKit.framework; path = Library/Frameworks/DriverKit.framework; sourceTree = DEVELOPER_DIR; };
+		C5B7D9C226128AC50089B4C3 /* SimpleAudioDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleAudioDriver.cpp; sourceTree = "<group>"; };
+		C5B7D9C426128AC50089B4C3 /* SimpleAudioDriver.iig */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.iig; path = SimpleAudioDriver.iig; sourceTree = "<group>"; };
+		C5B7D9C626128AC50089B4C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5B7D9CC26128ADA0089B4C3 /* AudioDriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioDriverKit.framework; path = System/DriverKit/System/Library/Frameworks/AudioDriverKit.framework; sourceTree = SDKROOT; };
+		C5B7D9CE26128B150089B4C3 /* SimpleAudioDriver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleAudioDriver.entitlements; sourceTree = "<group>"; };
+		C5B7D9D0261291200089B4C3 /* SimpleAudioDevice.iig */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.iig; path = SimpleAudioDevice.iig; sourceTree = "<group>"; };
+		C5B7D9D2261291F20089B4C3 /* SimpleAudioDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleAudioDevice.cpp; sourceTree = "<group>"; };
+		C5C0063326178F98003345D8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		C5C006352617ACB8003345D8 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		C5C3BBB12612ACD3003C7BFE /* AudioDriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioDriverKit.framework; path = Platforms/DriverKit.platform/Developer/SDKs/DriverKit.MacOSX21.0.Internal.sdk/System/DriverKit/System/Library/Frameworks/AudioDriverKit.framework; sourceTree = DEVELOPER_DIR; };
+		C5C3BBB42612ACEF003C7BFE /* DriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DriverKit.framework; path = Platforms/DriverKit.platform/Developer/SDKs/DriverKit.MacOSX21.0.Internal.sdk/System/DriverKit/System/Library/Frameworks/DriverKit.framework; sourceTree = DEVELOPER_DIR; };
+		C5D787AB261667FC006047E5 /* SimpleAudioDriverUserClient.iig */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.iig; path = SimpleAudioDriverUserClient.iig; sourceTree = "<group>"; };
+		C5D787AD26168D1E006047E5 /* SimpleAudioDriverUserClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleAudioDriverUserClient.cpp; sourceTree = "<group>"; };
+		C5D787AF26168F46006047E5 /* SimpleAudioDriverKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleAudioDriverKeys.h; sourceTree = "<group>"; };
+		C5D787B026169723006047E5 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		C5D787B22616973F006047E5 /* SystemExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemExtensions.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/SystemExtensions.framework; sourceTree = DEVELOPER_DIR; };
+		C5D787B426169747006047E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5B655982612A1E40087D3B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C006362617ACB8003345D8 /* CoreAudio.framework in Frameworks */,
+				C5C0063426178F98003345D8 /* AppKit.framework in Frameworks */,
+				C5C0063226177AC4003345D8 /* SystemExtensions.framework in Frameworks */,
+				C5D787B126169723006047E5 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5B7D9B926128AC50089B4C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C3BBB32612ACDC003C7BFE /* AudioDriverKit.framework in Frameworks */,
+				C5C3BBB52612ACEF003C7BFE /* DriverKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		073410A80B7048187D9A783D /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				4012C5388A4655060272253D /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		7270FB5900B2A430E9D3084B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9E3D233737228B0525A55F63 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		C5B6559C2612A1E40087D3B4 /* SimpleAudio */ = {
+			isa = PBXGroup;
+			children = (
+				C5B655AD2612A1F70087D3B4 /* SimpleAudio.entitlements */,
+				C5B6559D2612A1E40087D3B4 /* AppDelegate.h */,
+				C5B6559E2612A1E40087D3B4 /* AppDelegate.mm */,
+				C5B655A02612A1E40087D3B4 /* ViewController.h */,
+				C5B655A12612A1E40087D3B4 /* ViewController.mm */,
+				C5B655A32612A1E40087D3B4 /* Assets.xcassets */,
+				C5B655A52612A1E40087D3B4 /* Main.storyboard */,
+				C5B655A82612A1E40087D3B4 /* main.mm */,
+			);
+			path = SimpleAudio;
+			sourceTree = "<group>";
+		};
+		C5B7D9B226128AC50089B4C3 = {
+			isa = PBXGroup;
+			children = (
+				1F06984F10B2EDA9C5B5D286 /* README.md */,
+				C5B7D9C126128AC50089B4C3 /* SimpleAudioDriverExtension */,
+				C5B6559C2612A1E40087D3B4 /* SimpleAudio */,
+				C5B7D9BE26128AC50089B4C3 /* Frameworks */,
+				C5B7D9BD26128AC50089B4C3 /* Products */,
+				7270FB5900B2A430E9D3084B /* Configuration */,
+				073410A80B7048187D9A783D /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		C5B7D9BD26128AC50089B4C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5B7D9BC26128AC50089B4C3 /* com.example.apple-samplecode.SimpleAudioDriver.dext */,
+				C5B6559B2612A1E40087D3B4 /* SimpleAudio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5B7D9BE26128AC50089B4C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5C006352617ACB8003345D8 /* CoreAudio.framework */,
+				C5C0063326178F98003345D8 /* AppKit.framework */,
+				C5D787B426169747006047E5 /* Foundation.framework */,
+				C5D787B22616973F006047E5 /* SystemExtensions.framework */,
+				C5D787B026169723006047E5 /* IOKit.framework */,
+				C5C3BBB42612ACEF003C7BFE /* DriverKit.framework */,
+				C5B7D9CC26128ADA0089B4C3 /* AudioDriverKit.framework */,
+				C5C3BBB12612ACD3003C7BFE /* AudioDriverKit.framework */,
+				C5B7D9BF26128AC50089B4C3 /* DriverKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5B7D9C126128AC50089B4C3 /* SimpleAudioDriverExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C5B7D9C226128AC50089B4C3 /* SimpleAudioDriver.cpp */,
+				C5B7D9C426128AC50089B4C3 /* SimpleAudioDriver.iig */,
+				C5B7D9D2261291F20089B4C3 /* SimpleAudioDevice.cpp */,
+				C5B7D9D0261291200089B4C3 /* SimpleAudioDevice.iig */,
+				C5D787AD26168D1E006047E5 /* SimpleAudioDriverUserClient.cpp */,
+				C5D787AB261667FC006047E5 /* SimpleAudioDriverUserClient.iig */,
+				C5D787AF26168F46006047E5 /* SimpleAudioDriverKeys.h */,
+				C5B7D9C626128AC50089B4C3 /* Info.plist */,
+				C5B7D9CE26128B150089B4C3 /* SimpleAudioDriver.entitlements */,
+			);
+			path = SimpleAudioDriverExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C5B7D9B726128AC50089B4C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C5B6559A2612A1E40087D3B4 /* SimpleAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5B655AC2612A1E40087D3B4 /* Build configuration list for PBXNativeTarget "SimpleAudio" */;
+			buildPhases = (
+				C5B655972612A1E40087D3B4 /* Sources */,
+				C5B655982612A1E40087D3B4 /* Frameworks */,
+				C5B655992612A1E40087D3B4 /* Resources */,
+				C5B655B02612A2140087D3B4 /* Embed Driver Extension */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5B655AF2612A20B0087D3B4 /* PBXTargetDependency */,
+			);
+			name = SimpleAudio;
+			productName = SimpleAudio;
+			productReference = C5B6559B2612A1E40087D3B4 /* SimpleAudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5B7D9BB26128AC50089B4C3 /* SimpleAudioDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5B7D9C926128AC50089B4C3 /* Build configuration list for PBXNativeTarget "SimpleAudioDriver" */;
+			buildPhases = (
+				C5B7D9B726128AC50089B4C3 /* Headers */,
+				C5B7D9B826128AC50089B4C3 /* Sources */,
+				C5B7D9B926128AC50089B4C3 /* Frameworks */,
+				C5B7D9BA26128AC50089B4C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleAudioDriver;
+			productName = SimpleAudioDriverExtension;
+			productReference = C5B7D9BC26128AC50089B4C3 /* com.example.apple-samplecode.SimpleAudioDriver.dext */;
+			productType = "com.apple.product-type.driver-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5B7D9B326128AC50089B4C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					C5B6559A2612A1E40087D3B4 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					C5B7D9BB26128AC50089B4C3 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = C5B7D9B626128AC50089B4C3 /* Build configuration list for PBXProject "SimpleAudioDriverExtension" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5B7D9B226128AC50089B4C3;
+			productRefGroup = C5B7D9BD26128AC50089B4C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5B7D9BB26128AC50089B4C3 /* SimpleAudioDriver */,
+				C5B6559A2612A1E40087D3B4 /* SimpleAudio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5B655992612A1E40087D3B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5B655A42612A1E40087D3B4 /* Assets.xcassets in Resources */,
+				C5B655A72612A1E40087D3B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5B7D9BA26128AC50089B4C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5B655972612A1E40087D3B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5B655A22612A1E40087D3B4 /* ViewController.mm in Sources */,
+				C5B655A92612A1E40087D3B4 /* main.mm in Sources */,
+				C5B6559F2612A1E40087D3B4 /* AppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5B7D9B826128AC50089B4C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5B7D9D1261291200089B4C3 /* SimpleAudioDevice.iig in Sources */,
+				C5B7D9C526128AC50089B4C3 /* SimpleAudioDriver.iig in Sources */,
+				C5D787AE26168E59006047E5 /* SimpleAudioDriverUserClient.cpp in Sources */,
+				C5D787AC261667FC006047E5 /* SimpleAudioDriverUserClient.iig in Sources */,
+				C5B7D9D3261291F20089B4C3 /* SimpleAudioDevice.cpp in Sources */,
+				C5B7D9C326128AC50089B4C3 /* SimpleAudioDriver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5B655AF2612A20B0087D3B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5B7D9BB26128AC50089B4C3 /* SimpleAudioDriver */;
+			targetProxy = C5B655AE2612A20B0087D3B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5B655A52612A1E40087D3B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5B655A62612A1E40087D3B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5B655AA2612A1E40087D3B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3D233737228B0525A55F63 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_ENTITLEMENTS = SimpleAudio/SimpleAudio.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SimpleAudio${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C5B655AB2612A1E40087D3B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3D233737228B0525A55F63 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_ENTITLEMENTS = SimpleAudio/SimpleAudio.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SimpleAudio${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C5B7D9C726128AC50089B4C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3D233737228B0525A55F63 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DRIVERKIT_DEPLOYMENT_TARGET = 21.0;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = driverkit;
+			};
+			name = Debug;
+		};
+		C5B7D9C826128AC50089B4C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3D233737228B0525A55F63 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DRIVERKIT_DEPLOYMENT_TARGET = 21.0;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = driverkit;
+			};
+			name = Release;
+		};
+		C5B7D9CA26128AC50089B4C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3D233737228B0525A55F63 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SimpleAudioDriverExtension/SimpleAudioDriver.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/DriverKit/System/Library/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleAudioDriverExtension/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SimpleAudioDriver${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = driverkit;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C5B7D9CB26128AC50089B4C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3D233737228B0525A55F63 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SimpleAudioDriverExtension/SimpleAudioDriver.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/System/DriverKit/System/Library/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleAudioDriverExtension/Info.plist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SimpleAudioDriver${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = driverkit;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5B655AC2612A1E40087D3B4 /* Build configuration list for PBXNativeTarget "SimpleAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5B655AA2612A1E40087D3B4 /* Debug */,
+				C5B655AB2612A1E40087D3B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5B7D9B626128AC50089B4C3 /* Build configuration list for PBXProject "SimpleAudioDriverExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5B7D9C726128AC50089B4C3 /* Debug */,
+				C5B7D9C826128AC50089B4C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5B7D9C926128AC50089B4C3 /* Build configuration list for PBXNativeTarget "SimpleAudioDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5B7D9CA26128AC50089B4C3 /* Debug */,
+				C5B7D9CB26128AC50089B4C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5B7D9B326128AC50089B4C3 /* Project object */;
+}

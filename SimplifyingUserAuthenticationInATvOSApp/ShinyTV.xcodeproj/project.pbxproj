@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B27DDDE2628BD6C009554E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B27DDDD2628BD6C009554E8 /* Assets.xcassets */; };
+		3B27DDE12628BD6C009554E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B27DDE02628BD6C009554E8 /* Preview Assets.xcassets */; };
+		3B27DDEE2628BEF1009554E8 /* ShinyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27DDE72628BEF0009554E8 /* ShinyApp.swift */; };
+		3B27DDEF2628BEF1009554E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27DDE82628BEF1009554E8 /* ContentView.swift */; };
+		3B27DDF02628BEF1009554E8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27DDE92628BEF1009554E8 /* SignInView.swift */; };
+		3B27DDF12628BEF1009554E8 /* SignInContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27DDEA2628BEF1009554E8 /* SignInContentView.swift */; };
+		3B27DDF22628BEF1009554E8 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27DDEB2628BEF1009554E8 /* AuthenticationController.swift */; };
+		3B27DDF32628BEF1009554E8 /* PasswordSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B27DDEC2628BEF1009554E8 /* PasswordSignInView.swift */; };
+		3B440CE8263796A900A180A5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B440CE7263796A900A180A5 /* HomeView.swift */; };
+		3B576A2626379D8400ABC47E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B576A2526379D8400ABC47E /* User.swift */; };
+		3B9688C62658143500C88D6F /* SignOutAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9688C52658143500C88D6F /* SignOutAction.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B27DDD62628BD6B009554E8 /* ShinyTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShinyTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B27DDDD2628BD6C009554E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B27DDE02628BD6C009554E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B27DDE72628BEF0009554E8 /* ShinyApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShinyApp.swift; sourceTree = "<group>"; };
+		3B27DDE82628BEF1009554E8 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B27DDE92628BEF1009554E8 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3B27DDEA2628BEF1009554E8 /* SignInContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInContentView.swift; sourceTree = "<group>"; };
+		3B27DDEB2628BEF1009554E8 /* AuthenticationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		3B27DDEC2628BEF1009554E8 /* PasswordSignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordSignInView.swift; sourceTree = "<group>"; };
+		3B27DDFA2628BF4E009554E8 /* ShinyTV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShinyTV.entitlements; sourceTree = "<group>"; };
+		3B440CE7263796A900A180A5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3B576A2526379D8400ABC47E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3B9688C52658143500C88D6F /* SignOutAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutAction.swift; sourceTree = "<group>"; };
+		4FB018B1C3CFD5944BB2AE89 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		7EB29BBD1760263C10A88445 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		828ABEF61EB34DE232D9EAA9 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B27DDD32628BD6B009554E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B27DDCD2628BD6B009554E8 = {
+			isa = PBXGroup;
+			children = (
+				7EB29BBD1760263C10A88445 /* README.md */,
+				3B27DDD82628BD6B009554E8 /* ShinyTV */,
+				3B27DDD72628BD6B009554E8 /* Products */,
+				A80A09A054AD69A46603ECA5 /* Configuration */,
+				F120E7DB08AD01D148FE4379 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		3B27DDD72628BD6B009554E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B27DDD62628BD6B009554E8 /* ShinyTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B27DDD82628BD6B009554E8 /* ShinyTV */ = {
+			isa = PBXGroup;
+			children = (
+				3B27DDF62628BF0E009554E8 /* App */,
+				3B38CE5E263DE6A200DD2D19 /* Models */,
+				3B27DDF72628BF16009554E8 /* Views */,
+				3B27DDF82628BF2A009554E8 /* Controllers */,
+				3B27DDF92628BF3B009554E8 /* Resources */,
+				3B27DDDF2628BD6C009554E8 /* Preview Content */,
+			);
+			path = ShinyTV;
+			sourceTree = "<group>";
+		};
+		3B27DDDF2628BD6C009554E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3B27DDE02628BD6C009554E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B27DDF62628BF0E009554E8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3B27DDE72628BEF0009554E8 /* ShinyApp.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		3B27DDF72628BF16009554E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B27DDE82628BEF1009554E8 /* ContentView.swift */,
+				3B440CE7263796A900A180A5 /* HomeView.swift */,
+				3B27DDEC2628BEF1009554E8 /* PasswordSignInView.swift */,
+				3B27DDEA2628BEF1009554E8 /* SignInContentView.swift */,
+				3B27DDE92628BEF1009554E8 /* SignInView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3B27DDF82628BF2A009554E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B27DDEB2628BEF1009554E8 /* AuthenticationController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3B27DDF92628BF3B009554E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B27DDDD2628BD6C009554E8 /* Assets.xcassets */,
+				3B27DDFA2628BF4E009554E8 /* ShinyTV.entitlements */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3B38CE5E263DE6A200DD2D19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B576A2526379D8400ABC47E /* User.swift */,
+				3B9688C52658143500C88D6F /* SignOutAction.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A80A09A054AD69A46603ECA5 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				4FB018B1C3CFD5944BB2AE89 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		F120E7DB08AD01D148FE4379 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				828ABEF61EB34DE232D9EAA9 /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B27DDD52628BD6B009554E8 /* ShinyTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B27DDE42628BD6C009554E8 /* Build configuration list for PBXNativeTarget "ShinyTV" */;
+			buildPhases = (
+				3B27DDD22628BD6B009554E8 /* Sources */,
+				3B27DDD32628BD6B009554E8 /* Frameworks */,
+				3B27DDD42628BD6B009554E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShinyTV;
+			productName = ShinyTV;
+			productReference = 3B27DDD62628BD6B009554E8 /* ShinyTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B27DDCE2628BD6B009554E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					3B27DDD52628BD6B009554E8 = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+				};
+			};
+			buildConfigurationList = 3B27DDD12628BD6B009554E8 /* Build configuration list for PBXProject "ShinyTV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B27DDCD2628BD6B009554E8;
+			productRefGroup = 3B27DDD72628BD6B009554E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B27DDD52628BD6B009554E8 /* ShinyTV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B27DDD42628BD6B009554E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B27DDE12628BD6C009554E8 /* Preview Assets.xcassets in Resources */,
+				3B27DDDE2628BD6C009554E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B27DDD22628BD6B009554E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B27DDF02628BEF1009554E8 /* SignInView.swift in Sources */,
+				3B27DDEF2628BEF1009554E8 /* ContentView.swift in Sources */,
+				3B27DDF12628BEF1009554E8 /* SignInContentView.swift in Sources */,
+				3B27DDF22628BEF1009554E8 /* AuthenticationController.swift in Sources */,
+				3B440CE8263796A900A180A5 /* HomeView.swift in Sources */,
+				3B27DDEE2628BEF1009554E8 /* ShinyApp.swift in Sources */,
+				3B27DDF32628BEF1009554E8 /* PasswordSignInView.swift in Sources */,
+				3B576A2626379D8400ABC47E /* User.swift in Sources */,
+				3B9688C62658143500C88D6F /* SignOutAction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3B27DDE22628BD6C009554E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FB018B1C3CFD5944BB2AE89 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		3B27DDE32628BD6C009554E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FB018B1C3CFD5944BB2AE89 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B27DDE52628BD6C009554E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FB018B1C3CFD5944BB2AE89 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ShinyTV/ShinyTV.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShinyTV/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Shiny TV";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ShinyTV${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		3B27DDE62628BD6C009554E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FB018B1C3CFD5944BB2AE89 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ShinyTV/ShinyTV.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShinyTV/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Shiny TV";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.ShinyTV${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B27DDD12628BD6B009554E8 /* Build configuration list for PBXProject "ShinyTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B27DDE22628BD6C009554E8 /* Debug */,
+				3B27DDE32628BD6C009554E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B27DDE42628BD6C009554E8 /* Build configuration list for PBXNativeTarget "ShinyTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B27DDE52628BD6C009554E8 /* Debug */,
+				3B27DDE62628BD6C009554E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B27DDCE2628BD6B009554E8 /* Project object */;
+}

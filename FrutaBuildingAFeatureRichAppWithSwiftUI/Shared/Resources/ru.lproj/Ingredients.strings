@@ -1,0 +1,70 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Ingredient localization file.
+*/
+
+/* Ingredient name */
+"Almond Milk" = "Миндальное молоко";
+
+/* Ingredient name */
+"Avocado" = "Авокадо";
+
+/* Ingredient name */
+"Banana" = "Банан";
+
+/* Ingredient name */
+"Blueberry" = "Голубика";
+
+/* Ingredient name */
+"Carrot" = "Морковь";
+
+/* Ingredient name */
+"Chocolate" = "Шоколад";
+
+/* Ingredient name */
+"Coconut" = "Кокос";
+
+/* Ingredients of a smoothie. For languages that have different words for "Ingredient" based on semantic context */
+"Ingredients.menu" = "Состав";
+
+/* Ingredients in a recipe. For languages that have different words for "Ingredient" based on semantic context */
+"Ingredients.recipe" = "Ингредиенты";
+
+/* Ingredient name */
+"Kiwi" = "Киви";
+
+/* Ingredient name */
+"Lemon" = "Лимон";
+
+/* Ingredient name */
+"Mango" = "Манго";
+
+/* Ingredient name */
+"Orange" = "Апельсин";
+
+/* Ingredient name */
+"Papaya" = "Папайя";
+
+/* Ingredient name */
+"Peanut Butter" = "Арахисовая паста";
+
+/* Ingredient name */
+"Pineapple" = "Ананас";
+
+/* Ingredient name */
+"Raspberry" = "Малина";
+
+/* Ingredient name */
+"Spinach" = "Шпинат";
+
+/* Ingredient name */
+"Strawberry" = "Клубника";
+
+/* Ingredient name */
+"Water" = "Вода";
+
+/* Ingredient name */
+"Watermelon" = "Арбуз";
+

@@ -1,0 +1,11 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Localized string resources.
+*/
+
+"Images Header Title" = "Images";
+"Other Header Title" = "Other";
+"Table Header Title" = "Table";
+"Form Header Title" = "Form";

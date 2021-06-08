@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "oceanside_villa.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "url" : "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8",
+        "poster_time": 0.0,
+        "title": "Bip Bop Streaming Example",
+        "description": "HTTP Live Streaming (HLS) sends audio and video over HTTP from an ordinary web server for playback on iOS-based devices—including iPhone, iPad, iPod touch, and Apple TV—and on desktop computers (macOS). Using the same protocol that powers the web, HLS deploys content using ordinary web servers and content delivery networks. HLS is designed for reliability and dynamically adapts to network conditions by optimizing playback for the available speed of wired and wireless connections."
+    },
+    {
+        "url" : "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10653/8/E739CC44-25A9-46B9-8E40-1788530C5785/master.m3u8",
+        "poster_time": 44.0,
+        "title": "Detect Body and Hand Pose with Vision",
+        "description": "Explore how the Vision framework can help your app detect body and hand poses in photos and video. With pose detection, your app can analyze the poses, movements, and gestures of people to offer new video editing possibilities, or to perform action classification when paired with an action classifier built in Create ML."
+    },
+    {
+        "url" : "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10228/7/9BBA826D-6117-4305-A587-78FEE220580B/master.m3u8",
+        "poster_time": 95.0,
+        "title": "What's new in Low-Latency HLS",
+        "description": "Apple has added Low-Latency extensions to the HTTP Live Streaming protocol that combine the quality and scalability of HLS with a stream delay of two seconds or less. Learn about the most recent developments in LL-HLS and how it allows you to make your video delivery competitive with broadcast and improve social media integration."
+    },
+    {
+        "url" : "https://devstreaming-cdn.apple.com/videos/wwdc/2020/10042/4/B38E5ED8-1188-4675-877A-272A47769177/master.m3u8",
+        "poster_time": 32.0,
+        "title": "Build SwiftUI apps for tvOS",
+        "description": "Add a new dimension to your tvOS app with SwiftUI. We'll show you how to build layouts powered by SwiftUI and customize your interface with custom buttons, provide more functionality in your app with a context menu, check if views are focused, and manage default focus."
+    },
+]

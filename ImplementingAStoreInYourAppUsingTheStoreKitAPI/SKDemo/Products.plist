@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>consumable.fuel.octane87</key>
+	<string>⛽️</string>
+	<key>consumable.fuel.octane89</key>
+	<string>⛽️</string>
+	<key>consumable.fule.octane91</key>
+	<string>⛽️</string>
+	<key>nonconsumable.motorcycle</key>
+	<string>🏍</string>
+	<key>nonconsumable.car</key>
+	<string>🚗</string>
+	<key>nonconsumable.utilityvehicle</key>
+	<string>🚙</string>
+	<key>nonconsumable.truck</key>
+	<string>🛻</string>
+	<key>nonconsumable.racecar</key>
+	<string>🏎</string>
+	<key>subscription.standard</key>
+	<string>🗺</string>
+	<key>subscription.premium</key>
+	<string>🗺</string>
+	<key>subscription.pro</key>
+	<string>🗺</string>
+</dict>
+</plist>

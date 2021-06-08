@@ -1,0 +1,24 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Configures the appearance of the extension's popover.
+*/
+
+body {
+    font-family: system-ui;
+    min-width: 220px;
+    text-align: center;
+    color: white;
+    background-color: rgb(46, 79, 154)
+}
+
+#title {
+    font-size: 30px;
+    margin-top: 7%;
+    font: -apple-system-title0;
+}
+
+#totalCount {
+    font: -apple-system-title3;
+}

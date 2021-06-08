@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F937125264C807B00D4F7E3 /* GardenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F937124264C807B00D4F7E3 /* GardenApp.swift */; };
+		1F937127264C807B00D4F7E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F937126264C807B00D4F7E3 /* ContentView.swift */; };
+		1F937129264C807C00D4F7E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F937128264C807C00D4F7E3 /* Assets.xcassets */; };
+		1F93712C264C807C00D4F7E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F93712B264C807C00D4F7E3 /* Preview Assets.xcassets */; };
+		1F937140264C858B00D4F7E3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F937142264C858B00D4F7E3 /* Localizable.strings */; };
+		1FA31E34264F22770067BFAE /* Plant+ImportImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA31E33264F22770067BFAE /* Plant+ImportImage.swift */; };
+		1FB65151264CE6BF006EE317 /* Plant+ItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB65150264CE6BF006EE317 /* Plant+ItemProvider.swift */; };
+		1FB65153264CE6FF006EE317 /* Store+ReferenceFileDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB65152264CE6FF006EE317 /* Store+ReferenceFileDocument.swift */; };
+		1FB65155264CE774006EE317 /* PlantGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB65154264CE774006EE317 /* PlantGallery.swift */; };
+		1FB65157264CE8A4006EE317 /* ImportExportCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB65156264CE8A4006EE317 /* ImportExportCommands.swift */; };
+		1FB6515B264CE901006EE317 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB6515A264CE901006EE317 /* SettingsView.swift */; };
+		532124D5264F678000513404 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 532124D3264F678000513404 /* InfoPlist.strings */; };
+		53A4D904264DCA9900447BCF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 53A4D902264DCA9800447BCF /* Credits.rtf */; };
+		A5BE4E50264C86EA005CE624 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE4E4F264C86EA005CE624 /* Plant.swift */; };
+		A5BE4E52264C8709005CE624 /* Garden.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE4E51264C8709005CE624 /* Garden.swift */; };
+		A5BE4E54264C8B9B005CE624 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE4E53264C8B9B005CE624 /* Store.swift */; };
+		A5BE4E56264C8E04005CE624 /* FocusedValues+Garden.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE4E55264C8E04005CE624 /* FocusedValues+Garden.swift */; };
+		A5BE4E58264C8FAF005CE624 /* PlantCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE4E57264C8FAF005CE624 /* PlantCommands.swift */; };
+		A5BE4E5A264C9065005CE624 /* AddPlantButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE4E59264C9065005CE624 /* AddPlantButton.swift */; };
+		A5BE4E5C264C90B7005CE624 /* WaterPlantsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE4E5B264C90B7005CE624 /* WaterPlantsButton.swift */; };
+		A5BE4E5E264C95B0005CE624 /* ExpansionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE4E5D264C95B0005CE624 /* ExpansionState.swift */; };
+		A5BE4E62264C96D6005CE624 /* DisplayModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE4E61264C96D6005CE624 /* DisplayModePicker.swift */; };
+		A5BE4E64264C9753005CE624 /* GardenDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE4E63264C9753005CE624 /* GardenDetail.swift */; };
+		A5BE4E66264C99C2005CE624 /* GardenHistoryOutline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE4E65264C99C2005CE624 /* GardenHistoryOutline.swift */; };
+		A5BE4E68264C9B54005CE624 /* SidebarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE4E67264C9B54005CE624 /* SidebarLabel.swift */; };
+		A5BE4E6A264C9BBE005CE624 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE4E69264C9BBE005CE624 /* Sidebar.swift */; };
+		A5BE4E6E264CA86E005CE624 /* database.json in Resources */ = {isa = PBXBuildFile; fileRef = A5BE4E6D264CA86E005CE624 /* database.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F937121264C807B00D4F7E3 /* Garden App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Garden App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F937124264C807B00D4F7E3 /* GardenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenApp.swift; sourceTree = "<group>"; };
+		1F937126264C807B00D4F7E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1F937128264C807C00D4F7E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F93712B264C807C00D4F7E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F937141264C858B00D4F7E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1FA31E33264F22770067BFAE /* Plant+ImportImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plant+ImportImage.swift"; sourceTree = "<group>"; };
+		1FB56301264EF4B300DD7882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1FB56302264EF6DE00DD7882 /* GardenApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GardenApp.entitlements; sourceTree = "<group>"; };
+		1FB65150264CE6BF006EE317 /* Plant+ItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plant+ItemProvider.swift"; sourceTree = "<group>"; };
+		1FB65152264CE6FF006EE317 /* Store+ReferenceFileDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+ReferenceFileDocument.swift"; sourceTree = "<group>"; };
+		1FB65154264CE774006EE317 /* PlantGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantGallery.swift; sourceTree = "<group>"; };
+		1FB65156264CE8A4006EE317 /* ImportExportCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportExportCommands.swift; sourceTree = "<group>"; };
+		1FB6515A264CE901006EE317 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4A001A32437FF244FC3C4411 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		532124D4264F678000513404 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53A4D903264DCA9800447BCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9DCDF12710A1F310914C9631 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = ../../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		A5BE4E4F264C86EA005CE624 /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		A5BE4E51264C8709005CE624 /* Garden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garden.swift; sourceTree = "<group>"; };
+		A5BE4E53264C8B9B005CE624 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		A5BE4E55264C8E04005CE624 /* FocusedValues+Garden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FocusedValues+Garden.swift"; sourceTree = "<group>"; };
+		A5BE4E57264C8FAF005CE624 /* PlantCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCommands.swift; sourceTree = "<group>"; };
+		A5BE4E59264C9065005CE624 /* AddPlantButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantButton.swift; sourceTree = "<group>"; };
+		A5BE4E5B264C90B7005CE624 /* WaterPlantsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterPlantsButton.swift; sourceTree = "<group>"; };
+		A5BE4E5D264C95B0005CE624 /* ExpansionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionState.swift; sourceTree = "<group>"; };
+		A5BE4E61264C96D6005CE624 /* DisplayModePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayModePicker.swift; sourceTree = "<group>"; };
+		A5BE4E63264C9753005CE624 /* GardenDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenDetail.swift; sourceTree = "<group>"; };
+		A5BE4E65264C99C2005CE624 /* GardenHistoryOutline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenHistoryOutline.swift; sourceTree = "<group>"; };
+		A5BE4E67264C9B54005CE624 /* SidebarLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarLabel.swift; sourceTree = "<group>"; };
+		A5BE4E69264C9BBE005CE624 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		A5BE4E6D264CA86E005CE624 /* database.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = database.json; sourceTree = "<group>"; };
+		AF8EDFA10AF10D87852DE43F /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F93711E264C807B00D4F7E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F937118264C807A00D4F7E3 = {
+			isa = PBXGroup;
+			children = (
+				4A001A32437FF244FC3C4411 /* README.md */,
+				1F937123264C807B00D4F7E3 /* GardenApp */,
+				1F937122264C807B00D4F7E3 /* Products */,
+				6B36F5F9286D0FA7CF7AA0F5 /* Configuration */,
+				F650B1FA95D0CDB1948178D2 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		1F937122264C807B00D4F7E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F937121264C807B00D4F7E3 /* Garden App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F937123264C807B00D4F7E3 /* GardenApp */ = {
+			isa = PBXGroup;
+			children = (
+				1F937124264C807B00D4F7E3 /* GardenApp.swift */,
+				1F937132264C80BF00D4F7E3 /* Model */,
+				1F937133264C80CA00D4F7E3 /* Views */,
+				1F937134264C80D000D4F7E3 /* Navigation */,
+				1F937136264C80DD00D4F7E3 /* Main Menu */,
+				1F937135264C80D500D4F7E3 /* Support */,
+				1F937137264C835500D4F7E3 /* Resources */,
+				1F937128264C807C00D4F7E3 /* Assets.xcassets */,
+				1FB56301264EF4B300DD7882 /* Info.plist */,
+				1FB56302264EF6DE00DD7882 /* GardenApp.entitlements */,
+				1F93712A264C807C00D4F7E3 /* Preview Content */,
+			);
+			path = GardenApp;
+			sourceTree = "<group>";
+		};
+		1F93712A264C807C00D4F7E3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1F93712B264C807C00D4F7E3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F937132264C80BF00D4F7E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5BE4E4F264C86EA005CE624 /* Plant.swift */,
+				A5BE4E51264C8709005CE624 /* Garden.swift */,
+				A5BE4E53264C8B9B005CE624 /* Store.swift */,
+				1FB65150264CE6BF006EE317 /* Plant+ItemProvider.swift */,
+				1FA31E33264F22770067BFAE /* Plant+ImportImage.swift */,
+				1FB65152264CE6FF006EE317 /* Store+ReferenceFileDocument.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F937133264C80CA00D4F7E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5BE4E59264C9065005CE624 /* AddPlantButton.swift */,
+				A5BE4E5B264C90B7005CE624 /* WaterPlantsButton.swift */,
+				A5BE4E61264C96D6005CE624 /* DisplayModePicker.swift */,
+				A5BE4E65264C99C2005CE624 /* GardenHistoryOutline.swift */,
+				A5BE4E67264C9B54005CE624 /* SidebarLabel.swift */,
+				1FB65154264CE774006EE317 /* PlantGallery.swift */,
+				1FB6515A264CE901006EE317 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F937134264C80D000D4F7E3 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				1F937126264C807B00D4F7E3 /* ContentView.swift */,
+				A5BE4E63264C9753005CE624 /* GardenDetail.swift */,
+				A5BE4E69264C9BBE005CE624 /* Sidebar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		1F937135264C80D500D4F7E3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A5BE4E55264C8E04005CE624 /* FocusedValues+Garden.swift */,
+				A5BE4E5D264C95B0005CE624 /* ExpansionState.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1F937136264C80DD00D4F7E3 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A5BE4E57264C8FAF005CE624 /* PlantCommands.swift */,
+				1FB65156264CE8A4006EE317 /* ImportExportCommands.swift */,
+			);
+			path = "Main Menu";
+			sourceTree = "<group>";
+		};
+		1F937137264C835500D4F7E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5BE4E6D264CA86E005CE624 /* database.json */,
+				1F937142264C858B00D4F7E3 /* Localizable.strings */,
+				532124D3264F678000513404 /* InfoPlist.strings */,
+				53A4D902264DCA9800447BCF /* Credits.rtf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6B36F5F9286D0FA7CF7AA0F5 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDF12710A1F310914C9631 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		F650B1FA95D0CDB1948178D2 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				AF8EDFA10AF10D87852DE43F /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = ../../LICENSE;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F937120264C807B00D4F7E3 /* Garden App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F93712F264C807C00D4F7E3 /* Build configuration list for PBXNativeTarget "Garden App" */;
+			buildPhases = (
+				1F93711D264C807B00D4F7E3 /* Sources */,
+				1F93711E264C807B00D4F7E3 /* Frameworks */,
+				1F93711F264C807B00D4F7E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Garden App";
+			productName = GardenPatch;
+			productReference = 1F937121264C807B00D4F7E3 /* Garden App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F937119264C807A00D4F7E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					1F937120264C807B00D4F7E3 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 1F93711C264C807A00D4F7E3 /* Build configuration list for PBXProject "GardenApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F937118264C807A00D4F7E3;
+			productRefGroup = 1F937122264C807B00D4F7E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F937120264C807B00D4F7E3 /* Garden App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F93711F264C807B00D4F7E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53A4D904264DCA9900447BCF /* Credits.rtf in Resources */,
+				532124D5264F678000513404 /* InfoPlist.strings in Resources */,
+				1F93712C264C807C00D4F7E3 /* Preview Assets.xcassets in Resources */,
+				1F937140264C858B00D4F7E3 /* Localizable.strings in Resources */,
+				A5BE4E6E264CA86E005CE624 /* database.json in Resources */,
+				1F937129264C807C00D4F7E3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F93711D264C807B00D4F7E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB65153264CE6FF006EE317 /* Store+ReferenceFileDocument.swift in Sources */,
+				A5BE4E54264C8B9B005CE624 /* Store.swift in Sources */,
+				1FB65157264CE8A4006EE317 /* ImportExportCommands.swift in Sources */,
+				A5BE4E52264C8709005CE624 /* Garden.swift in Sources */,
+				A5BE4E6A264C9BBE005CE624 /* Sidebar.swift in Sources */,
+				1FB65155264CE774006EE317 /* PlantGallery.swift in Sources */,
+				A5BE4E50264C86EA005CE624 /* Plant.swift in Sources */,
+				A5BE4E5A264C9065005CE624 /* AddPlantButton.swift in Sources */,
+				1FA31E34264F22770067BFAE /* Plant+ImportImage.swift in Sources */,
+				A5BE4E58264C8FAF005CE624 /* PlantCommands.swift in Sources */,
+				A5BE4E56264C8E04005CE624 /* FocusedValues+Garden.swift in Sources */,
+				1F937127264C807B00D4F7E3 /* ContentView.swift in Sources */,
+				A5BE4E5E264C95B0005CE624 /* ExpansionState.swift in Sources */,
+				A5BE4E5C264C90B7005CE624 /* WaterPlantsButton.swift in Sources */,
+				A5BE4E66264C99C2005CE624 /* GardenHistoryOutline.swift in Sources */,
+				A5BE4E64264C9753005CE624 /* GardenDetail.swift in Sources */,
+				1FB65151264CE6BF006EE317 /* Plant+ItemProvider.swift in Sources */,
+				1F937125264C807B00D4F7E3 /* GardenApp.swift in Sources */,
+				A5BE4E62264C96D6005CE624 /* DisplayModePicker.swift in Sources */,
+				A5BE4E68264C9B54005CE624 /* SidebarLabel.swift in Sources */,
+				1FB6515B264CE901006EE317 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F937142264C858B00D4F7E3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F937141264C858B00D4F7E3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		532124D3264F678000513404 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				532124D4264F678000513404 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		53A4D902264DCA9800447BCF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53A4D903264DCA9800447BCF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F93712D264C807C00D4F7E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DCDF12710A1F310914C9631 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F93712E264C807C00D4F7E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DCDF12710A1F310914C9631 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1F937130264C807C00D4F7E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DCDF12710A1F310914C9631 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GardenApp/GardenApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GardenApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GardenApp/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = "Garden App";
+				INFOPLIST_KEY_CFBundleName = "Garden App";
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.GardenApp${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1F937131264C807C00D4F7E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DCDF12710A1F310914C9631 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GardenApp/GardenApp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GardenApp/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GardenApp/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = "Garden App";
+				INFOPLIST_KEY_CFBundleName = "Garden App";
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.GardenApp${SAMPLE_CODE_DISAMBIGUATOR}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F93711C264C807A00D4F7E3 /* Build configuration list for PBXProject "GardenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F93712D264C807C00D4F7E3 /* Debug */,
+				1F93712E264C807C00D4F7E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F93712F264C807C00D4F7E3 /* Build configuration list for PBXNativeTarget "Garden App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F937130264C807C00D4F7E3 /* Debug */,
+				1F937131264C807C00D4F7E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F937119264C807A00D4F7E3 /* Project object */;
+}

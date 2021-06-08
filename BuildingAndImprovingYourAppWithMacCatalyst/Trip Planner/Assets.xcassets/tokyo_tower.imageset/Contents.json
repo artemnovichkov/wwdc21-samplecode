@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tokyo_tower.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,37 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Configures the appearance of the extension's new tab override page.
+*/
+
+body {
+    color: white;
+    background-color: rgb(46, 79, 154);
+}
+
+#content {
+    width: 850;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%
+}
+
+#header {
+    font: -apple-system-title;
+    font-size: 420%;
+}
+
+#dailyFact {
+    font-size: 200%;
+    margin-top: 35;
+}
+
+#totalCount {
+    margin-top: 40%;
+}
+
+* {
+    font-family: -apple-system;
+}

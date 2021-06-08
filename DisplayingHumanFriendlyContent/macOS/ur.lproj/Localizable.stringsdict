@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>कम से कम %lld दशमलव अंक</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@digitsCount@</string>
+		<key>digitsCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>کم از کم %lld اعشاریہ ہندسہ</string>
+			<key>other</key>
+			<string>کم از کم %lld اعشاریہ ہندسے</string>
+		</dict>
+	</dict>
+	<key>कम से कम %lld पूर्ण अंक</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@digitsCount@</string>
+		<key>digitsCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>کم سے کم %lld عددی ہندسہ</string>
+			<key>other</key>
+			<string>کم سے کم %lld عددی ہندسے</string>
+		</dict>
+	</dict>
+	<key>ज़्यादा से ज़्यादा %lld दशमलव अंक</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@digitsCount@</string>
+		<key>digitsCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>زیادہ سے زیادہ %lld جز ہندسہ</string>
+			<key>other</key>
+			<string>زیادہ سے زیادہ %lld جزوی ہندسے</string>
+		</dict>
+	</dict>
+	<key>ज़्यादा से ज़्यादा %lld पूर्ण अंक</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@digitsCount@</string>
+		<key>digitsCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>one</key>
+			<string>زیادہ سے زیادہ %lld عددی ہندسہ</string>
+			<key>other</key>
+			<string>زیادہ سے زیادہ %lld عددی ہندسے</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

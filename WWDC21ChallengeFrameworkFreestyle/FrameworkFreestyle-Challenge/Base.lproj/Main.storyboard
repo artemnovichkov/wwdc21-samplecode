@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19126" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19114"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="FrameworkFreestyle_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hb6-Tr-at4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPP-GL-Nh2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHH-H2-N6k">
+                                <rect key="frame" x="169.5" y="787" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="lPs-l5-X5A"/>
+                                    <constraint firstAttribute="width" constant="75" id="lRb-qi-ovQ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="white_button"/>
+                                </state>
+                                <state key="selected">
+                                    <imageReference key="image" image="red_button"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleRecordingWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1d1-FA-8aw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G3x-3e-hIM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SPP-GL-Nh2" firstAttribute="leading" secondItem="G3x-3e-hIM" secondAttribute="leading" id="NCR-yu-60V"/>
+                            <constraint firstItem="SPP-GL-Nh2" firstAttribute="centerX" secondItem="hb6-Tr-at4" secondAttribute="centerX" id="PfJ-gO-LzF"/>
+                            <constraint firstItem="SPP-GL-Nh2" firstAttribute="centerY" secondItem="hb6-Tr-at4" secondAttribute="centerY" id="PoF-2o-QYD"/>
+                            <constraint firstItem="OHH-H2-N6k" firstAttribute="top" secondItem="SPP-GL-Nh2" secondAttribute="bottom" constant="-109" id="fXI-Ph-79S"/>
+                            <constraint firstItem="OHH-H2-N6k" firstAttribute="centerX" secondItem="SPP-GL-Nh2" secondAttribute="centerX" id="kiM-kT-BR0"/>
+                            <constraint firstItem="SPP-GL-Nh2" firstAttribute="top" secondItem="hb6-Tr-at4" secondAttribute="topMargin" constant="-44" id="qlA-so-O0c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="SPP-GL-Nh2" id="1ue-Lg-Lbs"/>
+                        <outlet property="button" destination="OHH-H2-N6k" id="ut0-Ph-yT9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="red_button" width="368" height="368"/>
+        <image name="white_button" width="368" height="368"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

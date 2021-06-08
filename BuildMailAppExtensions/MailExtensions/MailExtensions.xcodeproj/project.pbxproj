@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F89183526559DBD0073A550 /* MockEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89183426559DBD0073A550 /* MockEncoder.swift */; };
+		1FED3CFF26544E770046520B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3CFE26544E770046520B /* AppDelegate.swift */; };
+		1FED3D0126544E770046520B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3D0026544E770046520B /* ViewController.swift */; };
+		1FED3D0326544E780046520B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FED3D0226544E780046520B /* Assets.xcassets */; };
+		1FED3D0626544E780046520B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FED3D0426544E780046520B /* Main.storyboard */; };
+		1FED3D1326544E9E0046520B /* MailExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3D1226544E9E0046520B /* MailExtension.swift */; };
+		1FED3D1526544E9E0046520B /* ContentBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3D1426544E9E0046520B /* ContentBlocker.swift */; };
+		1FED3D1726544E9E0046520B /* ContentBlockerRules.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FED3D1626544E9E0046520B /* ContentBlockerRules.json */; };
+		1FED3D1926544E9E0046520B /* MessageActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3D1826544E9E0046520B /* MessageActionHandler.swift */; };
+		1FED3D1B26544E9E0046520B /* ComposeSessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3D1A26544E9E0046520B /* ComposeSessionHandler.swift */; };
+		1FED3D1D26544E9E0046520B /* ComposeSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3D1C26544E9E0046520B /* ComposeSessionViewController.swift */; };
+		1FED3D1F26544E9E0046520B /* ComposeSessionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FED3D1E26544E9E0046520B /* ComposeSessionViewController.xib */; };
+		1FED3D2126544E9E0046520B /* MessageSecurityHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3D2026544E9E0046520B /* MessageSecurityHandler.swift */; };
+		1FED3D2326544E9E0046520B /* ExampleSigningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED3D2226544E9E0046520B /* ExampleSigningViewController.swift */; };
+		1FED3D2526544E9E0046520B /* ExampleSigningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FED3D2426544E9E0046520B /* ExampleSigningViewController.xib */; };
+		1FED3D2926544E9E0046520B /* SampleMailExtensions.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1FED3D1026544E9E0046520B /* SampleMailExtensions.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		69250BAC265CBAAA004F5C6A /* SpecialProjectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69250BAB265CBAAA004F5C6A /* SpecialProjectHandler.swift */; };
+		69250C04265D99BF004F5C6A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69250C03265D99BE004F5C6A /* Media.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FED3D2726544E9E0046520B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FED3CF326544E770046520B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FED3D0F26544E9E0046520B;
+			remoteInfo = SampleMailExtensions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1FED3D2D26544E9E0046520B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1FED3D2926544E9E0046520B /* SampleMailExtensions.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F89183426559DBD0073A550 /* MockEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEncoder.swift; sourceTree = "<group>"; };
+		1FED3CFB26544E770046520B /* MailExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FED3CFE26544E770046520B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FED3D0026544E770046520B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FED3D0226544E780046520B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FED3D0526544E780046520B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FED3D1026544E9E0046520B /* SampleMailExtensions.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SampleMailExtensions.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FED3D1226544E9E0046520B /* MailExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailExtension.swift; sourceTree = "<group>"; };
+		1FED3D1426544E9E0046520B /* ContentBlocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlocker.swift; sourceTree = "<group>"; };
+		1FED3D1626544E9E0046520B /* ContentBlockerRules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ContentBlockerRules.json; sourceTree = "<group>"; };
+		1FED3D1826544E9E0046520B /* MessageActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageActionHandler.swift; sourceTree = "<group>"; };
+		1FED3D1A26544E9E0046520B /* ComposeSessionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeSessionHandler.swift; sourceTree = "<group>"; };
+		1FED3D1C26544E9E0046520B /* ComposeSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeSessionViewController.swift; sourceTree = "<group>"; };
+		1FED3D1E26544E9E0046520B /* ComposeSessionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComposeSessionViewController.xib; sourceTree = "<group>"; };
+		1FED3D2026544E9E0046520B /* MessageSecurityHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSecurityHandler.swift; sourceTree = "<group>"; };
+		1FED3D2226544E9E0046520B /* ExampleSigningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSigningViewController.swift; sourceTree = "<group>"; };
+		1FED3D2426544E9E0046520B /* ExampleSigningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleSigningViewController.xib; sourceTree = "<group>"; };
+		1FED3D2626544E9E0046520B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FED3D2E26544EC70046520B /* SampleMailExtensions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleMailExtensions.entitlements; sourceTree = "<group>"; };
+		1FED3D2F26544ECB0046520B /* MailExtensions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MailExtensions.entitlements; sourceTree = "<group>"; };
+		58151D5D603D4DC4F31E5732 /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		62964CBCD5997DB579BA96CD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		69250BAB265CBAAA004F5C6A /* SpecialProjectHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialProjectHandler.swift; sourceTree = "<group>"; };
+		69250C03265D99BE004F5C6A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		FD5AF7C713EC5F05B816E6BC /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FED3CF826544E770046520B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FED3D0D26544E9E0046520B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FED3CF226544E770046520B = {
+			isa = PBXGroup;
+			children = (
+				62964CBCD5997DB579BA96CD /* README.md */,
+				1FED3CFD26544E770046520B /* MailExtensions */,
+				1FED3D1126544E9E0046520B /* SampleMailExtensions */,
+				1FED3CFC26544E770046520B /* Products */,
+				50A77B7425260B25AFE04107 /* Configuration */,
+				DF4FF907BED89FD52D39D018 /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		1FED3CFC26544E770046520B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FED3CFB26544E770046520B /* MailExtensions.app */,
+				1FED3D1026544E9E0046520B /* SampleMailExtensions.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FED3CFD26544E770046520B /* MailExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				1FED3D2F26544ECB0046520B /* MailExtensions.entitlements */,
+				1FED3CFE26544E770046520B /* AppDelegate.swift */,
+				1FED3D0026544E770046520B /* ViewController.swift */,
+				1FED3D0226544E780046520B /* Assets.xcassets */,
+				1FED3D0426544E780046520B /* Main.storyboard */,
+			);
+			path = MailExtensions;
+			sourceTree = "<group>";
+		};
+		1FED3D1126544E9E0046520B /* SampleMailExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				1FED3D2E26544EC70046520B /* SampleMailExtensions.entitlements */,
+				1FED3D1226544E9E0046520B /* MailExtension.swift */,
+				69250BAB265CBAAA004F5C6A /* SpecialProjectHandler.swift */,
+				6999892F265F5102004A1332 /* Content Blocker */,
+				69998932265F515F004A1332 /* Message Actions */,
+				69998930265F5123004A1332 /* Compose Session */,
+				69998931265F513B004A1332 /* Message Security */,
+				1FED3D2626544E9E0046520B /* Info.plist */,
+				69250C03265D99BE004F5C6A /* Media.xcassets */,
+			);
+			path = SampleMailExtensions;
+			sourceTree = "<group>";
+		};
+		50A77B7425260B25AFE04107 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				58151D5D603D4DC4F31E5732 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		6999892F265F5102004A1332 /* Content Blocker */ = {
+			isa = PBXGroup;
+			children = (
+				1FED3D1426544E9E0046520B /* ContentBlocker.swift */,
+				1FED3D1626544E9E0046520B /* ContentBlockerRules.json */,
+			);
+			path = "Content Blocker";
+			sourceTree = "<group>";
+		};
+		69998930265F5123004A1332 /* Compose Session */ = {
+			isa = PBXGroup;
+			children = (
+				1FED3D1A26544E9E0046520B /* ComposeSessionHandler.swift */,
+				1FED3D1C26544E9E0046520B /* ComposeSessionViewController.swift */,
+				1FED3D1E26544E9E0046520B /* ComposeSessionViewController.xib */,
+			);
+			path = "Compose Session";
+			sourceTree = "<group>";
+		};
+		69998931265F513B004A1332 /* Message Security */ = {
+			isa = PBXGroup;
+			children = (
+				1FED3D2026544E9E0046520B /* MessageSecurityHandler.swift */,
+				1FED3D2226544E9E0046520B /* ExampleSigningViewController.swift */,
+				1FED3D2426544E9E0046520B /* ExampleSigningViewController.xib */,
+				1F89183426559DBD0073A550 /* MockEncoder.swift */,
+			);
+			path = "Message Security";
+			sourceTree = "<group>";
+		};
+		69998932265F515F004A1332 /* Message Actions */ = {
+			isa = PBXGroup;
+			children = (
+				1FED3D1826544E9E0046520B /* MessageActionHandler.swift */,
+			);
+			path = "Message Actions";
+			sourceTree = "<group>";
+		};
+		DF4FF907BED89FD52D39D018 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				FD5AF7C713EC5F05B816E6BC /* LICENSE.txt */,
+			);
+			name = LICENSE;
+			path = ../LICENSE;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FED3CFA26544E770046520B /* MailExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FED3D0926544E780046520B /* Build configuration list for PBXNativeTarget "MailExtensions" */;
+			buildPhases = (
+				1FED3CF726544E770046520B /* Sources */,
+				1FED3CF826544E770046520B /* Frameworks */,
+				1FED3CF926544E770046520B /* Resources */,
+				1FED3D2D26544E9E0046520B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FED3D2826544E9E0046520B /* PBXTargetDependency */,
+			);
+			name = MailExtensions;
+			productName = MailExtensions;
+			productReference = 1FED3CFB26544E770046520B /* MailExtensions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FED3D0F26544E9E0046520B /* SampleMailExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FED3D2A26544E9E0046520B /* Build configuration list for PBXNativeTarget "SampleMailExtensions" */;
+			buildPhases = (
+				1FED3D0C26544E9E0046520B /* Sources */,
+				1FED3D0D26544E9E0046520B /* Frameworks */,
+				1FED3D0E26544E9E0046520B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleMailExtensions;
+			productName = SampleMailExtensions;
+			productReference = 1FED3D1026544E9E0046520B /* SampleMailExtensions.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FED3CF326544E770046520B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					1FED3CFA26544E770046520B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					1FED3D0F26544E9E0046520B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 1FED3CF626544E770046520B /* Build configuration list for PBXProject "MailExtensions" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FED3CF226544E770046520B;
+			productRefGroup = 1FED3CFC26544E770046520B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FED3CFA26544E770046520B /* MailExtensions */,
+				1FED3D0F26544E9E0046520B /* SampleMailExtensions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FED3CF926544E770046520B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FED3D0326544E780046520B /* Assets.xcassets in Resources */,
+				1FED3D0626544E780046520B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FED3D0E26544E9E0046520B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FED3D1F26544E9E0046520B /* ComposeSessionViewController.xib in Resources */,
+				1FED3D1726544E9E0046520B /* ContentBlockerRules.json in Resources */,
+				69250C04265D99BF004F5C6A /* Media.xcassets in Resources */,
+				1FED3D2526544E9E0046520B /* ExampleSigningViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FED3CF726544E770046520B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FED3D0126544E770046520B /* ViewController.swift in Sources */,
+				1FED3CFF26544E770046520B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FED3D0C26544E9E0046520B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FED3D1526544E9E0046520B /* ContentBlocker.swift in Sources */,
+				1FED3D1926544E9E0046520B /* MessageActionHandler.swift in Sources */,
+				1FED3D2126544E9E0046520B /* MessageSecurityHandler.swift in Sources */,
+				1FED3D1D26544E9E0046520B /* ComposeSessionViewController.swift in Sources */,
+				1FED3D1B26544E9E0046520B /* ComposeSessionHandler.swift in Sources */,
+				1FED3D2326544E9E0046520B /* ExampleSigningViewController.swift in Sources */,
+				1F89183526559DBD0073A550 /* MockEncoder.swift in Sources */,
+				69250BAC265CBAAA004F5C6A /* SpecialProjectHandler.swift in Sources */,
+				1FED3D1326544E9E0046520B /* MailExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FED3D2826544E9E0046520B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FED3D0F26544E9E0046520B /* SampleMailExtensions */;
+			targetProxy = 1FED3D2726544E9E0046520B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FED3D0426544E780046520B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FED3D0526544E780046520B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FED3D0726544E780046520B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58151D5D603D4DC4F31E5732 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FED3D0826544E780046520B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58151D5D603D4DC4F31E5732 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1FED3D0A26544E780046520B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58151D5D603D4DC4F31E5732 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MailExtensions/MailExtensions.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleExecutable = MailExtensions;
+				INFOPLIST_KEY_CFBundleName = MailExtensions;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.com${SAMPLE_CODE_DISAMBIGUATOR}.MailExtensions";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1FED3D0B26544E780046520B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58151D5D603D4DC4F31E5732 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MailExtensions/MailExtensions.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleExecutable = MailExtensions;
+				INFOPLIST_KEY_CFBundleName = MailExtensions;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.com${SAMPLE_CODE_DISAMBIGUATOR}.MailExtensions";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1FED3D2B26544E9E0046520B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58151D5D603D4DC4F31E5732 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SampleMailExtensions/SampleMailExtensions.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleMailExtensions/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SampleMailExtensions;
+				INFOPLIST_KEY_CFBundleExecutable = SampleMailExtensions;
+				INFOPLIST_KEY_CFBundleName = SampleMailExtensions;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.com${SAMPLE_CODE_DISAMBIGUATOR}.MailExtensions.SampleMailExtensions";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1FED3D2C26544E9E0046520B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58151D5D603D4DC4F31E5732 /* SampleCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SampleMailExtensions/SampleMailExtensions.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SampleMailExtensions/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SampleMailExtensions;
+				INFOPLIST_KEY_CFBundleExecutable = SampleMailExtensions;
+				INFOPLIST_KEY_CFBundleName = SampleMailExtensions;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.com${SAMPLE_CODE_DISAMBIGUATOR}.MailExtensions.SampleMailExtensions";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FED3CF626544E770046520B /* Build configuration list for PBXProject "MailExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FED3D0726544E780046520B /* Debug */,
+				1FED3D0826544E780046520B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FED3D0926544E780046520B /* Build configuration list for PBXNativeTarget "MailExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FED3D0A26544E780046520B /* Debug */,
+				1FED3D0B26544E780046520B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FED3D2A26544E9E0046520B /* Build configuration list for PBXNativeTarget "SampleMailExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FED3D2B26544E9E0046520B /* Debug */,
+				1FED3D2C26544E9E0046520B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FED3CF326544E770046520B /* Project object */;
+}

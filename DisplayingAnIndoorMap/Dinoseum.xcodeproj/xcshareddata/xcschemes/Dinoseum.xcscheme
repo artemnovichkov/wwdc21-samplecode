@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Scheme version="1.3" LastUpgradeVersion="1100">
+	<AnalyzeAction buildConfiguration="Debug" />
+	<ArchiveAction buildConfiguration="Release" revealArchiveInOrganizer="YES" />
+	<TestAction buildConfiguration="Debug" selectedLauncherIdentifier="Xcode.DebuggerFoundation.Launcher.LLDB" shouldUseLaunchSchemeArgsEnv="YES" codeCoverageEnabled="NO" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB">
+		<Testables />
+		<MacroExpansion>
+			<BuildableReference BlueprintIdentifier="7E61CEFB215E1FF500EAD172" BuildableIdentifier="primary" BuildableName="Dinoseum.app" BlueprintName="Dinoseum" ReferencedContainer="container:Dinoseum.xcodeproj" />
+		</MacroExpansion>
+	</TestAction>
+	<ProfileAction savedToolIdentifier="" debugDocumentVersioning="YES" shouldUseLaunchSchemeArgsEnv="YES" useCustomWorkingDirectory="NO" buildConfiguration="Release">
+		<BuildableProductRunnable runnableDebuggingMode="0">
+			<BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="7E61CEFB215E1FF500EAD172" BuildableName="Dinoseum.app" BlueprintName="Dinoseum" ReferencedContainer="container:Dinoseum.xcodeproj" />
+		</BuildableProductRunnable>
+	</ProfileAction>
+	<BuildAction parallelizeBuildables="YES" buildImplicitDependencies="YES">
+		<BuildActionEntries>
+			<BuildActionEntry buildForTesting="YES" buildForArchiving="YES" buildForAnalyzing="YES" buildForRunning="YES" buildForProfiling="YES">
+				<BuildableReference BuildableName="Dinoseum.app" BlueprintName="Dinoseum" BuildableIdentifier="primary" BlueprintIdentifier="7E61CEFB215E1FF500EAD172" ReferencedContainer="container:Dinoseum.xcodeproj" />
+			</BuildActionEntry>
+		</BuildActionEntries>
+	</BuildAction>
+	<LaunchAction debugServiceExtension="internal" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" allowLocationSimulation="YES" ignoresPersistentStateOnLaunch="NO" selectedLauncherIdentifier="Xcode.DebuggerFoundation.Launcher.LLDB" useCustomWorkingDirectory="NO" launchStyle="0" buildConfiguration="Debug" debugDocumentVersioning="YES">
+		<BuildableProductRunnable runnableDebuggingMode="0">
+			<BuildableReference BlueprintIdentifier="7E61CEFB215E1FF500EAD172" BlueprintName="Dinoseum" BuildableIdentifier="primary" BuildableName="Dinoseum.app" ReferencedContainer="container:Dinoseum.xcodeproj" />
+		</BuildableProductRunnable>
+	</LaunchAction>
+</Scheme>

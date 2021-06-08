@@ -1,0 +1,218 @@
+{
+  "identifier" : "E8BE4D16",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "F6BE4B97",
+      "localizations" : [
+        {
+          "description" : "Solo riders only",
+          "displayName" : "Motorcycle",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "nonconsumable.motorcycle",
+      "referenceName" : "Motorcycle",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "36835F3D",
+      "localizations" : [
+        {
+          "description" : "A standard 5 seater",
+          "displayName" : "Car",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "nonconsumable.car",
+      "referenceName" : "Car",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "8E64F7F7",
+      "localizations" : [
+        {
+          "description" : "Off-road vehicle",
+          "displayName" : "Sport Utility Vehicle",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "nonconsumable.utilityvehicle",
+      "referenceName" : "Sport Utility Vehicle",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "3.99",
+      "familyShareable" : false,
+      "internalID" : "86C5212C",
+      "localizations" : [
+        {
+          "description" : "Need to carry heavy loads?",
+          "displayName" : "Truck",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "nonconsumable.truck",
+      "referenceName" : "Truck",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "C63E7D42",
+      "localizations" : [
+        {
+          "description" : "It's all about speed",
+          "displayName" : "Racecar",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "nonconsumable.racecar",
+      "referenceName" : "Racecar",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "0B8E0C7E",
+      "localizations" : [
+        {
+          "description" : "87",
+          "displayName" : "Fuel87",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "consumable.fuel.octane87",
+      "referenceName" : "Fuel87",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "674FCF88",
+      "localizations" : [
+        {
+          "description" : "89",
+          "displayName" : "Fuel89",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "consumable.fuel.octane89",
+      "referenceName" : "Fuel89",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "46DA68EF",
+      "localizations" : [
+        {
+          "description" : "91",
+          "displayName" : "Fuel91",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "consumable.fuel.octane91",
+      "referenceName" : "Fuel91",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "3F19ED53",
+      "localizations" : [
+
+      ],
+      "name" : "Software Services",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "2.99",
+          "familyShareable" : false,
+          "groupNumber" : 3,
+          "internalID" : "0E3E0DC9",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Navigation assistance",
+              "displayName" : "Standard",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "subscription.standard",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Standard",
+          "subscriptionGroupID" : "3F19ED53",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "3.99",
+          "familyShareable" : false,
+          "groupNumber" : 2,
+          "internalID" : "5449D98C",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Navigation assistance and dash cam",
+              "displayName" : "Premium",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "subscription.premium",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Premium",
+          "subscriptionGroupID" : "3F19ED53",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "E0316BF9",
+          "introductoryOffer" : {
+            "displayPrice" : "1.99",
+            "internalID" : "D928FA2A",
+            "paymentMode" : "payUpFront",
+            "subscriptionPeriod" : "P2M"
+          },
+          "localizations" : [
+            {
+              "description" : "Navigation assistance, dash cam, & autopilot",
+              "displayName" : "Pro",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "subscription.pro",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Pro",
+          "subscriptionGroupID" : "3F19ED53",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}

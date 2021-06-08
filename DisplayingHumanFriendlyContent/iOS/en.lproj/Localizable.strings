@@ -1,0 +1,76 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Localizable.strings (English)
+*/
+
+"अंतराल" = "Interval";
+
+"अवधि" = "Duration";
+
+"काल" = "Era";
+
+"क्रमसूचक" = "Ordinal";
+
+"टेंप्लेट" = "Template";
+
+"घंटा" = "Hour";
+
+"तारीख़" = "Dates";
+
+"तारीख़ प्रारूप" = "Date Format";
+
+"तारीख़ व समय" = "Dates & Times";
+
+"तुलनात्‍मक" = "Relative";
+
+"दिन" = "Day";
+
+"दी गई इकाई" = "Provided Unit";
+
+"नाम" = "Names";
+
+"प्रतिशत" = "Percentage";
+
+"प्राकृतिक पैमाना" = "Natural Scale";
+
+"प्रारूप" = "Formatters";
+
+"पूर्ण व दशमलव अंक" = "Integer & Fractional Digits";
+
+"बग़ैर इकाई (सिर्फ़ तापमान पर लागू)" = "Temperature Without Unit";
+
+"माप" = "Measurements";
+
+"माह" = "Month";
+
+"मिनट" = "Minute";
+
+"मुद्रा" = "Currency";
+
+"मुद्रा – ISO कोड" = "Currency – ISO Code";
+
+"मुद्रा – शाब्दिक" = "Currency – Spell Out";
+
+"मुद्रा – हिसाब किताब" = "Currency – Accounting";
+
+"राउंडिंग मोड" = "Rounding Mode";
+
+"वार" = "Day of Week";
+
+"वैज्ञानिक" = "Scientific";
+
+"शाब्दिक" = "Spell Out";
+
+"संख्या" = "Numbers";
+
+"समय" = "Time";
+
+"साल" = "Year";
+
+"सांख्यिक" = "Decimal";
+
+"स्वाभाविक" = "Natural";
+
+"सेकंड" = "Second";

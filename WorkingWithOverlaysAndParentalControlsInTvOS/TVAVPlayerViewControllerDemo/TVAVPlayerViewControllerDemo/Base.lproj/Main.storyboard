@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14810.3" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="TVUIKit controls" minToolsVersion="10.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="TVAVPlayerViewControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tvPosterView contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" image="BipBop-Thumb" title="Bib Bop" subtitle="Theatrical Version" translatesAutoresizingMaskIntoConstraints="NO" id="1Fx-od-vnW">
+                                <rect key="frame" x="290" y="240" width="578" height="436"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="actionWithPosterView:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="cMg-AO-CiT"/>
+                                </connections>
+                            </tvPosterView>
+                            <tvPosterView contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" image="BibBop-PG13" title="Bip Bop" subtitle="Director's Cut" translatesAutoresizingMaskIntoConstraints="NO" id="fL5-fm-FvP">
+                                <rect key="frame" x="1050" y="240" width="578" height="436"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="actionWithPosterView:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="6Yx-Mq-L7W"/>
+                                </connections>
+                            </tvPosterView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstPosterView" destination="1Fx-od-vnW" id="UuE-LC-ylJ"/>
+                        <outlet property="secondPosterView" destination="fL5-fm-FvP" id="4bv-JR-uJd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BibBop-PG13" width="2544" height="1428"/>
+        <image name="BipBop-Thumb" width="2544" height="1428"/>
+    </resources>
+</document>

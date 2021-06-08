@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HeaderController-->
+        <scene sceneID="bEC-Cp-Z2y">
+            <objects>
+                <viewController storyboardIdentifier="HeaderViewController" id="AiD-YI-ZS4" userLabel="HeaderController" customClass="HeaderViewController" customModule="InfoBarStackView" sceneMemberID="viewController">
+                    <view key="view" id="ny1-P8-8gN" customClass="HeaderView" customModule="InfoBarStackView" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gjX-XY-wws">
+                                <rect key="frame" x="9" y="10" width="394" height="20"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" placeholderString="Heading Title" id="hfZ-9w-jsP">
+                                    <font key="font" size="13" name="HelveticaNeue-Bold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button hidden="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5UU-FY-1bt">
+                                <rect key="frame" x="406" y="2" width="27" height="26"/>
+                                <buttonCell key="cell" type="disclosure" bezelStyle="roundedDisclosure" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="m4a-cQ-TGl">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showHidePressed:" target="AiD-YI-ZS4" id="64T-eZ-WDO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5UU-FY-1bt" secondAttribute="trailing" constant="20" id="9nW-nO-PId"/>
+                            <constraint firstAttribute="bottom" secondItem="gjX-XY-wws" secondAttribute="bottom" constant="10" id="Dwl-Yn-vFW"/>
+                            <constraint firstItem="gjX-XY-wws" firstAttribute="top" secondItem="ny1-P8-8gN" secondAttribute="top" constant="2" id="ZtJ-pN-gzR"/>
+                            <constraint firstItem="5UU-FY-1bt" firstAttribute="top" secondItem="ny1-P8-8gN" secondAttribute="top" constant="6" id="bKW-ap-CFF"/>
+                            <constraint firstItem="gjX-XY-wws" firstAttribute="leading" secondItem="ny1-P8-8gN" secondAttribute="leading" constant="11" id="lnp-7B-frB"/>
+                            <constraint firstItem="5UU-FY-1bt" firstAttribute="leading" secondItem="gjX-XY-wws" secondAttribute="trailing" constant="8" id="r1F-1s-OPJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerTextField" destination="gjX-XY-wws" id="oN6-8P-MJZ"/>
+                        <outlet property="showHideButton" destination="5UU-FY-1bt" id="cfy-3d-bvP"/>
+                    </connections>
+                </viewController>
+                <customObject id="Szt-o8-d3D" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307" y="155"/>
+        </scene>
+        <!--HeaderTriangleController-->
+        <scene sceneID="k1f-fF-jvq">
+            <objects>
+                <viewController storyboardIdentifier="HeaderTriangleViewController" id="QsI-mr-tf4" userLabel="HeaderTriangleController" customClass="HeaderViewController" customModule="InfoBarStackView" sceneMemberID="viewController">
+                    <view key="view" id="m3B-p0-uYR" customClass="HeaderView" customModule="InfoBarStackView" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="249" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2QF-Iy-jUX">
+                                <rect key="frame" x="28" y="10" width="86" height="20"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" placeholderString="Heading Title" id="Ppy-WU-6mc">
+                                    <font key="font" size="13" name="HelveticaNeue-Bold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C34-nq-mBa">
+                                <rect key="frame" x="12" y="11" width="13" height="13"/>
+                                <buttonCell key="cell" type="disclosureTriangle" bezelStyle="disclosure" imagePosition="above" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jfs-Ud-1nC">
+                                    <behavior key="behavior" pushIn="YES" changeBackground="YES" changeGray="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showHidePressed:" target="QsI-mr-tf4" id="Uzg-Yt-SYM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2QF-Iy-jUX" secondAttribute="bottom" constant="10" id="0oy-1z-4t7"/>
+                            <constraint firstItem="2QF-Iy-jUX" firstAttribute="top" secondItem="m3B-p0-uYR" secondAttribute="top" constant="2" id="AKi-zg-e8d"/>
+                            <constraint firstItem="C34-nq-mBa" firstAttribute="leading" secondItem="m3B-p0-uYR" secondAttribute="leading" constant="12" id="Bjk-u9-yOU"/>
+                            <constraint firstItem="2QF-Iy-jUX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="C34-nq-mBa" secondAttribute="trailing" constant="5" id="SHR-Ec-sgA"/>
+                            <constraint firstItem="2QF-Iy-jUX" firstAttribute="leading" secondItem="m3B-p0-uYR" secondAttribute="leading" constant="30" id="Xhm-7S-t17"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2QF-Iy-jUX" secondAttribute="trailing" constant="20" symbolic="YES" id="itt-u6-TGl"/>
+                            <constraint firstItem="C34-nq-mBa" firstAttribute="top" secondItem="m3B-p0-uYR" secondAttribute="top" constant="8" id="qlq-Lz-2BA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerTextField" destination="2QF-Iy-jUX" id="QwC-mr-lgF"/>
+                        <outlet property="showHideButton" destination="C34-nq-mBa" id="Iq7-Q1-vJH"/>
+                    </connections>
+                </viewController>
+                <customObject id="Y5W-7D-8BK" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307" y="275"/>
+        </scene>
+    </scenes>
+</document>

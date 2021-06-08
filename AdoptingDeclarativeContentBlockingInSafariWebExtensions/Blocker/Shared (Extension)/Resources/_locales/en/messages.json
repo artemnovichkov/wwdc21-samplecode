@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "Blocker",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "A simple content blocker.",
+        "description": "Description of what the extension does."
+    }
+}

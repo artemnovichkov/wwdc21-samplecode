@@ -1,0 +1,12 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Localized strings for this sample app.
+*/
+
+"OKTitle" = "OK";
+
+"OpenNewWindowTitle" = "Open New Window";
+
+"UnableToContinueTitle" = "Unable to continue activity";

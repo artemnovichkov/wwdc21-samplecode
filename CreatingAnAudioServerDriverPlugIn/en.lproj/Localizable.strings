@@ -1,0 +1,14 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Localized strings displayed by the device.
+*/
+
+DeviceName = "Null Audio Device";
+InputStreamName = "Null Audio Input Stream";
+OutputStreamName = "Null Audio Output Stream";
+ManufacturerName = "Apple Inc.";
+MasterElementName = "Master";
+LeftElementName = "Left";
+RightElementName = "Right";

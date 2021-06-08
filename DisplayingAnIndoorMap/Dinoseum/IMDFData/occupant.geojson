@@ -1,0 +1,61 @@
+{
+    "features": [
+        {
+            "feature_type": "occupant",
+            "geometry": null,
+            "id": "5ac4bf40-2dbf-4bdb-9c39-495c442b7e38",
+            "properties": {
+                "address_id": null,
+                "alt_name": null,
+                "anchor_id": "bc57ca27-c994-4cba-8fae-10c8a52032d1",
+                "category": "restaurant",
+                "display_point": {
+                    "coordinates": [
+                       -121.8878608,
+                        37.3294221
+                      ],
+                    "type": "Point"
+                },
+                "hours": "Su-Sa 09:00-17:00",
+                "name": {
+                    "en": "Jurassic Table"
+                },
+                "phone": "+14087924511",
+                "restriction": null,
+                "website": null,
+                "correlation_id": null
+            },
+            "type": "Feature"
+        },
+        {
+            "feature_type": "occupant",
+            "geometry": null,
+            "id": "5ac4bf40-2dbf-4bdb-9c39-495c442b7e39",
+            "properties": {
+                "address_id": null,
+                "alt_name": null,
+                "anchor_id": "76336b53-81c9-4c93-8f81-a4c008d54ba1",
+                "category": "shopping",
+                "display_point": {
+                    "coordinates": [
+	                    -121.889609,
+	                    37.329678
+                      ],
+                    "type": "Point"
+                },
+                "hours": "Su-Sa 09:00-17:00",
+                "name": {
+                    "en": "Dinoshop"
+                },
+                "phone": "+14087924512",
+                "restriction": null,
+                "website": null,
+                "correlation_id": null
+            },
+            "type": "Feature"
+        }
+        
+    ],
+    "name": "Occupant",
+    "type": "FeatureCollection"
+}

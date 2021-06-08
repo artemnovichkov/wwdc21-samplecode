@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%lld Smoothies</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>%lld смузи</string>
+			<key>many</key>
+			<string>%lld смузи</string>
+			<key>one</key>
+			<string>%lld смузи</string>
+			<key>other</key>
+			<string>%lld смузи</string>
+			<key>zero</key>
+			<string>Нет смузи</string>
+		</dict>
+	</dict>
+	<key>%lld of 10 points earned</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>Вы заработали %lld из 10 баллов</string>
+			<key>many</key>
+			<string>Вы заработали %lld из 10 баллов</string>
+			<key>one</key>
+			<string>Вы заработали %lld из 10 баллов</string>
+			<key>other</key>
+			<string>Вы заработали %lld из 10 баллов</string>
+			<key>zero</key>
+			<string>Нет баллов</string>
+		</dict>
+	</dict>
+	<key>You are %lld points away from a free smoothie!</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>Вам не хватает %lld баллов до бесплатного смузи!</string>
+			<key>many</key>
+			<string>Вам не хватает %lld баллов до бесплатного смузи!</string>
+			<key>one</key>
+			<string>Вам не хватает %lld балла до бесплатного смузи!</string>
+			<key>other</key>
+			<string>Вам не хватает %lld балла до бесплатного смузи!</string>
+			<key>zero</key>
+			<string>Поздравляем, Вы получили бесплатный смузи!</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

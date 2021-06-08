@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "barcelona_hotel.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

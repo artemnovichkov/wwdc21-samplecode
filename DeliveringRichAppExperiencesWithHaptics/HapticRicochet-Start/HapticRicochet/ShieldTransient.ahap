@@ -1,0 +1,60 @@
+  {
+    "Version": 1.0,
+    "Metadata":
+        {
+            "Project" : "HapticRicochet",
+            "Created" : "1 June 2021",
+            "Description" : "Effect for adding a shield to the ball using transient events."
+        },
+    "Pattern":
+    [
+        {
+            "Event":
+            {
+                "Time": 0,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 1.0 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.3 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.11,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 1.0 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.6 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.45,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 1.0 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.5 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time":0.0,
+                "EventType":"AudioCustom",
+                "EventWaveformPath":"ShieldA.wav",
+                "EventParameters":
+                [
+                    {"ParameterID":"AudioVolume","ParameterValue":0.75}
+                ]
+            }
+        } 
+    ]
+}

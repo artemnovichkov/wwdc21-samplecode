@@ -1,0 +1,313 @@
+[
+    {
+        "id" : "079FBE8F-A402-4592-B930-9A8EB396F73F",
+        "year" : 2018,
+        "name" : "Backyard Flower Bed",
+        "plants" : [
+
+        ]
+    },
+    {
+        "id" : "FE2522C5-F361-4ACC-B311-2898ACF992C8",
+        "year" : 2018,
+        "name" : "Vegetable Patch",
+        "plants" : [
+
+        ]
+    },
+    {
+        "id" : "33B55A49-A07E-4BAA-BA87-45E08BD46D7B",
+        "year" : 2019,
+        "name" : "Backyard Flower Bed",
+        "plants" : [
+
+        ]
+    },
+    {
+        "id" : "700DA69E-8CCC-4890-8396-8612BE2336EE",
+        "year" : 2020,
+        "name" : "Vegetable Patch",
+        "plants" : [
+
+        ]
+    },
+    {
+        "id" : "D494F1B3-9332-4130-A9D8-C7DFB1B09619",
+        "year" : 2020,
+        "name" : "Backyard Flower Bed",
+        "plants" : [
+
+        ]
+    },
+    {
+        "id" : "67EA676C-891E-4457-96A5-7BFB5CDDC7AC",
+        "year" : 2021,
+        "name" : "Backyard Flower Bed",
+        "plants" : [
+            {
+                "wateringFrequency" : 5,
+                "id" : "610F8E9B-BB4E-4C7C-837A-74A7637AEE14",
+                "favorite" : false,
+                "variety" : "California Poppy",
+                "daysToMaturity" : 100,
+                "datePlanted" : "2021-05-01T00:00:00Z",
+                "lastWateredOn" : "2021-06-03T00:00:00Z"
+            },
+            {
+                "wateringFrequency" : 5,
+                "id" : "FC8B2DFC-7D0F-404D-9E86-2EC0235161DD",
+                "favorite" : false,
+                "variety" : "Marigold",
+                "daysToMaturity" : 100,
+                "datePlanted" : "2021-05-01T00:00:00Z",
+                "lastWateredOn" : "2021-06-02T00:00:00Z"
+            },
+            {
+                "wateringFrequency" : 5,
+                "id" : "169C1780-356C-45F1-9AE2-DECFFA926640",
+                "favorite" : false,
+                "variety" : "Sunflower",
+                "daysToMaturity" : 100,
+                "datePlanted" : "2021-05-01T00:00:00Z",
+                "lastWateredOn" : "2021-06-02T00:00:00Z"
+            },
+            {
+                "wateringFrequency" : 5,
+                "id" : "FAF12176-CA3C-4CCD-A483-31BFFD47B676",
+                "favorite" : false,
+                "variety" : "Peonies",
+                "daysToMaturity" : 50,
+                "datePlanted" : "2021-05-01T00:00:00Z",
+                "lastWateredOn" : "2021-06-01T00:00:00Z"
+            },
+            {
+                "wateringFrequency" : 5,
+                "id" : "562B2EC5-AFAC-482E-8720-7A7DBF6CAEF9",
+                "favorite" : false,
+                "variety" : "Morning Glory",
+                "daysToMaturity" : 50,
+                "datePlanted" : "2021-05-01T00:00:00Z",
+                "lastWateredOn" : "2021-06-03T00:00:00Z"
+            },
+            {
+                "wateringFrequency" : 5,
+                "id" : "296ADEBF-8E6A-4038-AA89-063E5D0E789C",
+                "favorite" : false,
+                "variety" : "Zinnias",
+                "daysToMaturity" : 50,
+                "datePlanted" : "2021-05-01T00:00:00Z",
+                "lastWateredOn" : "2021-06-03T00:00:00Z"
+            }
+        ]
+    },
+    {
+        "id" : "A37957BD-7F3B-40D1-AE6C-756EBE9B3684",
+        "year" : 2021,
+        "name" : "Vegetable Patch",
+        "plants" : [
+            {
+                "variety" : "Tomatoes",
+                "id" : "185119BF-B99A-4B9B-8F60-ED319D32C901",
+                "datePlanted" : "2021-05-18T00:34:54Z",
+                "favorite" : false,
+                "lastWateredOn" : "2021-05-30T00:34:54Z",
+                "daysToMaturity" : 85,
+                "wateringFrequency" : 2
+            },
+            {
+                "variety" : "Peppers",
+                "id" : "91111ACE-7F63-4AC8-A02A-D1A9335F6F73",
+                "datePlanted" : "2021-05-10T00:34:54Z",
+                "favorite" : false,
+                "lastWateredOn" : "2021-05-19T00:34:54Z",
+                "daysToMaturity" : 104,
+                "wateringFrequency" : 3
+            },
+            {
+                "variety" : "Strawberries",
+                "id" : "AA77C621-CAB3-4055-BE5D-23D325C293F9",
+                "datePlanted" : "2021-05-10T00:34:55Z",
+                "favorite" : true,
+                "lastWateredOn" : "2021-05-18T00:34:55Z",
+                "daysToMaturity" : 50,
+                "wateringFrequency" : 4
+            },
+            {
+                "variety" : "Radishes",
+                "id" : "7B71F2D9-5E2A-4D36-8DDF-D32D24B602ED",
+                "datePlanted" : "2021-05-13T00:34:56Z",
+                "favorite" : false,
+                "lastWateredOn" : "2021-05-22T00:34:56Z",
+                "daysToMaturity" : 77,
+                "wateringFrequency" : 5
+            },
+            {
+                "variety" : "Corn",
+                "id" : "15335960-2F46-425F-8FAA-E32206E54071",
+                "datePlanted" : "2021-02-02T00:34:56Z",
+                "favorite" : false,
+                "lastWateredOn" : "2021-03-18T00:34:56Z",
+                "daysToMaturity" : 67,
+                "wateringFrequency" : 3
+            },
+            {
+                "variety" : "Avocados",
+                "id" : "6ECFAF30-59AD-48B4-B8F0-92EF772C4ECE",
+                "datePlanted" : "2021-05-18T00:34:56Z",
+                "favorite" : false,
+                "lastWateredOn" : "2021-05-18T00:34:56Z",
+                "daysToMaturity" : 500,
+                "wateringFrequency" : 10
+            },
+            {
+                "variety" : "Swiss Chard",
+                "id" : "92CED6AF-6F24-455F-A9C5-AF759F780D69",
+                "datePlanted" : "2021-01-18T00:34:56Z",
+                "favorite" : false,
+                "lastWateredOn" : "2021-02-18T00:34:56Z",
+                "daysToMaturity" : 80,
+                "wateringFrequency" : 7
+            },
+            {
+                "variety" : "Beets",
+                "id" : "FF7B07CC-CAAB-4B51-BE9C-302ABE3BD41A",
+                "datePlanted" : "2021-05-03T00:34:57Z",
+                "favorite" : false,
+                "lastWateredOn" : "2021-05-15T00:34:57Z",
+                "daysToMaturity" : 65,
+                "wateringFrequency" : 5
+            },
+            {
+                "variety" : "Parsnips",
+                "id" : "9EFB4979-17F3-4B05-8148-1F2D9C066798",
+                "datePlanted" : "2021-03-15T00:34:57Z",
+                "favorite" : false,
+                "lastWateredOn" : "2021-04-16T00:34:57Z",
+                "daysToMaturity" : 88,
+                "wateringFrequency" : 10
+            },
+            {
+                "variety" : "Spinach",
+                "id" : "BB1DD869-6D4B-460D-9721-903973E27DAD",
+                "datePlanted" : "2021-05-22T01:04:43Z",
+                "favorite" : false,
+                "lastWateredOn" : "2021-05-21T01:04:43Z",
+                "daysToMaturity" : 90,
+                "wateringFrequency" : 3
+            },
+            {
+                "variety" : "Zucchini",
+                "id" : "DB2751BF-A0E7-45AF-AC84-0B4FB08E785D",
+                "datePlanted" : "2021-05-09T01:04:44Z",
+                "favorite" : false,
+                "lastWateredOn" : "2021-05-17T01:04:44Z",
+                "daysToMaturity" : 85,
+                "wateringFrequency" : 9
+            },
+            {
+                "variety" : "Lettuces",
+                "id" : "6E65E268-18F3-4D2F-A5B1-4B07B347B3FC",
+                "datePlanted" : "2021-03-04T01:04:45Z",
+                "favorite" : false,
+                "lastWateredOn" : "2021-05-18T01:04:45Z",
+                "daysToMaturity" : 65,
+                "wateringFrequency" : 10
+            },
+            {
+                "wateringFrequency" : 3,
+                "id" : "869C67F8-0B4C-4FFB-B2E3-B170D6227A81",
+                "favorite" : false,
+                "variety" : "Kale",
+                "daysToMaturity" : 60,
+                "datePlanted" : "2021-05-01T00:00:00Z",
+                "lastWateredOn" : "2021-06-01T00:00:00Z"
+            },
+            {
+                "wateringFrequency" : 2,
+                "id" : "DF277034-297E-4B28-A198-613FB505A132",
+                "favorite" : false,
+                "variety" : "Cucumber",
+                "daysToMaturity" : 45,
+                "datePlanted" : "2021-05-25T00:00:00Z",
+                "lastWateredOn" : "2021-05-30T00:00:00Z"
+            },
+            {
+                "wateringFrequency" : 4,
+                "id" : "786C2372-788D-4828-8E24-FAB09C6A1030",
+                "favorite" : true,
+                "variety" : "Carrots",
+                "daysToMaturity" : 60,
+                "datePlanted" : "2021-05-15T00:00:00Z",
+                "lastWateredOn" : "2021-06-01T00:00:00Z"
+            }
+        ]
+    },
+    {
+        "id" : "A5B3DC8E-2F4A-4CAC-9AFF-51E605E00F32",
+        "year" : 2021,
+        "name" : "Herbs",
+        "plants" : [
+            {
+                "wateringFrequency" : 7,
+                "id" : "12BCA68A-0005-4C8C-AF19-B4385F498A95",
+                "favorite" : false,
+                "variety" : "Dill",
+                "daysToMaturity" : 30,
+                "datePlanted" : "2021-05-15T00:00:00Z",
+                "lastWateredOn" : "2021-06-01T00:00:00Z"
+            },
+            {
+                "wateringFrequency" : 3,
+                "id" : "530011DA-3CD3-4705-914A-9D2B7588907E",
+                "favorite" : false,
+                "variety" : "Mint",
+                "daysToMaturity" : 42,
+                "datePlanted" : "2021-05-15T00:00:00Z",
+                "lastWateredOn" : "2021-06-01T00:00:00Z"
+            },
+            {
+                "wateringFrequency" : 4,
+                "id" : "0E728B02-743A-4392-A5E8-89D209CB70F9",
+                "favorite" : false,
+                "variety" : "Basil",
+                "daysToMaturity" : 40,
+                "datePlanted" : "2021-05-15T00:00:00Z",
+                "lastWateredOn" : "2021-06-01T00:00:00Z"
+            }
+        ]
+    },
+    {
+        "id" : "3878660A-B24B-4C67-98bE-1F08214DD70F",
+        "year" : 2021,
+        "name" : "Indoor Plants",
+        "plants" : [
+            {
+                "wateringFrequency" : 14,
+                "id" : "98F050A6-2bE4-4BE1-B11B-C5C4FA5D318A",
+                "favorite" : false,
+                "variety" : "Succulent",
+                "daysToMaturity" : 30,
+                "datePlanted" : "2021-06-07T00:00:00Z",
+                "lastWateredOn" : "2021-06-07T00:00:00Z"
+            },
+            {
+                "wateringFrequency" : 3,
+                "id" : "838937F8-CA7A-4E77-A55E-11CA018437B5",
+                "favorite" : false,
+                "variety" : "Rubber Plant",
+                "daysToMaturity" : 30,
+                "datePlanted" : "2021-06-02T00:00:00Z",
+                "lastWateredOn" : "2021-06-07T00:00:00Z"
+            },
+            {
+                "wateringFrequency" : 5,
+                "id" : "88218732-6F68-4D5F-A5F8-A3DF46A089A2",
+                "favorite" : false,
+                "variety" : "Begonia",
+                "daysToMaturity" : 30,
+                "datePlanted" : "2021-06-03T00:00:00Z",
+                "lastWateredOn" : "2021-06-07T00:00:00Z"
+            }
+        ]
+    }
+]

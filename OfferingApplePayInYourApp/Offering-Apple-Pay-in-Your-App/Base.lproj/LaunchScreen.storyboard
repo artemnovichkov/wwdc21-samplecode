@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19082.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19080.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Offering Apple Pay-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController title="Offering Apple Pay" id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ggu-pc-FEI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                            </mapView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k1Y-h8-zi7">
+                                <rect key="frame" x="0.0" y="575" width="414" height="199"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gR5-iD-Rl8">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="199"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Tickets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCU-gB-ffx">
+                                            <rect key="frame" x="8" y="8" width="398" height="39"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0G-yq-YxZ">
+                                            <rect key="frame" x="8" y="69" width="398" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="16R-4f-65x"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Q0G-yq-YxZ" secondAttribute="trailing" constant="8" id="ARj-8q-HeO"/>
+                                        <constraint firstItem="Q0G-yq-YxZ" firstAttribute="top" secondItem="SCU-gB-ffx" secondAttribute="bottom" constant="22" id="Eob-AN-RL8"/>
+                                        <constraint firstItem="Q0G-yq-YxZ" firstAttribute="leading" secondItem="gR5-iD-Rl8" secondAttribute="leading" constant="8" id="Vzn-hL-hKz"/>
+                                        <constraint firstItem="SCU-gB-ffx" firstAttribute="top" secondItem="gR5-iD-Rl8" secondAttribute="topMargin" id="e5s-fH-18w"/>
+                                        <constraint firstItem="SCU-gB-ffx" firstAttribute="trailing" secondItem="Q0G-yq-YxZ" secondAttribute="trailing" id="rr1-0b-73f"/>
+                                        <constraint firstItem="SCU-gB-ffx" firstAttribute="leading" secondItem="Q0G-yq-YxZ" secondAttribute="leading" id="xh5-0z-RwO"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="UPf-eB-QDm"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ggu-pc-FEI" secondAttribute="trailing" id="3zj-R5-XIu"/>
+                            <constraint firstItem="k1Y-h8-zi7" firstAttribute="leading" secondItem="ggu-pc-FEI" secondAttribute="leading" id="458-mq-fuW"/>
+                            <constraint firstItem="ggu-pc-FEI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="77R-U9-3zD"/>
+                            <constraint firstItem="ggu-pc-FEI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nSH-UU-REB"/>
+                            <constraint firstItem="ggu-pc-FEI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qob-nj-nrh"/>
+                            <constraint firstItem="k1Y-h8-zi7" firstAttribute="trailing" secondItem="ggu-pc-FEI" secondAttribute="trailing" id="t8o-o9-hRg"/>
+                            <constraint firstItem="k1Y-h8-zi7" firstAttribute="bottom" secondItem="ggu-pc-FEI" secondAttribute="bottom" id="y4f-jN-mfo"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

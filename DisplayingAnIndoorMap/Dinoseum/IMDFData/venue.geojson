@@ -1,0 +1,81 @@
+{
+    "features": [
+        {
+            "feature_type": "venue",
+            "geometry": {
+                "coordinates": [
+                    [
+                        [
+                            -121.8877302,
+                            37.3302817
+                        ],
+                        [
+                            -121.8884902,
+                            37.3299083
+                        ],
+                        [
+                            -121.888998,
+                            37.3305496
+                        ],
+                        [
+                            -121.8913729,
+                            37.3294515
+                        ],
+                        [
+                            -121.8899391,
+                            37.3275123
+                        ],
+                        [
+                            -121.8898073,
+                            37.3273687
+                        ],
+                        [
+                            -121.8888698,
+                            37.3278571
+                        ],
+                        [
+                            -121.886689,
+                            37.3294575
+                        ],
+                        [
+                            -121.8869795,
+                            37.3296993
+                        ],
+                        [
+                            -121.887412,
+                            37.3300593
+                        ],
+                        [
+                            -121.8877302,
+                            37.3302817
+                        ]
+                    ]
+                ],
+                "type": "Polygon"
+            },
+            "id": "c3ec5ea2-8839-434a-a7a8-34dbe35c9a4c",
+            "properties": {
+                "address_id": "e105efb7-b0d1-4144-8b8e-72eadf95724f",
+                "alt_name": null,
+                "category": "museum",
+                "display_point": {
+                    "coordinates": [
+                        -121.889164,
+                        37.32925
+                    ],
+                    "type": "Point"
+                },
+                "hours": "Su-Sa 09:00-17:00",
+                "name": {
+                    "en": "Dinoseum"
+                },
+                "phone": null,
+                "restriction": null,
+                "website": "https://developer.apple.com"
+            },
+            "type": "Feature"
+        }
+    ],
+    "name": "venue",
+    "type": "FeatureCollection"
+}

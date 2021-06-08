@@ -1,0 +1,8 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+Localized strings for provider UserInteractions.
+*/
+"ITEM_IN_USE_FORMAT" = "This item is in use by %@ and should not be modified.";
+"ITEM_IN_USE_FORMAT_MULTIPLE" = "These items are in use and should not be modified.";

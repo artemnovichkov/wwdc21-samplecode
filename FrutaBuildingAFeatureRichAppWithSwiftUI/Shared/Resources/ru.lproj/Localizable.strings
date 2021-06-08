@@ -1,0 +1,286 @@
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A localization file.
+*/
+
+/* Berry Blue smoothie description */
+"*Filling* and *refreshing*, this smoothie will fill you with joy!" = "*Питательный* и *освежающий*, этот смузи — настоящий источник радости!";
+
+/* Sailor Man smoothie description */
+"*Get strong* with this delicious spinach smoothie!" = "*Наберитесь сил* этим с этим восхитительным смузи из шпината!";
+
+/* Carrot Chops smoothie description */
+"*Packed* with vitamin A and C, Carrot Chops is a great way to start your day!" = "*Богатая* витаминами A и C, Рубленая морковь — прекрасное начало дня!";
+
+/* Accessibility label for collapsed ingredient card in smoothie overview */
+"%@ Ingredient" = "%@ ингредиент";
+
+/* No comment provided by engineer. */
+"%@ is ready to be picked up." = "Смузи «%@» готов! ";
+
+/* Tropical Blue smoothie description */
+"A delicious blend of *tropical fruits and blueberries* will have you sambaing around like you never knew you could!" = "Великолепный букет *тропических фруктов и ягод* — это настоящая самба вкуса!";
+
+/* Lemonberry smoothie description */
+"A refreshing blend that's a *real kick*!" = "Освежающий смузи доставит *огромное* удовольствие.";
+
+/* Placeholder text shown in list of smoothies when no favorite smoothies have been added yet */
+"Add some smoothies to your favorites!" = "Добавьте несколько смузи в Избранное!";
+
+/* Toolbar button/menu item to add a smoothie to favorites */
+"Add to Favorites" = "Добавить в Избранное";
+
+/* Smoothie name */
+"Berry Blue" = "Ягодный шок";
+
+/* Accessibility label for button to buy recipe for a certain price. */
+"Buy recipe for %@" = "Купить рецепт за %@";
+
+/* Accessibility label for Buy with Apple Pay button */
+"Buy with Apple Pay" = "Купить с Apple Pay";
+
+/* No comment provided by engineer. */
+"Calcium" = "Кальций";
+
+/* Smoothie name */
+"Carrot Chops" = "Рубленная морковь";
+
+/* Accessibility label for circular style toggle that is checked (on) */
+"Checked" = "Отмечено";
+
+/* No comment provided by engineer. */
+"Cholesterol" = "Холестерин";
+
+/* No comment provided by engineer. */
+"Close" = "Закрыть";
+
+/* No comment provided by engineer. */
+"Close Nutrition Facts" = "Закрыть «Пищевую ценность»";
+
+/* Label for toggle showing whether you have completed adding an ingredient that's part of a smoothie recipe */
+"Complete" = "Завершено";
+
+/* Mango Jambo smoothie description */
+"Dance around with this *delicious* tropical blend!" = "Потанцуйте с этим *изумительным* тропическим смузи!";
+
+/* No comment provided by engineer. */
+"Dietary Fiber" = "Клетчатка";
+
+/* Description shown for the widget when the user adds or edits it */
+"Displays the latest featured smoothie!" = "Новости из мира смузи";
+
+/* Button title to dismiss rewards sheet
+Button to dismiss the confirmation sheet after placing an order */
+"Done" = "Готово";
+
+/* Piña y Coco smoothie description */
+"Enjoy the *tropical* flavors of coconut and pineapple!" = "Наслаждайтесь *тропическим* вкусом кокоса и ананаса!";
+
+/* Peanut Butter Cup smoothie description */
+"Ever wondered what it was like to *drink a peanut butter cup*? Wonder no more!" = "Когда-нибудь задумывались, каково это *выпить стакан арахисовой пасты*? Пришло время узнать!";
+
+/* Swipe action button in smoothie list */
+"Favorite" = "В избранное";
+
+/* No comment provided by engineer. */
+"Favorite Smoothies" = "Избранные смузи";
+
+/* Title of the 'favorites' app section showing the list of favorite smoothies
+Favorite smoothies tab title */
+"Favorites" = "Избранное";
+
+/* The name shown for the widget when the user adds or edits it */
+"Featured Smoothie" = "Ассортимент смузи";
+
+/* One in a Melon smoothie description */
+"Feel special this summer with the *coolest* drink in our menu!" = "Этим летом почувствуйте себя особенными с самым *отмороженным* напитком нашего меню!";
+
+/* No comment provided by engineer. */
+"Fruta" = "Фрута";
+
+/* No comment provided by engineer. */
+"Get the full smoothie experience!" = "Получите незабываемые впечатления от наших смузи!";
+
+/* Smoothie name */
+"Hulking Lemonade" = "Богатырский лимонад";
+
+/* Love You Berry Much smoothie description */
+"If you *love* berries berry berry much, you will love this one!" = "*Без ума* от ягод? Вам точно полюбится этот смузи!";
+
+/* Accessibility label containing the full list of smoothie ingredients */
+"Ingredients: %@." = "Состав: %@.";
+
+/* No comment provided by engineer. */
+"Iron" = "Железо";
+
+/* Smoothie name */
+"Kiwi Cutie" = "Милашка киви";
+
+/* Kiwi Cutie smoothie description */
+"Kiwi Cutie is beautiful *inside* ***and*** *out*! Packed with nutrients to start your day!" = "Милашка киви прекрасна, *как ни посмотри*! Заряда витаминов хватит на весь день.";
+
+/* Smoothie name */
+"Lemonberry" = "Ягоды с лимоном";
+
+/* No comment provided by engineer. */
+"Loading…" = "Загрузка…";
+
+/* Smoothie name */
+"Love You Berry Much" = "Ягодная любовь";
+
+/* No comment provided by engineer. */
+"Make smoothies at home!" = "Смузи в домашних условиях";
+
+/* Smoothie name */
+"Mango Jambo" = "Манговая феерия";
+
+/* Smoothie menu tab title
+Title of the 'menu' app section showing the menu of available smoothies */
+"Menu" = "Меню";
+
+/* No comment provided by engineer. */
+"Monounsaturated Fat" = "Мононенасыщенные жиры";
+
+/* No comment provided by engineer. */
+"Nutrition Facts" = "Пищевая ценность";
+
+/* OK button of alert dialog when payments are disabled */
+"OK" = "ОК";
+
+/* Smoothie name */
+"One in a Melon" = "Туз‑арбуз";
+
+/* No comment provided by engineer. */
+"Open Nutrition Facts" = "Открыть «Пищевую ценность»";
+
+/* Papa's Papaya smoothie description */
+"Papa would be proud of you if he saw you drinking this!" = "Папа будет очень гордиться, если увидит, что Вы пьете этот напиток!";
+
+/* Smoothie name */
+"Papa's Papaya" = "Папина папайя";
+
+/* Title of alert dialog when payments are disabled */
+"Payments Disabled" = "Платежи отключены";
+
+/* Smoothie name */
+"Peanut Butter Cup" = "Стакан арахисовой пасты";
+
+/* Smoothie name */
+"Piña y Coco" = "Веселая колада";
+
+/* No comment provided by engineer. */
+"Polyunsaturated Fat" = "Полиненасыщенные жиры";
+
+/* No comment provided by engineer. */
+"Potassium" = "Калий";
+
+/* No comment provided by engineer. */
+"Protein" = "Белок";
+
+/* Smoothie recipes tab title
+Title of the 'recipes' app section showing the list of smoothie recipes */
+"Recipes" = "Рецепты";
+
+/* Button to redeem a free smoothie */
+"Redeem Free Smoothie!" = "Получить бесплатный смузи";
+
+/* Toolbar button/menu item to remove a smoothie from favorites */
+"Remove from Favorites" = "Удалить из Избранного";
+
+/* Smoothie rewards tab title */
+"Rewards" = "Бонусы";
+
+/* Header for rewards card
+The name shown for the widget when the user adds or edits it */
+"Rewards Card" = "Бонусная карта";
+
+/* Smoothie name */
+"Sailor Man" = "Флотский";
+
+/* No comment provided by engineer. */
+"Saturated Fat" = "Насыщенные жиры";
+
+/* Description shown for the widget when the user adds or edits it */
+"See your progress towards your next free smoothie!" = "Прогресс на пути к бесплатному смузи";
+
+/* No comment provided by engineer. */
+"Select a category" = "Выберите категорию";
+
+/* No comment provided by engineer. */
+"Select a smoothie" = "Выберите смузи";
+
+/* No comment provided by engineer. */
+"Serving Size 1 Cup" = "Содержание в одном стакане";
+
+/* Label shown in rewards card view when no account has been created yet */
+"Sign up to get rewards!" = "Зарегистрируйтесь, чтобы получить бонусы!";
+
+/* Menu title for smoothie-related actions
+Fallback name for smoothie */
+"Smoothie" = "Смузи";
+
+/* No comment provided by engineer. */
+"Smoothie Count" = "Количество смузи";
+
+/* No comment provided by engineer. */
+"Smoothies" = "Смузи";
+
+/* No comment provided by engineer. */
+"Sodium" = "Натрий";
+
+/* No comment provided by engineer. */
+"Stepper" = "Увеличить или уменьшить количество";
+
+/* No comment provided by engineer. */
+"Sugar" = "Сахар";
+
+/* No comment provided by engineer. */
+"Thank you for your order!" = "Спасибо за заказ!";
+
+/* Smoothie name */
+"That's a Smore!" = "Райская любовь!";
+
+/* Smoothie name */
+"That's Berry Bananas!" = "Море бананов";
+
+/* Explanatory text of alert dialog when payments are disabled */
+"The Fruta QR code was scanned too far from the shop, payments are disabled for your protection." = "QR-код Фруты отсканирован слишком далеко от магазина, поэтому в целях Вашей безопасности платежи недоступны.";
+
+/* Hulking Lemonade smoothie description */
+"This is not just *any* lemonade. It will give you *powers* you'll struggle to control!" = "Это *не обыкновенный* лимонад — с ним Вы сможете свернуть горы!";
+
+/* No comment provided by engineer. */
+"Total Carbohydrates" = "Всего углеводов";
+
+/* No comment provided by engineer. */
+"Total Fat" = "Всего жиров";
+
+/* Smoothie name */
+"Tropical Blue" = "Тропическое индиго";
+
+/* Accessibility label for circular style toggle that is unchecked (off) */
+"Unchecked" = "Не отмечено";
+
+/* No comment provided by engineer. */
+"Unlock All Recipes" = "Разблокируйте все рецепты";
+
+/* No comment provided by engineer. */
+"Vitamin A" = "Витамин A";
+
+/* No comment provided by engineer. */
+"Vitamin C" = "Витамин C";
+
+/* No comment provided by engineer. */
+"We will notify you when your order is ready." = "Вы получите уведомление, когда смузи будет готов.";
+
+/* That's a Smore! smoothie description */
+"When the world seems to rock like you've had too much choc, that's *a smore*!" = "С днем рождения поздравит. И, наверно, оставит мне в *пода-а-а-рок* сморов 500!";
+
+/* That's Berry Bananas! smoothie description */
+"You'll go *crazy* with this classic!" = "Вы будете *в восторге* от этой классики!";
+
+/* No comment provided by engineer. */
+"Your smoothie is ready!" = "Ваш смузи готов!";
+

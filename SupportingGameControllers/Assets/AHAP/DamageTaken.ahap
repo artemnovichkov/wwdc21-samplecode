@@ -1,0 +1,127 @@
+{
+  "Version" : 1,
+  "Metadata" : {
+    "Project" : "My Project",
+    "Created" : "",
+    "Description" : "Generated with Haptrix www.haptrix.com by nthState"
+  },
+  "Pattern" : [
+    {
+      "Event" : {
+        "EventType" : "HapticTransient",
+        "EventParameters" : [
+          {
+            "ParameterID" : "HapticIntensity",
+            "ParameterValue" : 0.72899997234344482
+          }
+        ],
+        "Time" : 0.64200000000000002
+      }
+    },
+    {
+      "Event" : {
+        "EventType" : "HapticTransient",
+        "EventParameters" : [
+          {
+            "ParameterID" : "HapticIntensity",
+            "ParameterValue" : 0.72899997234344482
+          }
+        ],
+        "Time" : 0.442
+      }
+    },
+    {
+      "Event" : {
+        "EventType" : "HapticTransient",
+        "EventParameters" : [
+          {
+            "ParameterID" : "HapticIntensity",
+            "ParameterValue" : 0.72899997234344482
+          }
+        ],
+        "Time" : 0.217
+      }
+    },
+    {
+      "Event" : {
+        "EventType" : "HapticTransient",
+        "EventParameters" : [
+          {
+            "ParameterID" : "HapticIntensity",
+            "ParameterValue" : 0.72899997234344482
+          }
+        ],
+        "Time" : 0.0080000000000000002
+      }
+    },
+    {
+      "Event" : {
+        "EventParameters" : [
+          {
+            "ParameterID" : "HapticIntensity",
+            "ParameterValue" : 0.44999998807907104
+          },
+          {
+            "ParameterID" : "HapticSharpness",
+            "ParameterValue" : 0.38999998569488525
+          },
+          {
+            "ParameterID" : "AttackTime",
+            "ParameterValue" : 0
+          },
+          {
+            "ParameterID" : "DecayTime",
+            "ParameterValue" : 0
+          },
+          {
+            "ParameterID" : "ReleaseTime",
+            "ParameterValue" : 0
+          },
+          {
+            "ParameterID" : "Sustained",
+            "ParameterValue" : 0
+          }
+        ],
+        "EventType" : "HapticContinuous",
+        "Time" : 0,
+        "EventDuration" : 0.65000000000000002
+      }
+    },
+    {
+      "ParameterCurve" : {
+        "ParameterID" : "HapticIntensityControl",
+        "ParameterCurveControlPoints" : [
+          {
+            "ParameterValue" : 1,
+            "Time" : 0
+          },
+          {
+            "ParameterValue" : 0.210999995470047,
+            "Time" : 0.10899999737739563
+          },
+          {
+            "ParameterValue" : 1.0119999647140503,
+            "Time" : 0.22499999403953552
+          },
+          {
+            "ParameterValue" : 0.20900000631809235,
+            "Time" : 0.33399999141693115
+          },
+          {
+            "ParameterValue" : 1.0130000114440918,
+            "Time" : 0.44600000977516174
+          },
+          {
+            "ParameterValue" : 0.21199999749660492,
+            "Time" : 0.5559999942779541
+          },
+          {
+            "ParameterValue" : 1,
+            "Time" : 0.64999997615814209
+          }
+        ],
+        "Time" : 0
+      }
+    }
+  ]
+}

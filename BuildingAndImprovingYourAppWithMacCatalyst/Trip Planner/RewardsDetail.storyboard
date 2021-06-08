@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19104" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="mac" appearance="light" renderMode="macOS">
+        <simulatedSceneSize key="mac" width="476" height="600"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19097"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rewards Program Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="RewardsProgramDetailViewController" customModule="Trip_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="476" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aae-bR-g2L" userLabel="Root Stack">
+                                <rect key="frame" x="0.0" y="8" width="476" height="476"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xoe-rG-bh1" userLabel="Title Stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="476" height="110"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZW8-7w-uwb">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ZW8-7w-uwb" secondAttribute="height" multiplier="1:1" id="J39-5m-OxC"/>
+                                                    <constraint firstAttribute="width" constant="110" id="a7w-fZ-TgP"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJy-dz-dG9">
+                                                <rect key="frame" x="130" y="0.0" width="346" height="110"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="REU-8U-q6a" userLabel="Slider Label and Toggle Button">
+                                        <rect key="frame" x="0.0" y="118" width="476" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points To Redeem:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qE7-a4-FQj">
+                                                <rect key="frame" x="0.0" y="0.0" width="147.5" height="24"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdC-br-ALH">
+                                                <rect key="frame" x="221" y="0.0" width="48" height="24"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qWE-Ns-q32">
+                                                <rect key="frame" x="351" y="-5" width="132" height="36"/>
+                                                <state key="normal" title="Extreme Points"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Points Multiplier"/>
+                                                <connections>
+                                                    <action selector="pointsMultiplierToggled:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Yyt-Zo-dnI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2nM-0L-PJf" customClass="EmojiKnobSlider" customModule="Trip_Planner" customModuleProvider="target">
+                                        <rect key="frame" x="-2" y="148" width="480" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="SNB-rq-m9H"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="sliderAction:" destination="Y6W-OH-hqX" eventType="valueChanged" id="eDF-OX-Rme"/>
+                                        </connections>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="10" verticalCompressionResistancePriority="200" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Syx-7J-qmE" userLabel="Big Toggle Buttons Stack">
+                                        <rect key="frame" x="0.0" y="181" width="476" height="295"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="10" verticalCompressionResistancePriority="200" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mX8-Yz-w9A">
+                                                <rect key="frame" x="0.0" y="0.0" width="476" height="144"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="10" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AT6-IG-5Dk">
+                                                        <rect key="frame" x="-7" y="-5" width="246" height="156"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                            <imageReference key="image" image="train.side.front.car" catalog="system"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="10" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tn0-Z3-bOt">
+                                                        <rect key="frame" x="237" y="-5" width="246" height="156"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                            <imageReference key="image" image="airplane" catalog="system"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="10" verticalCompressionResistancePriority="200" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zw4-1x-MFs">
+                                                <rect key="frame" x="0.0" y="151" width="476" height="144"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="10" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tAE-yN-7uD">
+                                                        <rect key="frame" x="-7" y="-5" width="246" height="156"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                            <imageReference key="image" image="car" catalog="system"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="10" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXe-d4-mNh">
+                                                        <rect key="frame" x="237" y="-5" width="246" height="156"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                            <imageReference key="image" image="bed.double" catalog="system"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="aae-bR-g2L" secondAttribute="height" id="mmE-PA-1dd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layoutMarginsRelativeArrangement" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FRO-if-Ndm">
+                                <rect key="frame" x="0.0" y="564" width="476" height="20"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0hW-x5-YYy">
+                                        <rect key="frame" x="-3" y="-1" width="157.5" height="25"/>
+                                        <menu key="menu" id="Zzw-Qs-iuD">
+                                            <children>
+                                                <command title="Redeem" id="hvM-av-Uoj">
+                                                    <keyModifierFlags key="modifierFlags" command="YES"/>
+                                                    <connections>
+                                                        <action selector="redeemOption:" destination="Ief-a0-LHa" id="jgg-D7-Cjk"/>
+                                                    </connections>
+                                                </command>
+                                                <command title="Donate" id="Dtv-qp-Qkh">
+                                                    <connections>
+                                                        <action selector="donateOption:" destination="Ief-a0-LHa" id="ko2-6D-tiE"/>
+                                                    </connections>
+                                                </command>
+                                                <command title="Cash Out" id="b7P-Di-ioC">
+                                                    <connections>
+                                                        <action selector="cashOutOption:" destination="Ief-a0-LHa" id="lFV-ao-zKF"/>
+                                                    </connections>
+                                                </command>
+                                            </children>
+                                        </menu>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPO-Is-Fbl">
+                                        <rect key="frame" x="163" y="0.0" width="150.5" height="20"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Reset"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="Fyb-nU-dQs" userLabel="Submit">
+                                        <rect key="frame" x="318" y="-5" width="164.5" height="32"/>
+                                        <state key="normal" title="Submit"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FRO-if-Ndm" firstAttribute="top" secondItem="aae-bR-g2L" secondAttribute="bottom" priority="200" id="63Q-A4-Rs4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FRO-if-Ndm" secondAttribute="trailing" id="HNj-JR-ldi"/>
+                            <constraint firstItem="FRO-if-Ndm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NA1-zY-E8s"/>
+                            <constraint firstItem="FRO-if-Ndm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aae-bR-g2L" secondAttribute="bottom" constant="20" id="Snk-Bi-3Y3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aae-bR-g2L" secondAttribute="trailing" id="bYC-mX-zFO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="FRO-if-Ndm" secondAttribute="bottom" constant="16" id="c2b-nM-Zml"/>
+                            <constraint firstItem="aae-bR-g2L" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qpQ-IZ-oe5"/>
+                            <constraint firstItem="aae-bR-g2L" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" id="xOB-dx-Wmk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomButtonsStack" destination="FRO-if-Ndm" id="RIm-0F-ugm"/>
+                        <outlet property="bottomLeft" destination="tAE-yN-7uD" id="64W-jr-165"/>
+                        <outlet property="bottomRight" destination="QXe-d4-mNh" id="KgJ-LJ-HXp"/>
+                        <outlet property="imageView" destination="ZW8-7w-uwb" id="zSB-HM-6DP"/>
+                        <outlet property="multiplierToggleButton" destination="qWE-Ns-q32" id="1QI-Ha-enx"/>
+                        <outlet property="pointsCount" destination="rdC-br-ALH" id="9dv-wJ-AO7"/>
+                        <outlet property="rootStack" destination="aae-bR-g2L" id="dqI-De-Lav"/>
+                        <outlet property="slider" destination="2nM-0L-PJf" id="Xvx-ah-h0W"/>
+                        <outlet property="sliderLabelAndMultiplierStack" destination="REU-8U-q6a" id="M6j-pI-j0X"/>
+                        <outlet property="titleLabel" destination="VJy-dz-dG9" id="oq1-vk-nw2"/>
+                        <outlet property="topLeft" destination="AT6-IG-5Dk" id="tye-2R-plP"/>
+                        <outlet property="topRight" destination="Tn0-Z3-bOt" id="vNF-5w-fc3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-112.18487394957984" y="2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="airplane" catalog="system" width="128" height="115"/>
+        <image name="bed.double" catalog="system" width="128" height="82"/>
+        <image name="car" catalog="system" width="128" height="93"/>
+        <image name="train.side.front.car" catalog="system" width="128" height="73"/>
+        <systemColor name="systemBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
