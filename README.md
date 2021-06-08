@@ -68,7 +68,7 @@
 
 ## Privacy & Security
 - [Connecting to a Service with Passkeys](/ConnectingToAServiceWithPasskeys)
-- [Simplifying User Authentication in a tvOS App](/SimplifyingUserAuthenticationInAtvOSApp)
+- [Simplifying User Authentication in a tvOS App](/SimplifyingUserAuthenticationInATvOSApp)
 
 ## Safari & Web
 - [Adopting Declarative Content Blocking in Safari Web Extensions](/AdoptingDeclarativeContentBlockingInSafariWebExtensions)
